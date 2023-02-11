@@ -1,16 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import templateObject from "./templateObject";
 function TestAccount() {
   const test = templateObject;
 
-  const inputRef = useRef(null);
-
-  const handleClick = async () => {
-    try {
-      await navigator.clipboard.writeText(inputRef.current.value);
-    } catch (err) {
-      console.error("Failed to copy text: ", err);
-    }
+  const handleClick = (e) => {
+    navigator.clipboard.writeText(e.currentTarget.value);
   };
 
   return (
@@ -27,7 +21,6 @@ function TestAccount() {
           <input
             readOnly
             className="BALANCE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.BALANCE}
           />
@@ -35,7 +28,6 @@ function TestAccount() {
           <input
             readOnly
             className="LINKED_BALANCE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LINKED_BALANCE}
           />
@@ -47,7 +39,6 @@ function TestAccount() {
           <input
             readOnly
             className="CLIENT"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CLIENT}
           />
@@ -55,7 +46,6 @@ function TestAccount() {
           <input
             readOnly
             className="ACCOUNT_TYPE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ACCOUNT_TYPE}
           />
@@ -63,7 +53,6 @@ function TestAccount() {
           <input
             readOnly
             className="STATUS"
-            ref={inputRef}
             onClick={handleClick}
             value={test.STATUS}
           />
@@ -71,7 +60,6 @@ function TestAccount() {
           <input
             readOnly
             className="CREDITOR"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CREDITOR}
           />
@@ -81,7 +69,6 @@ function TestAccount() {
           <input
             readOnly
             className="ACCOUNT_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ACCOUNT_NUMBER}
           />
@@ -89,7 +76,6 @@ function TestAccount() {
           <input
             readOnly
             className="ORIGINATED"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ORIGINATED}
           />
@@ -97,7 +83,6 @@ function TestAccount() {
           <input
             readOnly
             className="ACCOUNT_RECEIVED"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ACCOUNT_RECEIVED}
           />
@@ -105,7 +90,6 @@ function TestAccount() {
           <input
             readOnly
             className="IMPORTED_ON"
-            ref={inputRef}
             onClick={handleClick}
             value={test.IMPORTED_ON}
           />
@@ -115,7 +99,6 @@ function TestAccount() {
           <input
             readOnly
             className="COLLECTOR"
-            ref={inputRef}
             onClick={handleClick}
             value={test.COLLECTOR}
           />
@@ -123,7 +106,6 @@ function TestAccount() {
           <input
             readOnly
             className="CLIENT_CLAIM_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CLIENT_CLAIM_NUMBER}
           />
@@ -131,7 +113,6 @@ function TestAccount() {
           <input
             readOnly
             className="CHARGED_OFF"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CHARGED_OFF}
           />
@@ -139,7 +120,6 @@ function TestAccount() {
           <input
             readOnly
             className="PURCHASED"
-            ref={inputRef}
             onClick={handleClick}
             value={test.PURCHASED}
           />
@@ -149,7 +129,6 @@ function TestAccount() {
           <input
             readOnly
             className="QUEUE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.QUEUE}
           />
@@ -157,7 +136,6 @@ function TestAccount() {
           <input
             readOnly
             className="LAST_PAYMENT"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LAST_PAYMENT}
           />
@@ -165,7 +143,6 @@ function TestAccount() {
           <input
             readOnly
             className="NEXT_WORK"
-            ref={inputRef}
             onClick={handleClick}
             value={test.NEXT_WORK}
           />
@@ -173,7 +150,6 @@ function TestAccount() {
           <input
             readOnly
             className="DEBTOR_PMT_ID"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DEBTOR_PMT_ID}
           />
@@ -183,7 +159,6 @@ function TestAccount() {
           <input
             readOnly
             className="REFERRING"
-            ref={inputRef}
             onClick={handleClick}
             value={test.REFERRING}
           />
@@ -191,7 +166,6 @@ function TestAccount() {
           <input
             readOnly
             className="AGE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.AGE}
           />
@@ -199,7 +173,6 @@ function TestAccount() {
           <input
             readOnly
             className="DELINQ_1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DELINQ_1}
           />
@@ -207,7 +180,6 @@ function TestAccount() {
           <input
             readOnly
             className="PAYMENT_PORTAL"
-            ref={inputRef}
             onClick={handleClick}
             value={test.PAYMENT_PORTAL}
           />
@@ -217,7 +189,6 @@ function TestAccount() {
           <input
             readOnly
             className="SALES_REP"
-            ref={inputRef}
             onClick={handleClick}
             value={test.SALES_REP}
           />
@@ -229,7 +200,6 @@ function TestAccount() {
           <input
             readOnly
             className="ORIGINAL_CHECK_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ORIGINAL_CHECK_NUMBER}
           />
@@ -237,7 +207,6 @@ function TestAccount() {
           <input
             readOnly
             className="ITEM_A"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ITEM_A}
           />
@@ -245,7 +214,6 @@ function TestAccount() {
           <input
             readOnly
             className="ITEM_B"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ITEM_B}
           />
@@ -253,7 +221,6 @@ function TestAccount() {
           <input
             readOnly
             className="ITEM_C"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LANDLORD_PHONE_NUMBER}
           />
@@ -263,51 +230,28 @@ function TestAccount() {
           <input
             readOnly
             className="LANDLORD_PHONE_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LANDLORD_PHONE_NUMBER}
           />
           <div className="RENT_AMOUNT">Rent Amount:</div>
-          <input
-            readOnly
-            ref={inputRef}
-            onClick={handleClick}
-            value={test.RENT_AMOUNT}
-          />
+          <input readOnly onClick={handleClick} value={test.RENT_AMOUNT} />
           <div className="PRODUCT">Product:</div>
-          <input
-            readOnly
-            ref={inputRef}
-            onClick={handleClick}
-            value={test.PRODUCT}
-          />
+          <input readOnly onClick={handleClick} value={test.PRODUCT} />
           <div className="PROP_OWNER_ADDRESS">Prop Owner Address:</div>
           <input
             readOnly
-            ref={inputRef}
             onClick={handleClick}
             value={test.PROP_OWNER_ADDRESS}
           />
         </div>
         <div className="four">
           <div className="PROP">Prop:</div>
-          <input
-            readOnly
-            ref={inputRef}
-            onClick={handleClick}
-            value={test.PROP}
-          />
+          <input readOnly onClick={handleClick} value={test.PROP} />
           <div className="PROP_LOAN_AMOUNT">Prop Loan Amount:</div>
-          <input
-            readOnly
-            ref={inputRef}
-            onClick={handleClick}
-            value={test.PROP_LOAN_AMOUNT}
-          />
+          <input readOnly onClick={handleClick} value={test.PROP_LOAN_AMOUNT} />
           <div className="PROP_OWNER_LENDER">Prop Owner Lender:</div>
           <input
             readOnly
-            ref={inputRef}
             onClick={handleClick}
             value={test.PROP_OWNER_LENDER}
           />
@@ -315,7 +259,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_POE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_POE}
           />
@@ -325,7 +268,6 @@ function TestAccount() {
           <input
             readOnly
             className="CO_SIGNER_FIRST"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CO_SIGNER_FIRST}
           />
@@ -333,7 +275,6 @@ function TestAccount() {
           <input
             readOnly
             className="CO_SIGNER_LAST"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CO_SIGNER_LAST}
           />
@@ -341,7 +282,6 @@ function TestAccount() {
           <input
             readOnly
             className="CO_SIGN_SSN"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CO_SIGNER_SSN}
           />
@@ -349,7 +289,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_POE_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_POE_NUMBER}
           />
@@ -359,7 +298,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_ADDRESS"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_ADDRESS}
           />
@@ -367,7 +305,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_CITY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_CITY}
           />
@@ -375,7 +312,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_STATE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_STATE}
           />
@@ -383,7 +319,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_ADDRESS_2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_ADDRESS_2}
           />
@@ -393,7 +328,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1}
           />
@@ -401,7 +335,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_ADDY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_ADDY}
           />
@@ -409,7 +342,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_STATE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_STATE}
           />
@@ -417,7 +349,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_CITY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_CITY}
           />
@@ -427,7 +358,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_CITY_2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_CITY_2}
           />
@@ -435,7 +365,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_STATE_2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_STATE_2}
           />
@@ -443,7 +372,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_PH1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_PH1}
           />
@@ -451,7 +379,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_PH2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_PH2}
           />
@@ -459,7 +386,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_1_PH3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_1_PH3}
           />
@@ -469,7 +395,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_PHONE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_PHONE}
           />
@@ -477,7 +402,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_PHONE_2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_PHONE_2}
           />
@@ -485,7 +409,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_PHONE_3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_PHONE_3}
           />
@@ -493,7 +416,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_PHONE_4"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_PHONE_4}
           />
@@ -501,7 +423,6 @@ function TestAccount() {
           <input
             readOnly
             className="TLO_PHONE_5"
-            ref={inputRef}
             onClick={handleClick}
             value={test.TLO_PHONE_5}
           />
@@ -511,7 +432,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_2}
           />
@@ -519,7 +439,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_2_ADDY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_2_ADDY}
           />
@@ -527,7 +446,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_2_PH1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_2_PH1}
           />
@@ -535,7 +453,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_2_PH2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_2_PH2}
           />
@@ -543,7 +460,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_2_PH3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_2_PH3}
           />
@@ -553,7 +469,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_3}
           />
@@ -561,7 +476,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_3_ADDY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_3_ADDY}
           />
@@ -569,7 +483,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_3_PH1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_3_PH1}
           />
@@ -577,7 +490,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_3_PH2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_3_PH2}
           />
@@ -585,7 +497,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_3_PH3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_3_PH3}
           />
@@ -595,7 +506,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_4"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_4}
           />
@@ -603,7 +513,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_4_ADDY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_4_ADDY}
           />
@@ -611,7 +520,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_4_PH1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_4_PH1}
           />
@@ -619,7 +527,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_4_PH2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_4_PH2}
           />
@@ -627,7 +534,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_4_PH3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_4_PH3}
           />
@@ -637,7 +543,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_5"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_5}
           />
@@ -645,7 +550,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_5_ADDY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_5_ADDY}
           />
@@ -653,7 +557,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_5_PH1"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_5_PH1}
           />
@@ -661,7 +564,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_5_PH2"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_5_PH2}
           />
@@ -669,7 +571,6 @@ function TestAccount() {
           <input
             readOnly
             className="RELATIVE_5_PH3"
-            ref={inputRef}
             onClick={handleClick}
             value={test.RELATIVE_5_PH3}
           />
@@ -679,7 +580,6 @@ function TestAccount() {
           <input
             readOnly
             className="BANK_ACCT_NAME"
-            ref={inputRef}
             onClick={handleClick}
             value={test.BANK_ACCT_NAME}
           />
@@ -687,7 +587,6 @@ function TestAccount() {
           <input
             readOnly
             className="BANK_ROUTING"
-            ref={inputRef}
             onClick={handleClick}
             value={test.BANK_ROUTING}
           />
@@ -695,7 +594,6 @@ function TestAccount() {
           <input
             readOnly
             className="BANK_ACCT_NUMBER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.BANK_ACCT_NUMBER}
           />
@@ -703,7 +601,6 @@ function TestAccount() {
           <input
             readOnly
             className="LAST_PAYMENT"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LAST_PAYMENT}
           />
@@ -713,7 +610,6 @@ function TestAccount() {
           <input
             readOnly
             className="DATE_LAST_PAYMENT"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DATE_LAST_PAYMENT}
           />
@@ -721,7 +617,6 @@ function TestAccount() {
           <input
             readOnly
             className="DATE_OF_LAST_CHARGE"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DATE_OF_LAST_CHARGE}
           />
@@ -729,7 +624,6 @@ function TestAccount() {
           <input
             readOnly
             className="BANKRUPTCY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.BANKRUPTCY}
           />
@@ -737,7 +631,6 @@ function TestAccount() {
           <input
             readOnly
             className="DISCHARGED"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DISCHARGED}
           />
@@ -747,7 +640,6 @@ function TestAccount() {
           <input
             readOnly
             className="PDF"
-            ref={inputRef}
             onClick={handleClick}
             value={test.PDF}
           />
@@ -755,7 +647,6 @@ function TestAccount() {
           <input
             readOnly
             className="GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS"
-            ref={inputRef}
             onClick={handleClick}
             value={test.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS}
           />
@@ -763,7 +654,6 @@ function TestAccount() {
           <input
             readOnly
             className="SSN"
-            ref={inputRef}
             onClick={handleClick}
             value={test.SSN}
           />
@@ -771,7 +661,6 @@ function TestAccount() {
           <input
             readOnly
             className="DOB"
-            ref={inputRef}
             onClick={handleClick}
             value={test.DOB}
           />
@@ -781,7 +670,6 @@ function TestAccount() {
           <input
             readOnly
             className="ATTORNEY"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ATTORNEY}
           />
@@ -789,7 +677,6 @@ function TestAccount() {
           <input
             readOnly
             className="EMPLOYER"
-            ref={inputRef}
             onClick={handleClick}
             value={test.EMPLOYER}
           />
@@ -797,7 +684,6 @@ function TestAccount() {
           <input
             readOnly
             className="ACTION_CODES"
-            ref={inputRef}
             onClick={handleClick}
             value={test.ACTION_CODES}
           />
@@ -805,7 +691,6 @@ function TestAccount() {
           <input
             readOnly
             className="LETTER_FLOWS"
-            ref={inputRef}
             onClick={handleClick}
             value={test.LETTER_FLOWS}
           />
@@ -815,7 +700,6 @@ function TestAccount() {
           <input
             readOnly
             className="NOTES"
-            ref={inputRef}
             onClick={handleClick}
             value={test.NOTES}
           />
@@ -823,7 +707,6 @@ function TestAccount() {
           <input
             readOnly
             className="CALL_DISPOSITIONS"
-            ref={inputRef}
             onClick={handleClick}
             value={test.CALL_DISPOSITIONS}
           />

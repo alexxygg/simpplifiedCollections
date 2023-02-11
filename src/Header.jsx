@@ -5,7 +5,7 @@ function Header() {
     <div className="header">
       <div>simplicity collect</div>
       <div>
-        <div>James, LINA SURYAKANT</div>
+        <div>James, Michael</div>
         <div>Account # 2023-999999</div>
         <div>Status: General New Import Last Updated: 2/7/2023</div>
       </div>
