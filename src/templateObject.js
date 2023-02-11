@@ -96,7 +96,48 @@ const templateObject = {
   EMPLOYER: "ABC Inc.",
   ACTION_CODES: "L1, L2, L3",
   LETTER_FLOWS: "A, B, C",
-  NOTES: "Debtor has been cooperative.",
+  NOTES: [
+    {
+      id: 1,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "Remind clients of due dates: A note to remind clients of their due dates and the consequences of not paying on time.",
+    },
+    {
+      id: 2,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to document all communication with clients, including phone calls and emails, for record keeping purposes.",
+    },
+    {
+      id: 3,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to use friendly but firm language when communicating with clients, and avoid using aggressive or threatening language.",
+    },
+    {
+      id: 4,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to offer payment plan options to clients who are unable to pay the full amount owed.",
+    },
+    {
+      id: 5,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to escalate cases to the agency's legal team if necessary, such as when clients are repeatedly late on payments or unwilling to pay.",
+    },
+    {
+      id: 6,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to maintain client privacy and ensure all communication and personal information is handled in accordance with relevant laws and regulations.",
+    },
+    {
+      id: 7,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to stay up-to-date on debt collection laws and regulations, and ensure the agency is operating within legal bounds.",
+    },
+    {
+      id: 8,
+      timestamp: "2/10/2022 1:26:15 PM",
+      note: "A note to track and analyze data, such as the success rate of payment plans and the number of cases escalated to the legal team, to continuously improve the collections process",
+    },
+  ],
   CALL_DISPOSITIONS: "Left Message, No Answer, Call Back Later",
 };
 
