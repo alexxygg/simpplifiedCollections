@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header3({ data }) {
+function Header3() {
   return (
     <div className="header3">
       <div>

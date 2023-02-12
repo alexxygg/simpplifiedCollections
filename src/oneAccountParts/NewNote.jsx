@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 
-function NewNote({ object, setObject, data }) {
-  const test = data;
+function NewNote({ object, updateNotes }) {
+  const [allNotes, setAllNotes] = useState(object.NOTES || []);
   const [input, setInput] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setObject({
-      ...object,
-      NOTES: [
-        ...object.NOTES,
-        {
-          id: object.NOTES.length + 1,
-          note: input,
-          timestamp: new Date().toLocaleString(),
-        },
-      ],
-    });
+    const newNotes = [
+      ...allNotes,
+      {
+        id: allNotes.length + 1,
+        note: input,
+        timestamp: new Date().toLocaleString(),
+      },
+    ];
+    setAllNotes(newNotes);
+    updateNotes(newNotes);
     setInput("");
   };
 

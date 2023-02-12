@@ -6,8 +6,7 @@ function OtherLinksHeader() {
     <div className="otherSites">
       <Link to="/home">Home</Link>
       <Link to="/about">About</Link>
-      <Link to="/">Account</Link>
-      <Link to="/accounts">Accounts</Link>
+      <Link to="/accountsList">Accounts</Link>
     </div>
   );
 }

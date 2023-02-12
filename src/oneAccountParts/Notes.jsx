@@ -1,10 +1,11 @@
 import React, { Fragment, useState } from "react";
 import NewNote from "./NewNote";
-function Notes({ data }) {
-  const test = data;
+function Notes({ object }) {
+  const [allNotes, setAllNotes] = useState(object.NOTES || []);
 
-  const [object, setObject] = useState(test);
-
+  const updateNotes = (newNotes) => {
+    setAllNotes(newNotes);
+  };
   return (
     <div>
       <h1 className="notesTitle">Notes:</h1>
@@ -12,7 +13,7 @@ function Notes({ data }) {
         <p className="id otherBg">ID:</p>
         <p className="time otherBg">Last Modified:</p>
         <div className="note otherBg">Note:</div>
-        {data.NOTES.map((note) => (
+        {allNotes.map((note) => (
           <Fragment key={note.id}>
             <p className="id">{note.id}</p>
             <p className="time">{note.timestamp}</p>
@@ -20,7 +21,7 @@ function Notes({ data }) {
           </Fragment>
         ))}
       </div>
-      <NewNote object={object} setObject={setObject} />
+      <NewNote object={object} updateNotes={updateNotes} />
     </div>
   );
 }

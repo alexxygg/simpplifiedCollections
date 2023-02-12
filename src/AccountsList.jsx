@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function AccountsList() {
   return (
-    <ul>
+    <>
       <OtherLinksHeader />
       <div className="accountFromList otherBg">
         <div>id</div>
@@ -18,7 +18,7 @@ function AccountsList() {
       </div>
       {allAccounts.map((account) => (
         <div key={account.id}>
-          <Link className="accountFromList" to={`/${account.id}`}>
+          <Link className="accountFromList" to={`/accounts/${account.id}`}>
             <div>{account.id}</div>
             <div>{account.TLO_ADDRESS}</div>
             <div>{account.TLO_CITY}</div>
@@ -28,7 +28,7 @@ function AccountsList() {
           </Link>
         </div>
       ))}
-    </ul>
+    </>
   );
 }
 

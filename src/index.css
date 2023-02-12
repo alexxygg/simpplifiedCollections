@@ -156,7 +156,7 @@ input {
   overflow: hidden;
   text-align: center;
   height: min-content;
-  margin: 15px;
+  margin: 1.5%;
   color: ghostwhite;
 }
 .two > div {
@@ -187,8 +187,7 @@ input {
 .section,
 .notes,
 .newNoteField,
-.newNoteBtn,
-input {
+.newNoteBtn {
   box-shadow: 5px 5px 15px #1a1b1c, -5px -5px 15px #2a2b2e;
   user-select: none;
 }
@@ -261,11 +260,48 @@ input {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  border: solid black;
-  border-top: none;
+  border: 1px solid black;
+  border-left: 0px;
+  border-right: 0px;
 }
 .accountFromList {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 10px 0px;
+}
+.searchBarDiv {
+  background-color: #213547;
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchBy {
+  width: 27%;
+  margin: 1.5% 0px;
+  display: flex;
+  height: 4vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.searchBar {
+  background-color: ghostwhite;
+  color: black;
+  width: 47%;
+  margin: 1.5%;
+  border-radius: 2rem;
+  height: 2.5vh;
+  align-self: center;
+}
+.searchBtn {
+  width: 17%;
+  margin: 1.5%;
+  border-radius: 2rem;
+  outline: ghostwhite solid;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.results {
+  width: 100%;
+  height: max-content;
 }
