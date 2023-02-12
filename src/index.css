@@ -16,26 +16,25 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
+  color: rgb(248, 250, 246);
 }
 a:hover {
-  color: #535bf2;
+  color: ghostwhite;
 }
 
 body {
-  min-width: 700px;
+  min-width: 600px;
   min-height: 100vh;
   font-size: 14px;
   font-weight: 500;
-  background-color: rgb(141, 141, 65);
+  background-color: rgb(140, 197, 84);
   padding: 0vw 2vw;
+  margin: 0;
 }
 button {
   background-color: blue;
   color: ghostwhite;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px rgb(84, 91, 95);
   transition: all 0.1s ease-in-out;
 }
 
@@ -63,44 +62,30 @@ button:active {
 .account {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(32, 35, 37);
 }
-.section,
-.section2 {
+.section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  border: solid #f9f9f9;
+  border: solid ghostwhite;
+  border-radius: 10px;
   background-color: rgb(32, 35, 37);
   width: 100%;
 }
-.section2 {
-  margin: 20px 0px;
-}
-.section > div,
-.section2 > div {
+.section {
+  margin: 10px 0px;
   background-color: rgb(32, 35, 37);
+}
+
+.section > div {
   min-width: 100px;
   margin-right: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.section2 > div:nth-of-type(1),
-.section2 > div:nth-of-type(2) {
-  width: auto;
-  display: flex;
-}
-.section2 > div:nth-of-type(1) {
-  margin-right: auto;
-}
-.section2 > div:nth-of-type(2) > div {
-  margin-right: 20px;
-}
-.section2 > div:nth-of-type(1) > div {
-  margin-right: 20px;
-}
+
 .box {
   border: solid ghostwhite;
   background-color: rgb(24, 26, 27);
@@ -116,32 +101,55 @@ button:active {
   height: min-content;
   width: 100%;
   outline: solid #3b3e41;
+  margin: 20px 0px;
+  user-select: none;
 }
 .header {
   justify-content: space-between;
-  background-color: #707070;
+  background-color: #213547;
   margin: 0px 0px 20px 0px;
+  display: flex;
+  outline: solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
 }
-.header > div {
-  width: auto;
-  outline: solid #213547;
+.logo > img {
+  width: 100%;
+  height: 100%;
+}
+.header > div:nth-of-type(1) {
+  max-width: 22%;
+  margin-right: 3%;
+}
+.header > div:nth-of-type(2) {
+  width: 50%;
+}
+.header > div:nth-of-type(3) {
+  width: 25%;
 }
 .header2 {
   justify-content: space-evenly;
-  background-color: rgb(84, 91, 95);
+  background-color: rgb(42, 42, 94);
+  outline: solid black;
+  border-radius: 10px;
 }
 .header2 > div {
   width: auto;
-  outline: solid #213547;
 }
 .header3 {
-  justify-content: start;
-  background-color: #504343;
+  background-color: #213547;
+  outline: solid black;
 }
 .header3 > div {
-  width: auto;
-  outline: solid #213547;
-  margin-right: 20px;
+  border-right: solid black;
+  margin: 0px 20px;
+  margin-left: 0;
+  padding: 0px 20px;
+  padding-left: 0px;
+  background-color: #213547;
+}
+.header3 > div:nth-of-type(1) {
+  padding-left: 20px;
 }
 input {
   width: 60px;
@@ -160,11 +168,6 @@ input {
 .five > div {
   width: 10%;
 }
-@media (min-width: 800px) {
-  body {
-    padding: 0vw 5vw;
-  }
-}
 @media (min-width: 1000px) {
   body {
     padding: 0vw 15vw;
@@ -178,10 +181,27 @@ input {
 .notesTitle {
   width: 100%;
 }
+.header,
+.header2,
+.header3,
+.section,
+.notes,
+.newNoteField,
+.newNoteBtn,
+input {
+  box-shadow: 5px 5px 15px #1a1b1c, -5px -5px 15px #2a2b2e;
+  user-select: none;
+}
+.newNoteField,
+.newNoteBtn,
+.header3 {
+  border-radius: 10px;
+}
 .notes {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  outline: solid black;
 }
 .note,
 .id,
@@ -217,6 +237,7 @@ input {
 .newNoteField {
   width: 85%;
   margin: 20px 0px;
+  background-color: #213547;
 }
 .newNoteBtn {
   width: 15%;
@@ -224,4 +245,27 @@ input {
 }
 .otherBg {
   background-color: black !important;
+}
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a > img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.otherSites {
+  height: 7vh;
+  background-color: rgb(42, 42, 94);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: solid black;
+  border-top: none;
+}
+.accountFromList {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
 }

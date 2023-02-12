@@ -1,12 +1,14 @@
 import React from "react";
 
-function Header() {
+function Header({ data }) {
   return (
     <div className="header">
-      <div>simplicity collect</div>
+      <div className="logo">
+        <img src="/simplicityCollect.jpg" alt="" />
+      </div>
       <div>
-        <div>James, Michael</div>
-        <div>Account # 2023-999999</div>
+        <div>{data.TLO_ADDRESS}</div>
+        <div>{data.id}</div>
         <div>Status: General New Import Last Updated: 2/7/2023</div>
       </div>
       <div>

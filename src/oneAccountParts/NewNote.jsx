@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import templateObject from "./templateObject";
 
-function NewNote({ object, setObject }) {
-  const test = templateObject;
+function NewNote({ object, setObject, data }) {
+  const test = data;
   const [input, setInput] = useState("");
 
   const handleSubmit = (event) => {
@@ -27,7 +26,7 @@ function NewNote({ object, setObject }) {
         className="newNoteField"
         wrap="hard"
         rows="5"
-        maxlength="500"
+        maxLength="500"
         type="text"
         value={input}
         onChange={(event) => setInput(event.target.value)}

@@ -1,19 +1,23 @@
 import "./App.css";
-import TestAccount from "./TestAccount";
-import Header from "./Header";
-import Header2 from "./Header2";
-import Header3 from "./Header3";
-import Notes from "./Notes";
-import NewNote from "./NewNote";
+
+import Account from "./Account";
+import AccountsList from "./AccountsList";
+import HomePage from "./HomePage";
+import AboutPage from "./AboutPage";
+//react router
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Header2 />
-      <Header3 />
-      <TestAccount />
-      <Notes />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/accounts" element={<AccountsList />} />
+          <Route path="/account/:id" element={<Account />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
