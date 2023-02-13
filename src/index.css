@@ -227,7 +227,8 @@ input {
 .searchBarDiv,
 .otherSites,
 .title,
-.accountFromList {
+.accountFromList,
+.footer {
   box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
@@ -409,6 +410,7 @@ input {
   height: 5vh;
   width: 100%;
   background-color: #213547;
+  border-top: solid black;
 }
 .homePage,
 .aboutPage,
