@@ -8,7 +8,7 @@ function Notes({ object }) {
   };
   return (
     <div>
-      <h1 className="notesTitle">Notes:</h1>
+      <h1 className="title">Notes:</h1>
       <div className="notes">
         <p className="id otherBg">ID:</p>
         <p className="time otherBg">Last Modified:</p>

@@ -14,29 +14,33 @@ function TestAccount({ object }) {
           <button>Delete</button>
         </div>
         <div className="four">
-          <div>Principal:</div>
+          <div className="objectKeyName">Principal:</div>
           <input
+            readOnly
             type="text"
             name="PRINCIPAL"
             onClick={handleClick}
             defaultValue={object.PRINCIPAL}
           />
-          <div>Payments:</div>
+          <div className="objectKeyName">Payments:</div>
           <input
+            readOnly
             type="text"
             name="PAYMENTS"
             onClick={handleClick}
             defaultValue={object.PAYMENTS}
           />
-          <div>Balance:</div>
+          <div className="objectKeyName">Balance:</div>
           <input
+            readOnly
             type="text"
             name="BALANCE"
             onClick={handleClick}
             defaultValue={object.BALANCE}
           />
-          <div>Linked Balance:</div>
+          <div className="objectKeyName">Linked Balance:</div>
           <input
+            readOnly
             type="text"
             name="LINKED_BALANCE"
             onClick={handleClick}
@@ -46,29 +50,33 @@ function TestAccount({ object }) {
       </div>
       <div className="section">
         <div className="four">
-          <div>Client:</div>
+          <div className="objectKeyName">Client:</div>
           <input
+            readOnly
             type="text"
             name="CLIENT"
             onClick={handleClick}
             defaultValue={object.CLIENT}
           />
-          <div>Account Type:</div>
+          <div className="objectKeyName">Account Type:</div>
           <input
+            readOnly
             type="text"
             name="ACCOUNT_TYPE"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_TYPE}
           />
-          <div>Status:</div>
+          <div className="objectKeyName">Status:</div>
           <input
+            readOnly
             type="text"
             name="STATUS"
             onClick={handleClick}
             defaultValue={object.STATUS}
           />
-          <div>Creditor:</div>
+          <div className="objectKeyName">Creditor:</div>
           <input
+            readOnly
             type="text"
             name="CREDITOR"
             onClick={handleClick}
@@ -76,29 +84,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Account #:</div>
+          <div className="objectKeyName">Account #:</div>
           <input
+            readOnly
             type="text"
             name="ACCOUNT_NUMBER"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_NUMBER}
           />
-          <div>Originated:</div>
+          <div className="objectKeyName">Originated:</div>
           <input
+            readOnly
             type="text"
             name="ORIGINATED"
             onClick={handleClick}
             defaultValue={object.ORIGINATED}
           />
-          <div>Account Received:</div>
+          <div className="objectKeyName">Account Received:</div>
           <input
+            readOnly
             type="text"
             name="ACCOUNT_RECEIVED"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_RECEIVED}
           />
-          <div>Imported on:</div>
+          <div className="objectKeyName">Imported on:</div>
           <input
+            readOnly
             type="text"
             name="IMPORTED_ON"
             onClick={handleClick}
@@ -106,29 +118,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Collector:</div>
+          <div className="objectKeyName">Collector:</div>
           <input
+            readOnly
             type="text"
             name="COLLECTOR"
             onClick={handleClick}
             defaultValue={object.COLLECTOR}
           />
-          <div>Client Claim #:</div>
+          <div className="objectKeyName">Client Claim #:</div>
           <input
+            readOnly
             type="text"
             name="CLIENT_CLAIM_NUMBER"
             onClick={handleClick}
             defaultValue={object.CLIENT_CLAIM_NUMBER}
           />
-          <div>Charged Off:</div>
+          <div className="objectKeyName">Charged Off:</div>
           <input
+            readOnly
             type="text"
             name="CHARGED_OFF"
             onClick={handleClick}
             defaultValue={object.CHARGED_OFF}
           />
-          <div>Purchased:</div>
+          <div className="objectKeyName">Purchased:</div>
           <input
+            readOnly
             type="text"
             name="PURCHASED"
             onClick={handleClick}
@@ -136,29 +152,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Queue:</div>
+          <div className="objectKeyName">Queue:</div>
           <input
+            readOnly
             type="text"
             name="QUEUE"
             onClick={handleClick}
             defaultValue={object.QUEUE}
           />
-          <div>Last Payment:</div>
+          <div className="objectKeyName">Last Payment:</div>
           <input
+            readOnly
             type="text"
             name="LAST_PAYMENT"
             onClick={handleClick}
             defaultValue={object.LAST_PAYMENT}
           />
-          <div>Next Work:</div>
+          <div className="objectKeyName">Next Work:</div>
           <input
+            readOnly
             type="text"
             name="NEXT_WORK"
             onClick={handleClick}
             defaultValue={object.NEXT_WORK}
           />
-          <div>Debtor Payment ID:</div>
+          <div className="objectKeyName">Debtor Payment ID:</div>
           <input
+            readOnly
             type="text"
             name="DEBTOR_PMT_ID"
             onClick={handleClick}
@@ -166,29 +186,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Referring:</div>
+          <div className="objectKeyName">Referring:</div>
           <input
+            readOnly
             type="text"
             name="REFERRING"
             onClick={handleClick}
             defaultValue={object.REFERRING}
           />
-          <div>Age:</div>
+          <div className="objectKeyName">Age:</div>
           <input
+            readOnly
             type="text"
             name="AGE"
             onClick={handleClick}
             defaultValue={object.AGE}
           />
-          <div>Delinq #1:</div>
+          <div className="objectKeyName">Delinq #1:</div>
           <input
+            readOnly
             type="text"
             name="DELINQ_1"
             onClick={handleClick}
             defaultValue={object.DELINQ_1}
           />
-          <div>Payment Portal:</div>
+          <div className="objectKeyName">Payment Portal:</div>
           <input
+            readOnly
             type="text"
             name="PAYMENT_PORTAL"
             onClick={handleClick}
@@ -196,8 +220,9 @@ function TestAccount({ object }) {
           />
         </div>
         <div>
-          <div>Sales Rep:</div>
+          <div className="objectKeyName">Sales Rep:</div>
           <input
+            readOnly
             type="text"
             name="SALES_REP"
             onClick={handleClick}
@@ -207,29 +232,33 @@ function TestAccount({ object }) {
       </div>
       <div className="section">
         <div className="four">
-          <div>Original Check #:</div>
+          <div className="objectKeyName">Original Check #:</div>
           <input
+            readOnly
             type="text"
             name="ORIGINAL_CHECK_NUMBER"
             onClick={handleClick}
             defaultValue={object.ORIGINAL_CHECK_NUMBER}
           />
-          <div>Item A:</div>
+          <div className="objectKeyName">Item A:</div>
           <input
+            readOnly
             type="text"
             name="ITEM_A"
             onClick={handleClick}
             defaultValue={object.ITEM_A}
           />
-          <div>Item B:</div>
+          <div className="objectKeyName">Item B:</div>
           <input
+            readOnly
             type="text"
             name="ITEM_B"
             onClick={handleClick}
             defaultValue={object.ITEM_B}
           />
-          <div>Item C:</div>
+          <div className="objectKeyName">Item C:</div>
           <input
+            readOnly
             type="text"
             name="ITEM_C"
             onClick={handleClick}
@@ -237,29 +266,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Landlord Phone #:</div>
+          <div className="objectKeyName">Landlord Phone #:</div>
           <input
+            readOnly
             type="text"
             name="LANDLORD_PHONE_NUMBER"
             onClick={handleClick}
             defaultValue={object.LANDLORD_PHONE_NUMBER}
           />
-          <div className="RENT_AMOUNT">Rent Amount:</div>
+          <div className="objectKeyName">Rent Amount:</div>
           <input
+            readOnly
             type="text"
             name="RENT_AMOUNT"
             onClick={handleClick}
             defaultValue={object.RENT_AMOUNT}
           />
-          <div className="PRODUCT">Product:</div>
+          <div className="objectKeyName">Product:</div>
           <input
+            readOnly
             type="text"
             name="PRODUCT"
             onClick={handleClick}
             defaultValue={object.PRODUCT}
           />
-          <div className="PROP_OWNER_ADDRESS">Prop Owner Address:</div>
+          <div className="objectKeyName">Prop Owner Address:</div>
           <input
+            readOnly
             type="text"
             name="PROP_OWNER_ADDRESS"
             onClick={handleClick}
@@ -267,29 +300,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div className="PROP">Prop:</div>
+          <div className="objectKeyName">Prop:</div>
           <input
+            readOnly
             type="text"
             name="PROP"
             onClick={handleClick}
             defaultValue={object.PROP}
           />
-          <div className="PROP_LOAN_AMOUNT">Prop Loan Amount:</div>
+          <div className="objectKeyName">Prop Loan Amount:</div>
           <input
+            readOnly
             type="text"
             name="PROP_LOAN_AMOUNT"
             onClick={handleClick}
             defaultValue={object.PROP_LOAN_AMOUNT}
           />
-          <div className="PROP_OWNER_LENDER">Prop Owner Lender:</div>
+          <div className="objectKeyName">Prop Owner Lender:</div>
           <input
+            readOnly
             type="text"
             name="PROP_OWNER_LENDER"
             onClick={handleClick}
             defaultValue={object.PROP_OWNER_LENDER}
           />
-          <div>TLO POE:</div>
+          <div className="objectKeyName">TLO POE:</div>
           <input
+            readOnly
             type="text"
             name="TLO_POE"
             onClick={handleClick}
@@ -297,29 +334,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Co-Signer First:</div>
+          <div className="objectKeyName">Co-Signer First:</div>
           <input
+            readOnly
             type="text"
             name="CO_SIGNER_FIRST"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_FIRST}
           />
-          <div>Co-Signer Last:</div>
+          <div className="objectKeyName">Co-Signer Last:</div>
           <input
+            readOnly
             type="text"
             name="CO_SIGNER_LAST"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_LAST}
           />
-          <div>Co-Signer SSN:</div>
+          <div className="objectKeyName">Co-Signer SSN:</div>
           <input
+            readOnly
             type="text"
             name="CO_SIGN_SSN"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_SSN}
           />
-          <div>TLO POE #:</div>
+          <div className="objectKeyName">TLO POE #:</div>
           <input
+            readOnly
             type="text"
             name="TLO_POE_NUMBER"
             onClick={handleClick}
@@ -327,29 +368,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>TLO Address:</div>
+          <div className="objectKeyName">TLO Address:</div>
           <input
+            readOnly
             type="text"
             name="TLO_ADDRESS"
             onClick={handleClick}
             defaultValue={object.TLO_ADDRESS}
           />
-          <div>TLO City:</div>
+          <div className="objectKeyName">TLO City:</div>
           <input
+            readOnly
             type="text"
             name="TLO_CITY"
             onClick={handleClick}
             defaultValue={object.TLO_CITY}
           />
-          <div>TLO State:</div>
+          <div className="objectKeyName">TLO State:</div>
           <input
+            readOnly
             type="text"
             name="TLO_STATE"
             onClick={handleClick}
             defaultValue={object.TLO_STATE}
           />
-          <div>TLO Address 2:</div>
+          <div className="objectKeyName">TLO Address 2:</div>
           <input
+            readOnly
             type="text"
             name="TLO_ADDRESS_2"
             onClick={handleClick}
@@ -357,29 +402,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Relative 1:</div>
+          <div className="objectKeyName">Relative 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1}
           />
-          <div>R-1 Address:</div>
+          <div className="objectKeyName">R-1 Address:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_ADDY}
           />
-          <div>R-1 State:</div>
+          <div className="objectKeyName">R-1 State:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_STATE"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_STATE}
           />
-          <div>R-1 City:</div>
+          <div className="objectKeyName">R-1 City:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_CITY"
             onClick={handleClick}
@@ -387,73 +436,88 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="five">
-          <div>TLO City 2:</div>
+          <div className="objectKeyName">TLO City 2:</div>
           <input
+            readOnly
             type="text"
             name="TLO_CITY_2"
             onClick={handleClick}
             defaultValue={object.TLO_CITY_2}
           />
-          <div>TLO State 2:</div>
+          <div className="objectKeyName">TLO State 2:</div>
           <input
+            readOnly
             type="text"
             name="TLO_STATE_2"
             onClick={handleClick}
             defaultValue={object.TLO_STATE_2}
           />
-          <div>R-1 Phone 1:</div>
+          <div className="objectKeyName">R-1 Phone 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH1}
           />
-          <div>R-1 Phone 2:</div>
+          <div className="objectKeyName">R-1 Phone 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH2}
           />
-          <div>R-1 Phone 3:</div>
+          <div className="objectKeyName">R-1 Phone 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_1_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH3}
           />
         </div>{" "}
+      </div>
+      <h1 className="title">
+        <div>Contact:</div>
+      </h1>
+      <div className="section">
         <div className="five">
-          <div>TLO Phone 1</div>
+          <div className="objectKeyName">TLO Phone 1</div>
           <input
+            readOnly
             type="text"
             name="TLO_PHONE"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE}
           />
-          <div>TLO Phone 2</div>
+          <div className="objectKeyName">TLO Phone 2</div>
           <input
+            readOnly
             type="text"
             name="TLO_PHONE_2"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_2}
           />
-          <div>TLO Phone 3</div>
+          <div className="objectKeyName">TLO Phone 3</div>
           <input
+            readOnly
             type="text"
             name="TLO_PHONE_3"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_3}
           />
-          <div>TLO Phone 4</div>
+          <div className="objectKeyName">TLO Phone 4</div>
           <input
+            readOnly
             type="text"
             name="TLO_PHONE_4"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_4}
           />
-          <div>TLO Phone 5</div>
+          <div className="objectKeyName">TLO Phone 5</div>
           <input
+            readOnly
             type="text"
             name="TLO_PHONE_5"
             onClick={handleClick}
@@ -461,36 +525,41 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="five">
-          <div>Relative 2:</div>
+          <div className="objectKeyName">Relative 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2}
           />
-          <div>R-2 Address:</div>
+          <div className="objectKeyName">R-2 Address:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_2_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_ADDY}
           />
-          <div>R-2 Phone 1:</div>
+          <div className="objectKeyName">R-2 Phone 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_2_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH1}
           />
-          <div>R-2 Phone 2:</div>
+          <div className="objectKeyName">R-2 Phone 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_2_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH2}
           />
-          <div>R-2 Phone 3:</div>
+          <div className="objectKeyName">R-2 Phone 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_2_PH3"
             onClick={handleClick}
@@ -498,36 +567,41 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="five">
-          <div>Relative 3:</div>
+          <div className="objectKeyName">Relative 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3}
           />
-          <div>R-3 Address:</div>
+          <div className="objectKeyName">R-3 Address:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_3_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_ADDY}
           />
-          <div>R-3 Phone 1:</div>
+          <div className="objectKeyName">R-3 Phone 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_3_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH1}
           />
-          <div>R-3 Phone 2:</div>
+          <div className="objectKeyName">R-3 Phone 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_3_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH2}
           />
-          <div>R-3 Phone 3:</div>
+          <div className="objectKeyName">R-3 Phone 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_3_PH3"
             onClick={handleClick}
@@ -535,36 +609,41 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="five">
-          <div>Relative 4:</div>
+          <div className="objectKeyName">Relative 4:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_4"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4}
           />
-          <div>R-4 Address:</div>
+          <div className="objectKeyName">R-4 Address:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_4_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_ADDY}
           />
-          <div>R-4 Phone 1:</div>
+          <div className="objectKeyName">R-4 Phone 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_4_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH1}
           />
-          <div>R-4 Phone 2:</div>
+          <div className="objectKeyName">R-4 Phone 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_4_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH2}
           />
-          <div>R-4 Phone 3:</div>
+          <div className="objectKeyName">R-4 Phone 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_4_PH3"
             onClick={handleClick}
@@ -572,36 +651,41 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="five">
-          <div>Relative 5:</div>
+          <div className="objectKeyName">Relative 5:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_5"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5}
           />
-          <div>R-5 Address:</div>
+          <div className="objectKeyName">R-5 Address:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_5_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_ADDY}
           />
-          <div>R-5 Phone 1:</div>
+          <div className="objectKeyName">R-5 Phone 1:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_5_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH1}
           />
-          <div>R-5 Phone 2:</div>
+          <div className="objectKeyName">R-5 Phone 2:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_5_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH2}
           />
-          <div>R-5 Phone 3:</div>
+          <div className="objectKeyName">R-5 Phone 3:</div>
           <input
+            readOnly
             type="text"
             name="RELATIVE_5_PH3"
             onClick={handleClick}
@@ -609,29 +693,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Bank Account Name:</div>
+          <div className="objectKeyName">Bank Account Name:</div>
           <input
+            readOnly
             type="text"
             name="BANK_ACCT_NAME"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NAME}
           />
-          <div>Bank Routing:</div>
+          <div className="objectKeyName">Bank Routing:</div>
           <input
+            readOnly
             type="text"
             name="BANK_ROUTING"
             onClick={handleClick}
             defaultValue={object.BANK_ROUTING}
           />
-          <div>Bank Account #:</div>
+          <div className="objectKeyName">Bank Account #:</div>
           <input
+            readOnly
             type="text"
             name="BANK_ACCT_NUMBER"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NUMBER}
           />
-          <div>Last Payment:</div>
+          <div className="objectKeyName">Last Payment:</div>
           <input
+            readOnly
             type="text"
             name="LAST_PAYMENT"
             onClick={handleClick}
@@ -639,29 +727,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Date Last Payment:</div>
+          <div className="objectKeyName">Date Last Payment:</div>
           <input
+            readOnly
             type="text"
             name="DATE_LAST_PAYMENT"
             onClick={handleClick}
             defaultValue={object.DATE_LAST_PAYMENT}
           />
-          <div>Date of Last Charge:</div>
+          <div className="objectKeyName">Date of Last Charge:</div>
           <input
+            readOnly
             type="text"
             name="DATE_OF_LAST_CHARGE"
             onClick={handleClick}
             defaultValue={object.DATE_OF_LAST_CHARGE}
           />
-          <div>Bankruptcy:</div>
+          <div className="objectKeyName">Bankruptcy:</div>
           <input
+            readOnly
             type="text"
             name="BANKRUPTCY"
             onClick={handleClick}
             defaultValue={object.BANKRUPTCY}
           />
-          <div>Discharged:</div>
+          <div className="objectKeyName">Discharged:</div>
           <input
+            readOnly
             type="text"
             name="DISCHARGED"
             onClick={handleClick}
@@ -669,29 +761,35 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>PDF:</div>
+          <div className="objectKeyName">PDF:</div>
           <input
+            readOnly
             type="text"
             name="PDF"
             onClick={handleClick}
             defaultValue={object.PDF}
           />
-          <div>Generate Debtor Document Notifications:</div>
+          <div className="objectKeyName">
+            Generate Debtor Document Notifications:
+          </div>
           <input
+            readOnly
             type="text"
             name="GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS"
             onClick={handleClick}
             defaultValue={object.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS}
           />
-          <div>SSN:</div>
+          <div className="objectKeyName">SSN:</div>
           <input
+            readOnly
             type="text"
             name="SSN"
             onClick={handleClick}
             defaultValue={object.SSN}
           />
-          <div>DOB:</div>
+          <div className="objectKeyName">DOB:</div>
           <input
+            readOnly
             type="text"
             name="DOB"
             onClick={handleClick}
@@ -699,29 +797,33 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="four">
-          <div>Attorney:</div>
+          <div className="objectKeyName">Attorney:</div>
           <input
+            readOnly
             type="text"
             name="ATTORNEY"
             onClick={handleClick}
             defaultValue={object.ATTORNEY}
           />
-          <div>Employer:</div>
+          <div className="objectKeyName">Employer:</div>
           <input
+            readOnly
             type="text"
             name="EMPLOYER"
             onClick={handleClick}
             defaultValue={object.EMPLOYER}
           />
-          <div>Action Codes:</div>
+          <div className="objectKeyName">Action Codes:</div>
           <input
+            readOnly
             type="text"
             name="ACTION_CODES"
             onClick={handleClick}
             defaultValue={object.ACTION_CODES}
           />
-          <div>Letter Flows:</div>
+          <div className="objectKeyName">Letter Flows:</div>
           <input
+            readOnly
             type="text"
             name="LETTER_FLOWS"
             onClick={handleClick}
@@ -729,8 +831,9 @@ function TestAccount({ object }) {
           />
         </div>
         <div className="two">
-          <div>Call Dispositions:</div>
+          <div className="objectKeyName">Call Dispositions:</div>
           <input
+            readOnly
             type="text"
             name="CALL_DISPOSITIONS"
             onClick={handleClick}

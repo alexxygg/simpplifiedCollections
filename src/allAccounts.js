@@ -1,6 +1,7 @@
 const allAccounts = [
   {
     id: 1,
+    NAME: "John Smith",
     PRINCIPAL: "$5,000",
     PAYMENTS: "$250",
     BALANCE: "$4,750",
@@ -109,6 +110,7 @@ const allAccounts = [
   },
   {
     id: 2,
+    NAME: "Jane Doe",
     PRINCIPAL: "$5,000",
     PAYMENTS: "$250",
     BALANCE: "$4,750",
@@ -252,6 +254,7 @@ const allAccounts = [
   },
   {
     id: 3,
+    NAME: "George Harris",
     PRINCIPAL: "$5,000",
     PAYMENTS: "$250",
     BALANCE: "$4,750",
@@ -365,6 +368,7 @@ const allAccounts = [
   },
   {
     id: 4,
+    NAME: "James Woods",
     PRINCIPAL: "$7,000",
     PAYMENTS: "$300",
     BALANCE: "$6,700",

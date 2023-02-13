@@ -56,7 +56,7 @@ const SearchBar = () => {
       <input
         className="searchBar"
         type="text"
-        placeholder="xxx-xxx-xxxx"
+        placeholder=" id, Account #, Phone #, SSN, DOB..."
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
       />

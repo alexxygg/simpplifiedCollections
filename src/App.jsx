@@ -8,6 +8,7 @@ import AboutPage from "./AboutPage";
 import allAccounts from "./allAccounts";
 //react router
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           ))}{" "}
           <Route path="/accountsList" element={<AccountsList />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </div>

@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: ghostwhite;
+  color: rgb(140, 197, 84);
 }
 
 body {
@@ -39,13 +39,13 @@ button {
 }
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 5px 10px rgb(84, 91, 95);
+  transform: translateY(-0.5px);
+  box-shadow: 0px 5px 10px rgb(54, 69, 105);
 }
 
 button:active {
-  transform: translateY(2px);
-  box-shadow: 0px 2px 5px rgb(84, 91, 95);
+  transform: translateY(0.5px);
+  box-shadow: 0px 2px 5px rgb(54, 69, 105);
 }
 
 @media (prefers-color-scheme: light) {
@@ -82,6 +82,7 @@ button:active {
 .section {
   margin: 10px 0px;
   background-color: rgb(32, 35, 37);
+  padding: 15px 0px;
 }
 
 .section > div {
@@ -98,14 +99,13 @@ button:active {
   display: flex;
   height: min-content;
   width: 100%;
-  outline: solid #3b3e41;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   user-select: none;
 }
 
 .header {
   justify-content: space-between;
-  background-color: #213547;
+  background-color: rgb(32, 35, 37);
   margin: 8px 0px 20px 0px;
   display: flex;
   outline: solid black;
@@ -113,29 +113,36 @@ button:active {
   border-radius: 0 0 10px 10px;
 }
 
-.logo > img {
-  width: 100%;
-  height: 100%;
-}
-
 .header > div:nth-of-type(1) {
   max-width: 22%;
   margin-right: 3%;
+  margin: auto;
+  font-size: 23px;
 }
-
+.logo {
+  width: 20vw;
+  height: 6vh;
+  background-color: black;
+  text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold,
+    1px 1px 0 gold;
+  color: black;
+  font-family: "Permanent Marker", cursive;
+}
 .header > div:nth-of-type(2) {
   width: 50%;
+  border-left: solid black;
 }
 
 .header > div:nth-of-type(3) {
   width: 25%;
+  border-left: solid black;
 }
 
 .header2 {
   justify-content: space-evenly;
-  background-color: rgb(42, 42, 94);
+  background-color: #213547;
   outline: solid black;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .header2 > div {
@@ -145,6 +152,7 @@ button:active {
 .header3 {
   background-color: #213547;
   outline: solid black;
+  border-radius: 0px !important;
 }
 
 .header3 > div {
@@ -165,8 +173,11 @@ input {
   overflow: hidden;
   text-align: center;
   height: min-content;
-  margin: 1.5%;
+  margin: 0% 1.5%;
   color: ghostwhite;
+  background-color: #242424;
+  font-weight: 600;
+  outline: solid rgb(140, 197, 84) 2px;
 }
 
 .two > div {
@@ -193,11 +204,15 @@ input {
   }
 }
 
-.notesTitle {
+.title {
   width: 100%;
   background-color: #213547;
   border-radius: 10px;
   outline: solid black;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+  height: auto;
+  font-size: x-large;
 }
 
 .header,
@@ -209,7 +224,8 @@ input {
 .newNoteBtn,
 .searchBarDiv,
 .otherSites,
-.notesTitle {
+.title,
+.accountFromList {
   box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
@@ -271,7 +287,7 @@ input {
 }
 
 .newNoteBtn {
-  width: 15%;
+  width: 20%;
   margin: 20px 0px;
 }
 
@@ -292,62 +308,96 @@ input {
 
 .otherSites {
   height: 7vh;
-  background-color: rgb(42, 42, 94);
+  background-color: #213547;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   outline: solid black;
+  margin-bottom: 10px;
 }
 
 .accountFromList {
   display: flex;
   justify-content: space-around;
-  margin: 10px 0px;
+  padding: 5px 0px;
+  background-color: #14171b;
+  outline: ghostwhite solid;
 }
 
 .searchBarDiv {
-  background-color: #213547;
+  background-color: rgb(54, 69, 105);
   display: flex;
   flex-wrap: wrap;
-  border-radius: 10px;
   outline: black solid;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .searchBy {
   width: 27%;
   margin: 1.5%;
   display: flex;
-  height: 4vh;
-  justify-content: space-evenly;
+  height: 3.3vh;
+  margin-right: 0%;
+  justify-content: space-around;
   align-items: center;
+  border: solid black;
+  outline: solid ghostwhite 2px;
 }
 
 .searchBy > label {
   min-width: max-content;
-  margin-right: 10px;
 }
 
 .searchBar {
   background-color: ghostwhite;
   color: black;
-  width: 37%;
-  margin: 1.5%;
-  height: 2.2vh;
+  width: 40%;
+  padding: 0;
+  height: 3.3vh;
   align-self: center;
+  text-align: left;
+  margin: 0;
+  border: solid black;
+  outline: solid ghostwhite 2px;
 }
 
 .searchBtn {
-  width: 25%;
+  width: 28%;
   margin: 1.5%;
-  margin-left: none;
-  height: 3vh;
+  margin-left: 0%;
+  height: 4vh;
   display: flex;
   justify-content: center;
   align-self: center;
+  align-items: center;
+  border-radius: 0px 10px 10px 0px;
+  border: solid black;
+  border-left: none;
+  outline: solid ghostwhite 2px;
 }
 
 .results {
   width: 100%;
   height: max-content;
+}
+.notFound {
+  background-color: #14171b;
+  height: auto;
+  outline: ghostwhite solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.notFound > h1 {
+  width: 100%;
+}
+.notFound > div {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.redColor {
+  color: red;
 }

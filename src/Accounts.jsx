@@ -11,10 +11,10 @@ function Accounts({ object }) {
   return (
     <div>
       <OtherLinksHeader object={object} />
-      <Header object={object} />
       <SearchBar />
       <Header2 object={object} />
       <Header3 object={object} />
+      <Header object={object} />
       <TestAccount object={object} />
       <Notes object={object} />
     </div>
