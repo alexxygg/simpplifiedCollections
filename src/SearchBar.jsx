@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchBy, setSearchBy] = useState("id");
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -56,41 +56,45 @@ const SearchBar = () => {
       <input
         className="searchBar"
         type="text"
-        placeholder="Enter search term"
+        placeholder="xxx-xxx-xxxx"
         value={searchTerm}
         onChange={(event) => setSearchTerm(event.target.value)}
       />
       <button className="searchBtn" type="submit" value="Submit">
         Search
       </button>
-      {searchResults.length > 0 ? (
-        <div className="results">
-          <OtherLinksHeader />
-          <div className="accountFromList otherBg">
-            <div>id</div>
-            <div>Account #</div>
-            <div>Client Claim #</div>
-            <div>TLO Phone #</div>
-            <div>SSN</div>
-            <div>DOB</div>
+      {searchResults ? (
+        searchResults.length > 0 ? (
+          <div className="results">
+            <OtherLinksHeader />
+            <div className="accountFromList otherBg">
+              <div>id</div>
+              <div>Account #</div>
+              <div>Client Claim #</div>
+              <div>TLO Phone #</div>
+              <div>SSN</div>
+              <div>DOB</div>
+            </div>
+            {searchResults.map((result) => (
+              <Link
+                key={result.id}
+                className="accountFromList"
+                to={`/accounts/${result.id}`}
+              >
+                <div>{result.id}</div>
+                <div>{result.ACCOUNT_NUMBER}</div>
+                <div>{result.CLIENT_CLAIM_NUMBER}</div>
+                <div>{result.TLO_PHONE}</div>
+                <div>{result.SSN}</div>
+                <div>{result.DOB}</div>
+              </Link>
+            ))}
           </div>
-          {searchResults.map((result) => (
-            <Link
-              key={result.id}
-              className="accountFromList"
-              to={`/accounts/${result.id}`}
-            >
-              <div>{result.id}</div>
-              <div>{result.ACCOUNT_NUMBER}</div>
-              <div>{result.CLIENT_CLAIM_NUMBER}</div>
-              <div>{result.TLO_PHONE}</div>
-              <div>{result.SSN}</div>
-              <div>{result.DOB}</div>
-            </Link>
-          ))}
-        </div>
+        ) : (
+          <div className="results">No matches found.</div>
+        )
       ) : (
-        <div className="results">No results found.</div>
+        <div className="results">*Search to retrieve all matches.*</div>
       )}
     </form>
   );

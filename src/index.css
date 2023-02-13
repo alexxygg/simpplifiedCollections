@@ -2,11 +2,9 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,6 +17,7 @@ a {
   text-decoration: inherit;
   color: rgb(248, 250, 246);
 }
+
 a:hover {
   color: ghostwhite;
 }
@@ -32,6 +31,7 @@ body {
   padding: 0vw 2vw;
   margin: 0;
 }
+
 button {
   background-color: blue;
   color: ghostwhite;
@@ -40,29 +40,34 @@ button {
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 10px 20px rgb(84, 91, 95);
+  box-shadow: 0px 5px 10px rgb(84, 91, 95);
 }
 
 button:active {
   transform: translateY(2px);
   box-shadow: 0px 2px 5px rgb(84, 91, 95);
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
+
 .account {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +78,7 @@ button:active {
   background-color: rgb(32, 35, 37);
   width: 100%;
 }
+
 .section {
   margin: 10px 0px;
   background-color: rgb(32, 35, 37);
@@ -86,14 +92,6 @@ button:active {
   justify-content: space-between;
 }
 
-.box {
-  border: solid ghostwhite;
-  background-color: rgb(24, 26, 27);
-  border: 1px solid #707070;
-  border-radius: 1px;
-  margin: 0px 20px;
-  height: min-content;
-}
 .header,
 .header2,
 .header3 {
@@ -101,45 +99,54 @@ button:active {
   height: min-content;
   width: 100%;
   outline: solid #3b3e41;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   user-select: none;
 }
+
 .header {
   justify-content: space-between;
   background-color: #213547;
-  margin: 0px 0px 20px 0px;
+  margin: 8px 0px 20px 0px;
   display: flex;
   outline: solid black;
   border-top: none;
   border-radius: 0 0 10px 10px;
 }
+
 .logo > img {
   width: 100%;
   height: 100%;
 }
+
 .header > div:nth-of-type(1) {
   max-width: 22%;
   margin-right: 3%;
 }
+
 .header > div:nth-of-type(2) {
   width: 50%;
 }
+
 .header > div:nth-of-type(3) {
   width: 25%;
 }
+
 .header2 {
   justify-content: space-evenly;
   background-color: rgb(42, 42, 94);
   outline: solid black;
   border-radius: 10px;
 }
+
 .header2 > div {
   width: auto;
 }
+
 .header3 {
   background-color: #213547;
   outline: solid black;
 }
+
 .header3 > div {
   border-right: solid black;
   margin: 0px 20px;
@@ -148,9 +155,11 @@ button:active {
   padding-left: 0px;
   background-color: #213547;
 }
+
 .header3 > div:nth-of-type(1) {
   padding-left: 20px;
 }
+
 input {
   width: 60px;
   overflow: hidden;
@@ -159,148 +168,185 @@ input {
   margin: 1.5%;
   color: ghostwhite;
 }
+
 .two > div {
   width: 25%;
 }
+
 .four > div {
   width: 12.5%;
 }
+
 .five > div {
   width: 10%;
 }
+
 @media (min-width: 1000px) {
   body {
     padding: 0vw 15vw;
   }
 }
+
 @media (min-width: 1500px) {
   body {
     padding: 0vw 20vw;
   }
 }
+
 .notesTitle {
   width: 100%;
+  background-color: #213547;
+  border-radius: 10px;
+  outline: solid black;
 }
+
 .header,
 .header2,
 .header3,
 .section,
 .notes,
 .newNoteField,
-.newNoteBtn {
-  box-shadow: 5px 5px 15px #1a1b1c, -5px -5px 15px #2a2b2e;
+.newNoteBtn,
+.searchBarDiv,
+.otherSites,
+.notesTitle {
+  box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
+
 .newNoteField,
 .newNoteBtn,
 .header3 {
   border-radius: 10px;
 }
+
 .notes {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   outline: solid black;
 }
+
 .note,
 .id,
 .time {
   outline: solid black;
   font-weight: 400;
 }
+
 .note {
   width: 70%;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .id {
   width: 10%;
   margin: 0;
   background-color: #213547;
 }
+
 .time {
   width: 20%;
   margin: 0;
   background-color: #3d4e5d;
 }
-.note:nth-of-type(2n) {
+
+.note {
   background-color: #213547;
 }
-.note:nth-of-type(2n + 1) {
-  background-color: #3d4e5d;
-}
+
 .newNoteDiv {
   display: flex;
+  justify-content: space-between;
 }
+
 .newNoteField {
-  width: 85%;
+  width: 75%;
   margin: 20px 0px;
-  background-color: #213547;
+  margin-right: 5%;
+  background-color: ghostwhite;
+  color: black;
 }
+
 .newNoteBtn {
   width: 15%;
   margin: 20px 0px;
 }
+
 .otherBg {
   background-color: black !important;
 }
+
 .a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .a > img {
   max-width: 40px;
   max-height: 40px;
 }
+
 .otherSites {
   height: 7vh;
   background-color: rgb(42, 42, 94);
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
-  border-left: 0px;
-  border-right: 0px;
+  outline: solid black;
 }
+
 .accountFromList {
   display: flex;
   justify-content: space-around;
   margin: 10px 0px;
 }
+
 .searchBarDiv {
   background-color: #213547;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
+  outline: black solid;
+  margin-bottom: 20px;
 }
+
 .searchBy {
   width: 27%;
-  margin: 1.5% 0px;
+  margin: 1.5%;
   display: flex;
   height: 4vh;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.searchBy > label {
+  min-width: max-content;
+  margin-right: 10px;
+}
+
 .searchBar {
   background-color: ghostwhite;
   color: black;
-  width: 47%;
+  width: 37%;
   margin: 1.5%;
-  border-radius: 2rem;
-  height: 2.5vh;
+  height: 2.2vh;
   align-self: center;
 }
+
 .searchBtn {
-  width: 17%;
+  width: 25%;
   margin: 1.5%;
-  border-radius: 2rem;
-  outline: ghostwhite solid;
+  margin-left: none;
   height: 3vh;
   display: flex;
   justify-content: center;
   align-self: center;
 }
+
 .results {
   width: 100%;
   height: max-content;
