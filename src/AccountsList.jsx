@@ -1,13 +1,11 @@
 import React from "react";
 import allAccounts from "./allAccounts";
-import OtherLinksHeader from "./oneAccountParts/OtherLinksHeader";
 
 import { Link } from "react-router-dom";
 
 function AccountsList() {
   return (
-    <>
-      <OtherLinksHeader />
+    <div className="accountsPage">
       <div className="accountFromList otherBg">
         <div>id</div>
         <div>TLO_ADDRESS</div>
@@ -28,7 +26,7 @@ function AccountsList() {
           </Link>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 

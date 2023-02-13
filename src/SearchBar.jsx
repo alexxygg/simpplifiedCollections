@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import allAccounts from "./allAccounts";
-import OtherLinksHeader from "./oneAccountParts/OtherLinksHeader";
 import { Link } from "react-router-dom";
 
 const SearchBar = () => {
@@ -66,7 +65,6 @@ const SearchBar = () => {
       {searchResults ? (
         searchResults.length > 0 ? (
           <div className="results">
-            <OtherLinksHeader />
             <div className="accountFromList otherBg">
               <div>id</div>
               <div>Account #</div>

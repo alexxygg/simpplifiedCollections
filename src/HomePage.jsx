@@ -1,10 +1,8 @@
 import React from "react";
-import OtherLinksHeader from "./oneAccountParts/OtherLinksHeader";
 
 function HomePage() {
   return (
-    <div>
-      <OtherLinksHeader />
+    <div className="homePage">
       <div>Home Page</div>
     </div>
   );

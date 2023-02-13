@@ -28,8 +28,10 @@ body {
   font-size: 14px;
   font-weight: 500;
   background-color: rgb(140, 197, 84);
-  padding: 0vw 2vw;
   margin: 0;
+}
+.App {
+  padding: 0vw 2vw;
 }
 
 button {
@@ -193,13 +195,13 @@ input {
 }
 
 @media (min-width: 1000px) {
-  body {
+  .App {
     padding: 0vw 15vw;
   }
 }
 
 @media (min-width: 1500px) {
-  body {
+  .App {
     padding: 0vw 20vw;
   }
 }
@@ -400,4 +402,16 @@ input {
 }
 .redColor {
   color: red;
+}
+.footer {
+  bottom: 0;
+  margin-top: auto;
+  height: 5vh;
+  width: 100%;
+  background-color: #213547;
+}
+.homePage,
+.aboutPage,
+.accountsPage {
+  min-height: 86.9vh;
 }
