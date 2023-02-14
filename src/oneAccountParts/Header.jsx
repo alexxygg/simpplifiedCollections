@@ -7,7 +7,7 @@ function Header({ object }) {
       <div>
         <div>{object.TLO_ADDRESS}</div>
         <div>{object.id}</div>
-        <div className="redColor">{object.NAME}</div>
+        <div className="goldColor">{object.NAME}</div>
         <div>Status: General New Import Last Updated: 2/7/2023</div>
       </div>
       <div>

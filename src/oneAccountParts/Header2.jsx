@@ -1,27 +1,58 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import allAccounts from "../allAccounts";
 function Header2({ object }) {
   return (
     <div className="header2">
-      <Link className="a" to="/home">
+      <a className="a" href="/home">
         <img src="/homeIcon.png" alt="" />
-      </Link>
-      <div>Help</div>
-      <div>1310 / 4091 worked</div>
+      </a>
+      <div>
+        {object.id} / {allAccounts.length} accounts worked
+      </div>
       <a className="a" href={`/accounts/${object.id - 1}`}>
-        <img src="/previous.png" alt="" />
+        <img src="/previous.png" title="Previous Account" />
       </a>
       <a className="a" href={`/accounts/${object.id + 1}`}>
-        <img src="/next.png" alt="" />
+        <img src="/next.png" title="Next Account" />
       </a>
-      <a className="a" href={`/accounts/${object.id + 2}`}>
-        <img src="/skip.png" alt="" />
+      <a className="a" href={`/accounts/${object.id + 1}`}>
+        <img src="/skip.png" title="Skip to Next Account" />
       </a>
-      <div>Account Worklist </div>
-      <div>Details</div>
-      <div>Pause Current Worklist</div>
-      <div>Delete Current Worklist</div>
-      <div>f</div>
+      <a className="a" href={`/accountsList`}>
+        <img src="/worklistAllAccounts.png" title="Current worklist" />{" "}
+      </a>
+      <a className="a" href={`/accountsList`}>
+        <img src="/changeWorklist.png" title="Change Worklist" />{" "}
+      </a>
+      <a className="a" href={`/accountsList`}>
+        <img src="/worklistAllAccounts.png" title="Pause Current Worklist" />{" "}
+      </a>
+      <a className="a" href={`/accountsList`}>
+        <img src="/worklistAllAccounts.png" title="Delete Current Worklist" />{" "}
+      </a>{" "}
+      <div className="help-container">
+        Help
+        <div className="help-dropdown">
+          <a target="_blank" href="https://example.com/videos">
+            Videos
+          </a>
+          <a target="_blank" href="https://example.com/manuals">
+            Manuals
+          </a>
+          <a target="_blank" href="https://example.com/manuals">
+            Manuals
+          </a>
+          <a target="_blank" href="https://example.com/videos">
+            Videos
+          </a>
+          <a target="_blank" href="https://example.com/manuals">
+            Manuals
+          </a>
+          <a target="_blank" href="https://example.com/videos">
+            Videos
+          </a>
+        </div>
+      </div>{" "}
     </div>
   );
 }

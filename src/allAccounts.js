@@ -99,6 +99,24 @@ const allAccounts = [
     EMPLOYER: "ABC Inc.",
     ACTION_CODES: "L1, L2, L3",
     LETTER_FLOWS: "A, B, C",
+    TLO_ADDRESS_LIST: [
+      "123 Main St, Anytown, USA",
+      "456 Elm St, Anytown, USA",
+      "789 Maple Ave, Anytown, USA",
+    ],
+    GOOD_NUMBERS: [
+      { number: "987-654-3210", area: "Pacific", type: "Home" },
+      { number: "123-456-7890", area: "Pacific", type: "Home" },
+      { number: "555-555-1212", area: "Pacific", type: "Home" },
+      { number: "800-555-1212", area: "Pacific", type: "Home" },
+      { number: "212-555-1212", area: "Pacific", type: "Home" },
+      { number: "415-555-1212", area: "Pacific", type: "Home" },
+      { number: "202-555-1212", area: "Pacific", type: "Home" },
+      { number: "305-555-1212", area: "Pacific", type: "Home" },
+      { number: "713-555-1212", area: "Pacific", type: "Home" },
+      { number: "972-555-1212", area: "Pacific", type: "Home" },
+      ,
+    ],
     NOTES: [
       {
         id: 1,
@@ -208,6 +226,24 @@ const allAccounts = [
     EMPLOYER: "ABC Inc.",
     ACTION_CODES: "L1, L2, L3",
     LETTER_FLOWS: "A, B, C",
+    TLO_ADDRESS_LIST: [
+      "123 Main St, Anytown, USA",
+      "456 Elm St, Anytown, USA",
+      "789 Maple Ave, Anytown, USA",
+    ],
+    GOOD_NUMBERS: [
+      "987-654-3210",
+      "123-456-7890",
+      "555-555-1212",
+      "800-555-1212",
+      "212-555-1212",
+      "415-555-1212",
+      "202-555-1212",
+      "305-555-1212",
+      "713-555-1212",
+      "972-555-1212",
+      ,
+    ],
     NOTES: [
       {
         id: 1,
@@ -352,6 +388,24 @@ const allAccounts = [
     EMPLOYER: "ABC Inc.",
     ACTION_CODES: "L1, L2, L3",
     LETTER_FLOWS: "A, B, C",
+    TLO_ADDRESS_LIST: [
+      "123 Main St, Anytown, USA",
+      "456 Elm St, Anytown, USA",
+      "789 Maple Ave, Anytown, USA",
+    ],
+    GOOD_NUMBERS: [
+      "987-654-3210",
+      "123-456-7890",
+      "555-555-1212",
+      "800-555-1212",
+      "212-555-1212",
+      "415-555-1212",
+      "202-555-1212",
+      "305-555-1212",
+      "713-555-1212",
+      "972-555-1212",
+      ,
+    ],
     NOTES: [
       {
         id: 1,
@@ -466,6 +520,24 @@ const allAccounts = [
     EMPLOYER: "XYZ Corp.",
     ACTION_CODES: "L4, L5, L6",
     LETTER_FLOWS: "D, E, F",
+    TLO_ADDRESS_LIST: [
+      "123 Main St, Anytown, USA",
+      "456 Elm St, Anytown, USA",
+      "789 Maple Ave, Anytown, USA",
+    ],
+    GOOD_NUMBERS: [
+      "987-654-3210",
+      "123-456-7890",
+      "555-555-1212",
+      "800-555-1212",
+      "212-555-1212",
+      "415-555-1212",
+      "202-555-1212",
+      "305-555-1212",
+      "713-555-1212",
+      "972-555-1212",
+      ,
+    ],
     NOTES: [
       {
         id: 1,

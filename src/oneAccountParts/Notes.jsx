@@ -7,7 +7,7 @@ function Notes({ object }) {
     setAllNotes(newNotes);
   };
   return (
-    <div>
+    <div className="notesDiv">
       <h1 className="title">Notes:</h1>
       <div className="notes">
         <p className="id otherBg">ID:</p>

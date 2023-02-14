@@ -69,24 +69,23 @@ button:active {
   display: flex;
   flex-wrap: wrap;
 }
-
+.title:nth-of-type(1) {
+  margin: 7px 0px;
+  margin-top: 24px;
+}
 .section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   border: solid ghostwhite;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   background-color: rgb(32, 35, 37);
   width: 100%;
-}
-
-.section {
-  margin: 10px 0px;
   background-color: rgb(32, 35, 37);
-  padding: 15px 0px;
+  padding: 7px 0px;
+  margin-bottom: 7px;
 }
-
 .section > div {
   min-width: 100px;
   margin-right: 10px;
@@ -94,25 +93,22 @@ button:active {
   display: flex;
   justify-content: space-between;
 }
-
+.searchBarDiv,
 .header,
 .header2,
-.header3 {
+.tabs {
   display: flex;
   height: min-content;
-  width: 100%;
-  margin-bottom: 10px;
   user-select: none;
 }
 
 .header {
   justify-content: space-between;
   background-color: rgb(32, 35, 37);
-  margin: 8px 0px 20px 0px;
+  margin: 7px 0px;
   display: flex;
   outline: solid black;
   border-top: none;
-  border-radius: 0 0 10px 10px;
 }
 
 .header > div:nth-of-type(1) {
@@ -122,22 +118,21 @@ button:active {
   font-size: 23px;
 }
 .logo {
-  width: 20vw;
-  height: 6vh;
+  width: auto;
+  height: auto;
   background-color: black;
   text-shadow: -1px -1px 0 gold, 1px -1px 0 gold, -1px 1px 0 gold,
     1px 1px 0 gold;
   color: black;
   font-family: "Permanent Marker", cursive;
+  border: solid gold;
 }
 .header > div:nth-of-type(2) {
   width: 50%;
-  border-left: solid black;
 }
 
 .header > div:nth-of-type(3) {
   width: 25%;
-  border-left: solid black;
 }
 
 .header2 {
@@ -145,31 +140,28 @@ button:active {
   background-color: #213547;
   outline: solid black;
   border-radius: 0px;
+  align-items: center;
 }
 
 .header2 > div {
   width: auto;
 }
 
-.header3 {
+.tabs {
   background-color: #213547;
   outline: solid black;
   border-radius: 0px !important;
+  min-width: max-content;
 }
 
-.header3 > div {
+.tabs > div {
   border-right: solid black;
-  margin: 0px 20px;
-  margin-left: 0;
-  padding: 0px 20px;
-  padding-left: 0px;
-  background-color: #213547;
+  width: 100%;
+  min-width: max-content;
 }
-
-.header3 > div:nth-of-type(1) {
-  padding-left: 20px;
+.tabs > div:nth-of-type(4) {
+  border-right: none;
 }
-
 input {
   width: 60px;
   overflow: hidden;
@@ -209,21 +201,22 @@ input {
 .title {
   width: 100%;
   background-color: #213547;
-  border-radius: 10px;
   outline: solid black;
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
     2px 2px 0 black;
-  height: auto;
-  font-size: x-large;
+  height: max-content;
+  font-size: large;
+  margin-bottom: 7px;
 }
 
 .header,
 .header2,
-.header3,
+.tabs,
 .section,
 .notes,
 .newNoteField,
 .newNoteBtn,
+.clearSearch,
 .searchBarDiv,
 .otherSites,
 .title,
@@ -233,9 +226,12 @@ input {
   user-select: none;
 }
 
+.notesDiv {
+  padding-bottom: 3.5vh;
+}
 .newNoteField,
 .newNoteBtn,
-.header3 {
+.tabs {
   border-radius: 10px;
 }
 
@@ -310,14 +306,13 @@ input {
 }
 
 .otherSites {
-  height: 7vh;
+  height: 3vh;
   background-color: #213547;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   outline: solid black;
-  margin-bottom: 10px;
 }
 
 .accountFromList {
@@ -327,15 +322,15 @@ input {
   background-color: #14171b;
   outline: ghostwhite solid;
 }
-
+.accountFields {
+}
 .searchBarDiv {
   background-color: rgb(54, 69, 105);
   display: flex;
   flex-wrap: wrap;
   outline: black solid;
-  margin-bottom: 10px;
+  margin: 7px 0px;
 }
-
 .searchBy {
   width: 27%;
   margin: 1.5%;
@@ -365,7 +360,8 @@ input {
   outline: solid ghostwhite 2px;
 }
 
-.searchBtn {
+.searchBtn,
+.clearSearch {
   width: 28%;
   margin: 1.5%;
   margin-left: 0%;
@@ -379,41 +375,109 @@ input {
   border-left: none;
   outline: solid ghostwhite 2px;
 }
-
+.clearSearch {
+  background-color: red;
+  border: solid black;
+  width: 28%;
+  border-radius: 10px;
+  margin: 1.5%;
+  margin: 10px auto;
+}
 .results {
   width: 100%;
   height: max-content;
 }
 .notFound {
-  background-color: #14171b;
-  height: auto;
-  outline: ghostwhite solid;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
 }
-.notFound > h1 {
-  width: 100%;
+.notFound > div:nth-of-type(1) {
+  font-size: xx-large;
+  width: 80%;
+  margin: 0 auto;
+  height: 50%;
+  background-color: red;
+  padding-top: 20px;
 }
-.notFound > div {
-  width: 100%;
-  margin-bottom: 30px;
+.notFound > div:nth-of-type(2) {
+  font-size: small;
+  width: 80%;
+  margin: 0 auto;
+  height: 50%;
+  background-color: red;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
-.redColor {
-  color: red;
+.goldColor {
+  color: gold;
 }
 .footer {
   bottom: 0;
   margin-top: auto;
-  height: 5vh;
+  height: 3.5vh;
   width: 100%;
   background-color: #213547;
   border-top: solid black;
+  position: fixed;
 }
 .homePage,
 .aboutPage,
-.accountsPage {
-  min-height: 86.9vh;
+.accountsPage,
+.notFound {
+  min-height: 90.9vh;
+}
+.help-container {
+  position: relative;
+  display: inline-block;
+}
+
+.help-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 12px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: none;
+}
+
+.help-container:hover .help-dropdown {
+  display: block;
+}
+
+.help-dropdown a {
+  display: block;
+  padding: 8px 10px;
+  background-color: #213547;
+  color: ghostwhite;
+  text-decoration: none;
+  border: black solid;
+}
+
+.help-dropdown a:hover {
+  background-color: #2e3f4d;
+}
+.goodNumbers,
+.addAddressDiv {
+  background-color: #213547;
+  border: solid black;
+}
+.allThingsSection {
+  display: flex;
+}
+.allThingsSection > * {
+  width: 100%;
+  padding: 10px 0px;
+}
+.allGoodAddresses > input {
+  width: 80%;
+  margin-bottom: 5px;
+}
+.allGoodNumbers > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
 }

@@ -7,7 +7,10 @@ function TestAccount({ object }) {
   };
 
   return (
-    <div className="account">
+    <div className="account accountFields">
+      <h1 className="title">
+        <div>Debt:</div>
+      </h1>
       <div className="section">
         <div className="two">
           <button>Save</button>
@@ -48,6 +51,9 @@ function TestAccount({ object }) {
           />
         </div>
       </div>
+      <h1 className="title">
+        <div>Client:</div>
+      </h1>
       <div className="section">
         <div className="four">
           <div className="objectKeyName">Client:</div>
@@ -230,6 +236,9 @@ function TestAccount({ object }) {
           />
         </div>
       </div>
+      <h1 className="title">
+        <div>Debt Information:</div>
+      </h1>
       <div className="section">
         <div className="four">
           <div className="objectKeyName">Original Check #:</div>

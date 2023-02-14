@@ -2,18 +2,20 @@ import React from "react";
 import TestAccount from "./oneAccountParts/TestAccount";
 import Header from "./oneAccountParts/Header";
 import Header2 from "./oneAccountParts/Header2";
-import Header3 from "./oneAccountParts/Header3";
 import Notes from "./oneAccountParts/Notes";
 import SearchBar from "./SearchBar";
+import Tabs from "./oneAccountParts/Tabs";
+import AddThingsSection from "./oneAccountParts/AddThingsSection";
 
 function Accounts({ object }) {
   return (
     <div>
       <SearchBar />
-      <Header2 object={object} />
-      <Header3 object={object} />
+      <Tabs object={object} />
       <Header object={object} />
+      <Header2 object={object} />
       <TestAccount object={object} />
+      <AddThingsSection object={object} />
       <Notes object={object} />
     </div>
   );

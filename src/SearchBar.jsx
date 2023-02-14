@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import allAccounts from "./allAccounts";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchBy, setSearchBy] = useState("id");
   const [searchResults, setSearchResults] = useState(false);
+  const [showNoMatches, setShowNoMatches] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -32,69 +33,89 @@ const SearchBar = () => {
     });
 
     setSearchResults(results);
+    setShowNoMatches(results.length === 0);
   };
 
+  const clearSearch = () => {
+    setSearchTerm("");
+    setSearchResults(false);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearchResults(false);
+      setShowNoMatches(false);
+    }, 20000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [searchResults, showNoMatches]);
+
   return (
-    <form className="searchBarDiv" action="#" onSubmit={handleSubmit}>
-      <div className="searchBy">
-        <label htmlFor="searchBy">Search by:</label>
-        <select
-          id="searchBy"
-          name="searchBy"
-          value={searchBy}
-          onChange={(event) => setSearchBy(event.target.value)}
-        >
-          <option value="id">id</option>
-          <option value="ACCOUNT_NUMBER">Account #</option>
-          <option value="CLIENT_CLAIM_NUMBER">Client Claim #</option>
-          <option value="TLO_PHONE">TLO Phone #</option>
-          <option value="SSN">SSN</option>
-          <option value="DOB">DOB</option>
-        </select>
-      </div>{" "}
-      <input
-        className="searchBar"
-        type="text"
-        placeholder=" id, Account #, Phone #, SSN, DOB..."
-        value={searchTerm}
-        onChange={(event) => setSearchTerm(event.target.value)}
-      />
-      <button className="searchBtn" type="submit" value="Submit">
-        Search
-      </button>
-      {searchResults ? (
-        searchResults.length > 0 ? (
-          <div className="results">
-            <div className="accountFromList otherBg">
-              <div>id</div>
-              <div>Account #</div>
-              <div>Client Claim #</div>
-              <div>TLO Phone #</div>
-              <div>SSN</div>
-              <div>DOB</div>
+    <div className="searchBarDivAgain">
+      <form className="searchBarDiv" action="#" onSubmit={handleSubmit}>
+        <div className="searchBy">
+          <label htmlFor="searchBy">Search by:</label>
+          <select
+            id="searchBy"
+            name="searchBy"
+            value={searchBy}
+            onChange={(event) => setSearchBy(event.target.value)}
+          >
+            <option value="id">id</option>
+            <option value="ACCOUNT_NUMBER">Account #</option>
+            <option value="CLIENT_CLAIM_NUMBER">Client Claim #</option>
+            <option value="TLO_PHONE">TLO Phone #</option>
+            <option value="SSN">SSN</option>
+            <option value="DOB">DOB</option>
+          </select>
+        </div>{" "}
+        <input
+          className="searchBar"
+          type="text"
+          placeholder=" id, Account #, Phone #, SSN, DOB..."
+          value={searchTerm}
+          onChange={(event) => setSearchTerm(event.target.value)}
+        />
+        <button className="searchBtn" type="submit" value="Submit">
+          Search
+        </button>
+        {searchResults ? (
+          searchResults.length > 0 ? (
+            <div className="results">
+              <div className="accountFromList otherBg">
+                <div>id</div>
+                <div>Account #</div>
+                <div>Client Claim #</div>
+                <div>TLO Phone #</div>
+                <div>SSN</div>
+                <div>DOB</div>
+              </div>
+              {searchResults.map((result) => (
+                <Link
+                  key={result.id}
+                  className="accountFromList"
+                  to={`/accounts/${result.id}`}
+                >
+                  <div>{result.id}</div>
+                  <div>{result.ACCOUNT_NUMBER}</div>
+                  <div>{result.CLIENT_CLAIM_NUMBER}</div>
+                  <div>{result.TLO_PHONE}</div>
+                  <div>{result.SSN}</div>
+                  <div>{result.DOB}</div>
+                </Link>
+              ))}
+              <button onClick={clearSearch} className="clearSearch">
+                Clear Search
+              </button>
             </div>
-            {searchResults.map((result) => (
-              <Link
-                key={result.id}
-                className="accountFromList"
-                to={`/accounts/${result.id}`}
-              >
-                <div>{result.id}</div>
-                <div>{result.ACCOUNT_NUMBER}</div>
-                <div>{result.CLIENT_CLAIM_NUMBER}</div>
-                <div>{result.TLO_PHONE}</div>
-                <div>{result.SSN}</div>
-                <div>{result.DOB}</div>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <div className="results">No matches found.</div>
-        )
-      ) : (
-        <div className="results">*Search to retrieve all matches.*</div>
-      )}
-    </form>
+          ) : showNoMatches ? (
+            <div className="results">No matches found.</div>
+          ) : null
+        ) : null}
+      </form>
+    </div>
   );
 };
 
