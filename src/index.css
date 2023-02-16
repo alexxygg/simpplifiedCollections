@@ -73,26 +73,7 @@ button:active {
   margin: 7px 0px;
   margin-top: 24px;
 }
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  border: solid ghostwhite;
-  border-radius: 0px 0px 10px 10px;
-  background-color: rgb(32, 35, 37);
-  width: 100%;
-  background-color: rgb(32, 35, 37);
-  padding: 7px 0px;
-  margin-bottom: 7px;
-}
-.section > div {
-  min-width: 100px;
-  margin-right: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
+
 .searchBarDiv,
 .header,
 .header2,
@@ -162,31 +143,6 @@ button:active {
 .tabs > div:nth-of-type(4) {
   border-right: none;
 }
-input {
-  overflow: hidden;
-  text-align: center;
-  height: 10px;
-  margin: 0% 1.5%;
-  color: ghostwhite;
-  background-color: #242424;
-  font-weight: 600;
-  outline: solid rgb(140, 197, 84) 1px;
-}
-input:hover {
-  background-color: #383636;
-  outline: solid rgb(140, 197, 84) 2px;
-}
-.two > div {
-  width: 25%;
-}
-
-.four > div {
-  width: 12.5%;
-}
-
-.five > div {
-  width: 10%;
-}
 
 @media (min-width: 1000px) {
   .App {
@@ -206,8 +162,7 @@ input:hover {
   outline: solid black;
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
     2px 2px 0 black;
-  height: max-content;
-  font-size: large;
+  height: 20px;
   margin-bottom: 7px;
 }
 
@@ -477,6 +432,7 @@ input:hover {
 }
 .addAddressDiv > form > :nth-child(1) {
   min-width: 80% !important;
+  text-align: center;
 }
 .addAddressDiv > form > button,
 .addNumberDiv > form > button {
@@ -488,6 +444,7 @@ input:hover {
 }
 .addNumberDiv > form > div > input {
   width: 100%;
+  text-align: center;
 }
 .addNumberDiv,
 .addAddressDiv {
@@ -507,6 +464,7 @@ input:hover {
 .allGoodAddresses > input {
   width: 80%;
   margin-bottom: 5px;
+  text-align: center;
 }
 .allGoodNumbers,
 .allGoodAddresses,
@@ -526,6 +484,7 @@ input:hover {
 }
 .allGoodNumbers > div > input {
   min-width: 100px;
+  text-align: center;
 }
 .homepage-component {
   display: flex;
@@ -560,73 +519,123 @@ input:hover {
 .homepage-component__button:hover {
   background-color: #538d55;
 }
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid ghostwhite;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(32, 35, 37);
+  width: 100%;
+  background-color: rgb(32, 35, 37);
+  padding: 7px;
+  margin-bottom: 7px;
+}
+input {
+  overflow: hidden;
+  text-align: end;
+  height: 10px;
+  color: ghostwhite;
+  background-color: #242424;
+  font-weight: 600;
+}
+input:hover {
+  background-color: #383636;
+  outline: solid rgb(140, 197, 84) 2px;
+}
 .beforeInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: max-content;
+  background-color: #244726;
+  height: 17px;
+  margin: 2px auto;
+  font-weight: 700;
 }
-.PRINCIPAL {
+.RELATIVE_5,
+.RELATIVE_5_ADDY {
+  margin-bottom: 20px !important;
 }
-.PAYMENTS {
+.PRINCIPAL,
+.PAYMENTS,
+.BALANCE,
+.LINKED_BALANCE,
+.ACCOUNT_TYPE,
+.STATUS,
+.CREDITOR,
+.ACCOUNT_NUMBER,
+.ORIGINATED,
+.ACCOUNT_RECEIVED,
+.IMPORTED_ON,
+.COLLECTOR,
+.CLIENT_CLAIM_NUMBER,
+.CHARGED_OFF,
+.PURCHASED,
+.QUEUE,
+.LAST_PAYMENT,
+.NEXT_WORK,
+.DEBTOR_PMT_ID,
+.REFERRING,
+.AGE,
+.DELINQ_1,
+.PAYMENT_PORTAL,
+.LAST_PAYMENT,
+.DATE_LAST_PAYMENT,
+.DATE_OF_LAST_CHARGE,
+.SALES_REP,
+.LANDLORD_PHONE_NUMBER,
+.RELATIVE_1,
+.RELATIVE_1_ADDY,
+.RELATIVE_2,
+.RELATIVE_2_ADDY,
+.RELATIVE_3,
+.RELATIVE_3_ADDY,
+.RELATIVE_4,
+.RELATIVE_4_ADDY,
+.RELATIVE_5,
+.RELATIVE_5_ADDY {
+  width: 24.4%;
+  margin: 2px auto;
 }
-.BALANCE {
+.RELATIVE_1_PH1,
+.RELATIVE_1_PH2,
+.RELATIVE_1_PH3,
+.RELATIVE_2_PH1,
+.RELATIVE_2_PH2,
+.RELATIVE_2_PH3,
+.RELATIVE_3_PH1,
+.RELATIVE_3_PH2,
+.RELATIVE_3_PH3,
+.RELATIVE_4_PH1,
+.RELATIVE_4_PH2,
+.RELATIVE_4_PH3,
+.RELATIVE_5_PH1,
+.RELATIVE_5_PH2,
+.RELATIVE_5_PH3 {
+  width: 14.4%;
+  margin: 2px auto;
 }
-.LINKED_BALANCE {
+.ORIGINAL_CHECK_NUMBER,
+.ITEM_A,
+.ITEM_B,
+.ITEM_C,
+.RENT_AMOUNT,
+.PRODUCT {
+  width: 11.2%;
+  margin: 2px auto;
 }
 .CLIENT {
+  width: 49.4%;
+  margin-right: auto;
 }
-.ACCOUNT_TYPE {
-}
-.STATUS {
-}
-.CREDITOR {
-}
-.ACCOUNT_NUMBER {
-}
-.ORIGINATED {
-}
-.ACCOUNT_RECEIVED {
-}
-.IMPORTED_ON {
-}
-.COLLECTOR {
-}
-.CLIENT_CLAIM_NUMBER {
-}
-.CHARGED_OFF {
-}
-.PURCHASED {
-}
-.QUEUE {
-}
-.LAST_PAYMENT {
-}
-.NEXT_WORK {
-}
-.DEBTOR_PMT_ID {
-}
-.REFERRING {
-}
-.AGE {
-}
-.DELINQ_1 {
-}
-.PAYMENT_PORTAL {
-}
-.SALES_REP {
-}
-.ORIGINAL_CHECK_NUMBER {
-}
-.ITEM_A {
-}
-.ITEM_B {
-}
-.ITEM_C {
+.CLIENT:is(div) {
+  background-color: rgb(168, 19, 19);
 }
 .LANDLORD_PHONE_NUMBER {
 }
-.RENT_AMOUNT {
-}
-.PRODUCT {
-}
+
 .PROP_OWNER_ADDRESS {
 }
 .PROP {
@@ -653,23 +662,9 @@ input:hover {
 }
 .TLO_ADDRESS_2 {
 }
-.RELATIVE_1 {
-}
-.RELATIVE_1_ADDY {
-}
-.RELATIVE_1_STATE {
-}
-.RELATIVE_1_CITY {
-}
 .TLO_CITY_2 {
 }
 .TLO_STATE_2 {
-}
-.RELATIVE_1_PH1 {
-}
-.RELATIVE_1_PH2 {
-}
-.RELATIVE_1_PH3 {
 }
 .TLO_PHONE {
 }
@@ -680,46 +675,6 @@ input:hover {
 .TLO_PHONE_4 {
 }
 .TLO_PHONE_5 {
-}
-.RELATIVE_2 {
-}
-.RELATIVE_2_ADDY {
-}
-.RELATIVE_2_PH1 {
-}
-.RELATIVE_2_PH2 {
-}
-.RELATIVE_2_PH3 {
-}
-.RELATIVE_3 {
-}
-.RELATIVE_3_ADDY {
-}
-.RELATIVE_3_PH1 {
-}
-.RELATIVE_3_PH2 {
-}
-.RELATIVE_3_PH3 {
-}
-.RELATIVE_4 {
-}
-.RELATIVE_4_ADDY {
-}
-.RELATIVE_4_PH1 {
-}
-.RELATIVE_4_PH2 {
-}
-.RELATIVE_4_PH3 {
-}
-.RELATIVE_5 {
-}
-.RELATIVE_5_ADDY {
-}
-.RELATIVE_5_PH1 {
-}
-.RELATIVE_5_PH2 {
-}
-.RELATIVE_5_PH3 {
 }
 .BANK_ACCT_NAME {
 }
