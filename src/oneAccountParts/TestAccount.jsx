@@ -1,4 +1,7 @@
 import React from "react";
+import Others from "./AccountTemplate/Others";
+import Relatives from "./AccountTemplate/Relatives";
+import TLO from "./AccountTemplate/TLO";
 
 function TestAccount({ object }) {
   //copy to clipboard
@@ -8,7 +11,7 @@ function TestAccount({ object }) {
 
   return (
     <div className="account accountFields">
-      <div className="title">Debt:</div>
+      <div className="title">Debt</div>
       <div className="section">
         <div className="beforeInput PRINCIPAL">Principal:</div>
         <input
@@ -77,7 +80,7 @@ function TestAccount({ object }) {
           defaultValue={object.DATE_OF_LAST_CHARGE}
         />
       </div>
-      <div className="title">Client:</div>
+      <div className="title">Client</div>
       <div className="section">
         <div className="beforeInput CLIENT">Client:</div>
         <input
@@ -233,7 +236,7 @@ function TestAccount({ object }) {
           defaultValue={object.SALES_REP}
         />
       </div>
-      <div className="title">Debt Information:</div>
+      <div className="title">Debt Information</div>
       <div className="section">
         <div className="beforeInput BANK_ACCT_NAME">Bank Account Name:</div>
         <input
@@ -267,30 +270,25 @@ function TestAccount({ object }) {
           onClick={handleClick}
           defaultValue={object.LAST_PAYMENT}
         />
-        <div className="beforeInput BANKRUPTCY">Bankruptcy:</div>
+        <div className="beforeInput ORIGINAL_CHECK_NUMBER">
+          Original Check #:
+        </div>
         <input
           readOnly
           type="text"
-          className="BANKRUPTCY"
+          className="ORIGINAL_CHECK_NUMBER"
           onClick={handleClick}
-          defaultValue={object.BANKRUPTCY}
-        />
-        <div className="beforeInput DISCHARGED">Discharged:</div>
+          defaultValue={object.ORIGINAL_CHECK_NUMBER}
+        />{" "}
+        <div className="beforeInput PRODUCT">Product:</div>
         <input
           readOnly
           type="text"
-          className="DISCHARGED"
+          className="PRODUCT"
           onClick={handleClick}
-          defaultValue={object.DISCHARGED}
+          defaultValue={object.PRODUCT}
         />
-        <div className="beforeInput PDF">PDF:</div>
-        <input
-          readOnly
-          type="text"
-          className="PDF"
-          onClick={handleClick}
-          defaultValue={object.PDF}
-        />
+        <div className="subTitle goldColor">Documents</div>
         <div className="beforeInput GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS">
           Generate Debtor Document Notifications:
         </div>
@@ -301,6 +299,15 @@ function TestAccount({ object }) {
           onClick={handleClick}
           defaultValue={object.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS}
         />
+        <div className="beforeInput PDF">PDF:</div>
+        <input
+          readOnly
+          type="text"
+          className="PDF"
+          onClick={handleClick}
+          defaultValue={object.PDF}
+        />
+        <div className="subTitle goldColor">DOB and SSN</div>
         <div className="beforeInput SSN">SSN:</div>
         <input
           readOnly
@@ -316,22 +323,6 @@ function TestAccount({ object }) {
           className="DOB"
           onClick={handleClick}
           defaultValue={object.DOB}
-        />
-        <div className="beforeInput ATTORNEY">Attorney:</div>
-        <input
-          readOnly
-          type="text"
-          className="ATTORNEY"
-          onClick={handleClick}
-          defaultValue={object.ATTORNEY}
-        />
-        <div className="beforeInput EMPLOYER">Employer:</div>
-        <input
-          readOnly
-          type="text"
-          className="EMPLOYER"
-          onClick={handleClick}
-          defaultValue={object.EMPLOYER}
         />
         <div className="beforeInput ACTION_CODES">Action Codes:</div>
         <input
@@ -357,432 +348,10 @@ function TestAccount({ object }) {
           onClick={handleClick}
           defaultValue={object.CALL_DISPOSITIONS}
         />
-        <div className="beforeInput ORIGINAL_CHECK_NUMBER">
-          Original Check #:
-        </div>
-        <input
-          readOnly
-          type="text"
-          className="ORIGINAL_CHECK_NUMBER"
-          onClick={handleClick}
-          defaultValue={object.ORIGINAL_CHECK_NUMBER}
-        />
-        <div className="beforeInput ITEM_A">Item A:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_A"
-          onClick={handleClick}
-          defaultValue={object.ITEM_A}
-        />
-        <div className="beforeInput ITEM_B">Item B:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_B"
-          onClick={handleClick}
-          defaultValue={object.ITEM_B}
-        />
-        <div className="beforeInput ITEM_C">Item C:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_C"
-          onClick={handleClick}
-          defaultValue={object.ITEM_C}
-        />
-        <div className="beforeInput LANDLORD_PHONE_NUMBER">
-          Landlord Phone #:
-        </div>
-        <input
-          readOnly
-          type="text"
-          className="LANDLORD_PHONE_NUMBER"
-          onClick={handleClick}
-          defaultValue={object.LANDLORD_PHONE_NUMBER}
-        />
-        <div className="beforeInput RENT_AMOUNT">Rent Amount:</div>
-        <input
-          readOnly
-          type="text"
-          className="RENT_AMOUNT"
-          onClick={handleClick}
-          defaultValue={object.RENT_AMOUNT}
-        />
-        <div className="beforeInput PRODUCT">Product:</div>
-        <input
-          readOnly
-          type="text"
-          className="PRODUCT"
-          onClick={handleClick}
-          defaultValue={object.PRODUCT}
-        />
-        <div className="beforeInput PROP_OWNER_ADDRESS">
-          Prop Owner Address:
-        </div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_OWNER_ADDRESS"
-          onClick={handleClick}
-          defaultValue={object.PROP_OWNER_ADDRESS}
-        />
-        <div className="beforeInput PROP">Prop:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP"
-          onClick={handleClick}
-          defaultValue={object.PROP}
-        />
-        <div className="beforeInput PROP_LOAN_AMOUNT">Prop Loan Amount:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_LOAN_AMOUNT"
-          onClick={handleClick}
-          defaultValue={object.PROP_LOAN_AMOUNT}
-        />
-        <div className="beforeInput PROP_OWNER_LENDER">Prop Owner Lender:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_OWNER_LENDER"
-          onClick={handleClick}
-          defaultValue={object.PROP_OWNER_LENDER}
-        />
-        <div className="beforeInput TLO_POE">TLO POE:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_POE"
-          onClick={handleClick}
-          defaultValue={object.TLO_POE}
-        />
-        <div className="beforeInput CO_SIGNER_FIRST">Co-Signer First:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGNER_FIRST"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_FIRST}
-        />
-        <div className="beforeInput CO_SIGNER_LAST">Co-Signer Last:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGNER_LAST"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_LAST}
-        />
-        <div className="beforeInput CO_SIGN_SSN">Co-Signer SSN:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGN_SSN"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_SSN}
-        />
-        <div className="beforeInput TLO_POE_NUMBER">TLO POE #:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_POE_NUMBER"
-          onClick={handleClick}
-          defaultValue={object.TLO_POE_NUMBER}
-        />
-        <div className="beforeInput TLO_ADDRESS">TLO Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_ADDRESS"
-          onClick={handleClick}
-          defaultValue={object.TLO_ADDRESS}
-        />
-        <div className="beforeInput TLO_CITY">TLO City:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_CITY"
-          onClick={handleClick}
-          defaultValue={object.TLO_CITY}
-        />
-        <div className="beforeInput TLO_STATE">TLO State:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_STATE"
-          onClick={handleClick}
-          defaultValue={object.TLO_STATE}
-        />
-        <div className="beforeInput TLO_ADDRESS_2">TLO Address 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_ADDRESS_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_ADDRESS_2}
-        />
-        <div className="beforeInput TLO_CITY_2">TLO City 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_CITY_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_CITY_2}
-        />
-        <div className="beforeInput TLO_STATE_2">TLO State 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_STATE_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_STATE_2}
-        />
-        <div className="beforeInput TLO_PHONE">TLO Phone 1</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_PHONE"
-          onClick={handleClick}
-          defaultValue={object.TLO_PHONE}
-        />
-        <div className="beforeInput TLO_PHONE_2">TLO Phone 2</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_PHONE_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_PHONE_2}
-        />
-        <div className="beforeInput TLO_PHONE_3">TLO Phone 3</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_PHONE_3"
-          onClick={handleClick}
-          defaultValue={object.TLO_PHONE_3}
-        />
-        <div className="beforeInput TLO_PHONE_4">TLO Phone 4</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_PHONE_4"
-          onClick={handleClick}
-          defaultValue={object.TLO_PHONE_4}
-        />
-        <div className="beforeInput TLO_PHONE_5">TLO Phone 5</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_PHONE_5"
-          onClick={handleClick}
-          defaultValue={object.TLO_PHONE_5}
-        />
       </div>
-      <div className="title">Contact:</div>
-      <div className="section">
-        <div className="beforeInput RELATIVE_1">Relative 1 (R1):</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_1}
-        />
-        <div className="beforeInput RELATIVE_1_ADDY">R1 Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_1_ADDY"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_1_ADDY}
-        />
-        <div className="beforeInput RELATIVE_2">Relative 2 (R2):</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_2}
-        />
-        <div className="beforeInput RELATIVE_2_ADDY">R2 Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_2_ADDY"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_2_ADDY}
-        />{" "}
-        <div className="beforeInput RELATIVE_3">Relative 3 (R3):</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_3}
-        />
-        <div className="beforeInput RELATIVE_3_ADDY">R3 Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_3_ADDY"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_3_ADDY}
-        />{" "}
-        <div className="beforeInput RELATIVE_4">Relative 4 (R4):</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_4"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_4}
-        />
-        <div className="beforeInput RELATIVE_4_ADDY">R4 Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_4_ADDY"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_4_ADDY}
-        />{" "}
-        <div className="beforeInput RELATIVE_5">Relative 5 (R5):</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_5"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_5}
-        />
-        <div className="beforeInput RELATIVE_5_ADDY">R5 Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_5_ADDY"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_5_ADDY}
-        />
-        <div className="beforeInput RELATIVE_1_PH1">R1 Phone 1:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_1_PH1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_1_PH1}
-        />
-        <div className="beforeInput RELATIVE_1_PH2">R1 Phone 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_1_PH2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_1_PH2}
-        />
-        <div className="beforeInput RELATIVE_1_PH3">R1 Phone 3:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_1_PH3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_1_PH3}
-        />{" "}
-        <div className="beforeInput RELATIVE_2_PH1">R2 Phone 1:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_2_PH1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_2_PH1}
-        />
-        <div className="beforeInput RELATIVE_2_PH2">R2 Phone 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_2_PH2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_2_PH2}
-        />
-        <div className="beforeInput RELATIVE_2_PH3">R2 Phone 3:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_2_PH3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_2_PH3}
-        />
-        <div className="beforeInput RELATIVE_3_PH1">R3 Phone 1:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_3_PH1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_3_PH1}
-        />
-        <div className="beforeInput RELATIVE_3_PH2">R3 Phone 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_3_PH2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_3_PH2}
-        />
-        <div className="beforeInput RELATIVE_3_PH3">R3 Phone 3:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_3_PH3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_3_PH3}
-        />
-        <div className="beforeInput RELATIVE_4_PH1">R4 Phone 1:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_4_PH1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_4_PH1}
-        />
-        <div className="beforeInput RELATIVE_4_PH2">R4 Phone 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_4_PH2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_4_PH2}
-        />
-        <div className="beforeInput RELATIVE_4_PH3">R4 Phone 3:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_4_PH3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_4_PH3}
-        />
-        <div className="beforeInput RELATIVE_5_PH1">R5 Phone 1:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_5_PH1"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_5_PH1}
-        />
-        <div className="beforeInput RELATIVE_5_PH2">R5 Phone 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_5_PH2"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_5_PH2}
-        />
-        <div className="beforeInput RELATIVE_5_PH3">R5 Phone 3:</div>
-        <input
-          readOnly
-          type="text"
-          className="RELATIVE_5_PH3"
-          onClick={handleClick}
-          defaultValue={object.RELATIVE_5_PH3}
-        />
-      </div>
+      <Others object={object} />
+      <TLO object={object} />
+      <Relatives object={object} />
     </div>
   );
 }
