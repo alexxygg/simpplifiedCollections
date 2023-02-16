@@ -163,17 +163,19 @@ button:active {
   border-right: none;
 }
 input {
-  width: 60px;
   overflow: hidden;
   text-align: center;
-  height: min-content;
+  height: 10px;
   margin: 0% 1.5%;
   color: ghostwhite;
   background-color: #242424;
   font-weight: 600;
+  outline: solid rgb(140, 197, 84) 1px;
+}
+input:hover {
+  background-color: #383636;
   outline: solid rgb(140, 197, 84) 2px;
 }
-
 .two > div {
   width: 25%;
 }
@@ -459,25 +461,297 @@ input {
 .help-dropdown a:hover {
   background-color: #2e3f4d;
 }
-.goodNumbers,
+.addAddressDiv > form,
+.addNumberDiv > form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.addNumberDiv > form > div {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.addAddressDiv > form > :nth-child(1) {
+  min-width: 80% !important;
+}
+.addAddressDiv > form > button,
+.addNumberDiv > form > button {
+  height: 30px;
+  width: 50%;
+  border-radius: 2rem;
+  margin: 20px 0px;
+  border: solid black;
+}
+.addNumberDiv > form > div > input {
+  width: 100%;
+}
+.addNumberDiv,
 .addAddressDiv {
   background-color: #213547;
   border: solid black;
+}
+#newAddressInput {
+  min-width: max-content;
 }
 .allThingsSection {
   display: flex;
 }
 .allThingsSection > * {
-  width: 100%;
-  padding: 10px 0px;
+  width: 92%;
+  padding: 0 2%;
 }
 .allGoodAddresses > input {
   width: 80%;
   margin-bottom: 5px;
 }
+.allGoodNumbers,
+.allGoodAddresses,
+.addNumberDiv,
+.addAddressDiv {
+  padding: 20px 0px;
+}
 .allGoodNumbers > div {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 5px;
+}
+.allGoodNumbers > div > img,
+.addNumberDiv > form > div > img {
+  height: 20px;
+}
+.allGoodNumbers > div > input {
+  min-width: 100px;
+}
+.homepage-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  margin-top: 2vh;
+  background-color: #171717;
+}
+
+.homepage-component__title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.homepage-component__subtitle {
+  font-size: 14px;
+}
+
+.homepage-component__button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: rgb(140, 197, 84);
+  color: #0c0c0c;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.homepage-component__button:hover {
+  background-color: #538d55;
+}
+.beforeInput {
+  min-width: max-content;
+}
+.PRINCIPAL {
+}
+.PAYMENTS {
+}
+.BALANCE {
+}
+.LINKED_BALANCE {
+}
+.CLIENT {
+}
+.ACCOUNT_TYPE {
+}
+.STATUS {
+}
+.CREDITOR {
+}
+.ACCOUNT_NUMBER {
+}
+.ORIGINATED {
+}
+.ACCOUNT_RECEIVED {
+}
+.IMPORTED_ON {
+}
+.COLLECTOR {
+}
+.CLIENT_CLAIM_NUMBER {
+}
+.CHARGED_OFF {
+}
+.PURCHASED {
+}
+.QUEUE {
+}
+.LAST_PAYMENT {
+}
+.NEXT_WORK {
+}
+.DEBTOR_PMT_ID {
+}
+.REFERRING {
+}
+.AGE {
+}
+.DELINQ_1 {
+}
+.PAYMENT_PORTAL {
+}
+.SALES_REP {
+}
+.ORIGINAL_CHECK_NUMBER {
+}
+.ITEM_A {
+}
+.ITEM_B {
+}
+.ITEM_C {
+}
+.LANDLORD_PHONE_NUMBER {
+}
+.RENT_AMOUNT {
+}
+.PRODUCT {
+}
+.PROP_OWNER_ADDRESS {
+}
+.PROP {
+}
+.PROP_LOAN_AMOUNT {
+}
+.PROP_OWNER_LENDER {
+}
+.TLO_POE {
+}
+.CO_SIGNER_FIRST {
+}
+.CO_SIGNER_LAST {
+}
+.CO_SIGN_SSN {
+}
+.TLO_POE_NUMBER {
+}
+.TLO_ADDRESS {
+}
+.TLO_CITY {
+}
+.TLO_STATE {
+}
+.TLO_ADDRESS_2 {
+}
+.RELATIVE_1 {
+}
+.RELATIVE_1_ADDY {
+}
+.RELATIVE_1_STATE {
+}
+.RELATIVE_1_CITY {
+}
+.TLO_CITY_2 {
+}
+.TLO_STATE_2 {
+}
+.RELATIVE_1_PH1 {
+}
+.RELATIVE_1_PH2 {
+}
+.RELATIVE_1_PH3 {
+}
+.TLO_PHONE {
+}
+.TLO_PHONE_2 {
+}
+.TLO_PHONE_3 {
+}
+.TLO_PHONE_4 {
+}
+.TLO_PHONE_5 {
+}
+.RELATIVE_2 {
+}
+.RELATIVE_2_ADDY {
+}
+.RELATIVE_2_PH1 {
+}
+.RELATIVE_2_PH2 {
+}
+.RELATIVE_2_PH3 {
+}
+.RELATIVE_3 {
+}
+.RELATIVE_3_ADDY {
+}
+.RELATIVE_3_PH1 {
+}
+.RELATIVE_3_PH2 {
+}
+.RELATIVE_3_PH3 {
+}
+.RELATIVE_4 {
+}
+.RELATIVE_4_ADDY {
+}
+.RELATIVE_4_PH1 {
+}
+.RELATIVE_4_PH2 {
+}
+.RELATIVE_4_PH3 {
+}
+.RELATIVE_5 {
+}
+.RELATIVE_5_ADDY {
+}
+.RELATIVE_5_PH1 {
+}
+.RELATIVE_5_PH2 {
+}
+.RELATIVE_5_PH3 {
+}
+.BANK_ACCT_NAME {
+}
+.BANK_ROUTING {
+}
+.BANK_ACCT_NUMBER {
+}
+.LAST_PAYMENT {
+}
+.DATE_LAST_PAYMENT {
+}
+.DATE_OF_LAST_CHARGE {
+}
+.BANKRUPTCY {
+}
+.DISCHARGED {
+}
+.PDF {
+}
+.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS {
+}
+.SSN {
+}
+.DOB {
+}
+.ATTORNEY {
+}
+.EMPLOYER {
+}
+.ACTION_CODES {
+}
+.LETTER_FLOWS {
+}
+.CALL_DISPOSITIONS {
 }

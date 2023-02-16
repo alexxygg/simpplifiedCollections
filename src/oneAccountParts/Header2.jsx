@@ -3,7 +3,7 @@ import allAccounts from "../allAccounts";
 function Header2({ object }) {
   return (
     <div className="header2">
-      <a className="a" href="/home">
+      <a className="a" href="/">
         <img src="/homeIcon.png" alt="" />
       </a>
       <div>

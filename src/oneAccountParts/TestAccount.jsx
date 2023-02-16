@@ -17,35 +17,35 @@ function TestAccount({ object }) {
           <button>Delete</button>
         </div>
         <div className="four">
-          <div className="objectKeyName">Principal:</div>
+          <div className="beforeInput PRINCIPAL">Principal:</div>
           <input
             readOnly
             type="text"
-            name="PRINCIPAL"
+            className="PRINCIPAL"
             onClick={handleClick}
             defaultValue={object.PRINCIPAL}
           />
-          <div className="objectKeyName">Payments:</div>
+          <div className="beforeInput PAYMENTS">Payments:</div>
           <input
             readOnly
             type="text"
-            name="PAYMENTS"
+            className="PAYMENTS"
             onClick={handleClick}
             defaultValue={object.PAYMENTS}
           />
-          <div className="objectKeyName">Balance:</div>
+          <div className="beforeInput BALANCE">Balance:</div>
           <input
             readOnly
             type="text"
-            name="BALANCE"
+            className="BALANCE"
             onClick={handleClick}
             defaultValue={object.BALANCE}
           />
-          <div className="objectKeyName">Linked Balance:</div>
+          <div className="beforeInput LINKED_BALANCE">Linked Balance:</div>
           <input
             readOnly
             type="text"
-            name="LINKED_BALANCE"
+            className="LINKED_BALANCE"
             onClick={handleClick}
             defaultValue={object.LINKED_BALANCE}
           />
@@ -56,181 +56,181 @@ function TestAccount({ object }) {
       </h1>
       <div className="section">
         <div className="four">
-          <div className="objectKeyName">Client:</div>
+          <div className="beforeInput CLIENT">Client:</div>
           <input
             readOnly
             type="text"
-            name="CLIENT"
+            className="CLIENT"
             onClick={handleClick}
             defaultValue={object.CLIENT}
           />
-          <div className="objectKeyName">Account Type:</div>
+          <div className="beforeInput ACCOUNT_TYPE">Account Type:</div>
           <input
             readOnly
             type="text"
-            name="ACCOUNT_TYPE"
+            className="ACCOUNT_TYPE"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_TYPE}
           />
-          <div className="objectKeyName">Status:</div>
+          <div className="beforeInput STATUS">Status:</div>
           <input
             readOnly
             type="text"
-            name="STATUS"
+            className="STATUS"
             onClick={handleClick}
             defaultValue={object.STATUS}
           />
-          <div className="objectKeyName">Creditor:</div>
+          <div className="beforeInput CREDITOR">Creditor:</div>
           <input
             readOnly
             type="text"
-            name="CREDITOR"
+            className="CREDITOR"
             onClick={handleClick}
             defaultValue={object.CREDITOR}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Account #:</div>
+          <div className="beforeInput ACCOUNT_NUMBER">Account #:</div>
           <input
             readOnly
             type="text"
-            name="ACCOUNT_NUMBER"
+            className="ACCOUNT_NUMBER"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_NUMBER}
           />
-          <div className="objectKeyName">Originated:</div>
+          <div className="beforeInput ORIGINATED">Originated:</div>
           <input
             readOnly
             type="text"
-            name="ORIGINATED"
+            className="ORIGINATED"
             onClick={handleClick}
             defaultValue={object.ORIGINATED}
           />
-          <div className="objectKeyName">Account Received:</div>
+          <div className="beforeInput ACCOUNT_RECEIVED">Account Received:</div>
           <input
             readOnly
             type="text"
-            name="ACCOUNT_RECEIVED"
+            className="ACCOUNT_RECEIVED"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_RECEIVED}
           />
-          <div className="objectKeyName">Imported on:</div>
+          <div className="beforeInput IMPORTED_ON">Imported on:</div>
           <input
             readOnly
             type="text"
-            name="IMPORTED_ON"
+            className="IMPORTED_ON"
             onClick={handleClick}
             defaultValue={object.IMPORTED_ON}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Collector:</div>
+          <div className="beforeInput COLLECTOR">Collector:</div>
           <input
             readOnly
             type="text"
-            name="COLLECTOR"
+            className="COLLECTOR"
             onClick={handleClick}
             defaultValue={object.COLLECTOR}
           />
-          <div className="objectKeyName">Client Claim #:</div>
+          <div className="beforeInput CLIENT_CLAIM_NUMBER">Client Claim #:</div>
           <input
             readOnly
             type="text"
-            name="CLIENT_CLAIM_NUMBER"
+            className="CLIENT_CLAIM_NUMBER"
             onClick={handleClick}
             defaultValue={object.CLIENT_CLAIM_NUMBER}
           />
-          <div className="objectKeyName">Charged Off:</div>
+          <div className="beforeInput CHARGED_OFF">Charged Off:</div>
           <input
             readOnly
             type="text"
-            name="CHARGED_OFF"
+            className="CHARGED_OFF"
             onClick={handleClick}
             defaultValue={object.CHARGED_OFF}
           />
-          <div className="objectKeyName">Purchased:</div>
+          <div className="beforeInput PURCHASED">Purchased:</div>
           <input
             readOnly
             type="text"
-            name="PURCHASED"
+            className="PURCHASED"
             onClick={handleClick}
             defaultValue={object.PURCHASED}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Queue:</div>
+          <div className="beforeInput QUEUE">Queue:</div>
           <input
             readOnly
             type="text"
-            name="QUEUE"
+            className="QUEUE"
             onClick={handleClick}
             defaultValue={object.QUEUE}
           />
-          <div className="objectKeyName">Last Payment:</div>
+          <div className="beforeInput LAST_PAYMENT">Last Payment:</div>
           <input
             readOnly
             type="text"
-            name="LAST_PAYMENT"
+            className="LAST_PAYMENT"
             onClick={handleClick}
             defaultValue={object.LAST_PAYMENT}
           />
-          <div className="objectKeyName">Next Work:</div>
+          <div className="beforeInput NEXT_WORK">Next Work:</div>
           <input
             readOnly
             type="text"
-            name="NEXT_WORK"
+            className="NEXT_WORK"
             onClick={handleClick}
             defaultValue={object.NEXT_WORK}
           />
-          <div className="objectKeyName">Debtor Payment ID:</div>
+          <div className="beforeInput DEBTOR_PMT_ID">Debtor Payment ID:</div>
           <input
             readOnly
             type="text"
-            name="DEBTOR_PMT_ID"
+            className="DEBTOR_PMT_ID"
             onClick={handleClick}
             defaultValue={object.DEBTOR_PMT_ID}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Referring:</div>
+          <div className="beforeInput REFERRING">Referring:</div>
           <input
             readOnly
             type="text"
-            name="REFERRING"
+            className="REFERRING"
             onClick={handleClick}
             defaultValue={object.REFERRING}
           />
-          <div className="objectKeyName">Age:</div>
+          <div className="beforeInput AGE">Age:</div>
           <input
             readOnly
             type="text"
-            name="AGE"
+            className="AGE"
             onClick={handleClick}
             defaultValue={object.AGE}
           />
-          <div className="objectKeyName">Delinq #1:</div>
+          <div className="beforeInput DELINQ_1">Delinq #1:</div>
           <input
             readOnly
             type="text"
-            name="DELINQ_1"
+            className="DELINQ_1"
             onClick={handleClick}
             defaultValue={object.DELINQ_1}
           />
-          <div className="objectKeyName">Payment Portal:</div>
+          <div className="beforeInput PAYMENT_PORTAL">Payment Portal:</div>
           <input
             readOnly
             type="text"
-            name="PAYMENT_PORTAL"
+            className="PAYMENT_PORTAL"
             onClick={handleClick}
             defaultValue={object.PAYMENT_PORTAL}
           />
         </div>
         <div>
-          <div className="objectKeyName">Sales Rep:</div>
+          <div className="beforeInput SALES_REP">Sales Rep:</div>
           <input
             readOnly
             type="text"
-            name="SALES_REP"
+            className="SALES_REP"
             onClick={handleClick}
             defaultValue={object.SALES_REP}
           />
@@ -241,247 +241,255 @@ function TestAccount({ object }) {
       </h1>
       <div className="section">
         <div className="four">
-          <div className="objectKeyName">Original Check #:</div>
+          <div className="beforeInput ORIGINAL_CHECK_NUMBER">
+            Original Check #:
+          </div>
           <input
             readOnly
             type="text"
-            name="ORIGINAL_CHECK_NUMBER"
+            className="ORIGINAL_CHECK_NUMBER"
             onClick={handleClick}
             defaultValue={object.ORIGINAL_CHECK_NUMBER}
           />
-          <div className="objectKeyName">Item A:</div>
+          <div className="beforeInput ITEM_A">Item A:</div>
           <input
             readOnly
             type="text"
-            name="ITEM_A"
+            className="ITEM_A"
             onClick={handleClick}
             defaultValue={object.ITEM_A}
           />
-          <div className="objectKeyName">Item B:</div>
+          <div className="beforeInput ITEM_B">Item B:</div>
           <input
             readOnly
             type="text"
-            name="ITEM_B"
+            className="ITEM_B"
             onClick={handleClick}
             defaultValue={object.ITEM_B}
           />
-          <div className="objectKeyName">Item C:</div>
+          <div className="beforeInput ITEM_C">Item C:</div>
           <input
             readOnly
             type="text"
-            name="ITEM_C"
+            className="ITEM_C"
             onClick={handleClick}
             defaultValue={object.LANDLORD_PHONE_NUMBER}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Landlord Phone #:</div>
+          <div className="beforeInput LANDLORD_PHONE_NUMBER">
+            Landlord Phone #:
+          </div>
           <input
             readOnly
             type="text"
-            name="LANDLORD_PHONE_NUMBER"
+            className="LANDLORD_PHONE_NUMBER"
             onClick={handleClick}
             defaultValue={object.LANDLORD_PHONE_NUMBER}
           />
-          <div className="objectKeyName">Rent Amount:</div>
+          <div className="beforeInput RENT_AMOUNT">Rent Amount:</div>
           <input
             readOnly
             type="text"
-            name="RENT_AMOUNT"
+            className="RENT_AMOUNT"
             onClick={handleClick}
             defaultValue={object.RENT_AMOUNT}
           />
-          <div className="objectKeyName">Product:</div>
+          <div className="beforeInput PRODUCT">Product:</div>
           <input
             readOnly
             type="text"
-            name="PRODUCT"
+            className="PRODUCT"
             onClick={handleClick}
             defaultValue={object.PRODUCT}
           />
-          <div className="objectKeyName">Prop Owner Address:</div>
+          <div className="beforeInput PROP_OWNER_ADDRESS">
+            Prop Owner Address:
+          </div>
           <input
             readOnly
             type="text"
-            name="PROP_OWNER_ADDRESS"
+            className="PROP_OWNER_ADDRESS"
             onClick={handleClick}
             defaultValue={object.PROP_OWNER_ADDRESS}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Prop:</div>
+          <div className="beforeInput PROP">Prop:</div>
           <input
             readOnly
             type="text"
-            name="PROP"
+            className="PROP"
             onClick={handleClick}
             defaultValue={object.PROP}
           />
-          <div className="objectKeyName">Prop Loan Amount:</div>
+          <div className="beforeInput PROP_LOAN_AMOUNT">Prop Loan Amount:</div>
           <input
             readOnly
             type="text"
-            name="PROP_LOAN_AMOUNT"
+            className="PROP_LOAN_AMOUNT"
             onClick={handleClick}
             defaultValue={object.PROP_LOAN_AMOUNT}
           />
-          <div className="objectKeyName">Prop Owner Lender:</div>
+          <div className="beforeInput PROP_OWNER_LENDER">
+            Prop Owner Lender:
+          </div>
           <input
             readOnly
             type="text"
-            name="PROP_OWNER_LENDER"
+            className="PROP_OWNER_LENDER"
             onClick={handleClick}
             defaultValue={object.PROP_OWNER_LENDER}
           />
-          <div className="objectKeyName">TLO POE:</div>
+          <div className="beforeInput TLO_POE">TLO POE:</div>
           <input
             readOnly
             type="text"
-            name="TLO_POE"
+            className="TLO_POE"
             onClick={handleClick}
             defaultValue={object.TLO_POE}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Co-Signer First:</div>
+          <div className="beforeInput CO_SIGNER_FIRST">Co-Signer First:</div>
           <input
             readOnly
             type="text"
-            name="CO_SIGNER_FIRST"
+            className="CO_SIGNER_FIRST"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_FIRST}
           />
-          <div className="objectKeyName">Co-Signer Last:</div>
+          <div className="beforeInput CO_SIGNER_LAST">Co-Signer Last:</div>
           <input
             readOnly
             type="text"
-            name="CO_SIGNER_LAST"
+            className="CO_SIGNER_LAST"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_LAST}
           />
-          <div className="objectKeyName">Co-Signer SSN:</div>
+          <div className="beforeInput CO_SIGN_SSN">Co-Signer SSN:</div>
           <input
             readOnly
             type="text"
-            name="CO_SIGN_SSN"
+            className="CO_SIGN_SSN"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_SSN}
           />
-          <div className="objectKeyName">TLO POE #:</div>
+          <div className="beforeInput TLO_POE_NUMBER">TLO POE #:</div>
           <input
             readOnly
             type="text"
-            name="TLO_POE_NUMBER"
+            className="TLO_POE_NUMBER"
             onClick={handleClick}
             defaultValue={object.TLO_POE_NUMBER}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">TLO Address:</div>
+          <div className="beforeInput TLO_ADDRESS">TLO Address:</div>
           <input
             readOnly
             type="text"
-            name="TLO_ADDRESS"
+            className="TLO_ADDRESS"
             onClick={handleClick}
             defaultValue={object.TLO_ADDRESS}
           />
-          <div className="objectKeyName">TLO City:</div>
+          <div className="beforeInput TLO_CITY">TLO City:</div>
           <input
             readOnly
             type="text"
-            name="TLO_CITY"
+            className="TLO_CITY"
             onClick={handleClick}
             defaultValue={object.TLO_CITY}
           />
-          <div className="objectKeyName">TLO State:</div>
+          <div className="beforeInput TLO_STATE">TLO State:</div>
           <input
             readOnly
             type="text"
-            name="TLO_STATE"
+            className="TLO_STATE"
             onClick={handleClick}
             defaultValue={object.TLO_STATE}
           />
-          <div className="objectKeyName">TLO Address 2:</div>
+          <div className="beforeInput TLO_ADDRESS_2">TLO Address 2:</div>
           <input
             readOnly
             type="text"
-            name="TLO_ADDRESS_2"
+            className="TLO_ADDRESS_2"
             onClick={handleClick}
             defaultValue={object.TLO_ADDRESS_2}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Relative 1:</div>
+          <div className="beforeInput RELATIVE_1">Relative 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1"
+            className="RELATIVE_1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1}
           />
-          <div className="objectKeyName">R-1 Address:</div>
+          <div className="beforeInput RELATIVE_1_ADDY">R-1 Address:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_ADDY"
+            className="RELATIVE_1_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_ADDY}
           />
-          <div className="objectKeyName">R-1 State:</div>
+          <div className="beforeInput RELATIVE_1_STATE">R-1 State:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_STATE"
+            className="RELATIVE_1_STATE"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_STATE}
           />
-          <div className="objectKeyName">R-1 City:</div>
+          <div className="beforeInput RELATIVE_1_CITY">R-1 City:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_CITY"
+            className="RELATIVE_1_CITY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_CITY}
           />
         </div>
         <div className="five">
-          <div className="objectKeyName">TLO City 2:</div>
+          <div className="beforeInput TLO_CITY_2">TLO City 2:</div>
           <input
             readOnly
             type="text"
-            name="TLO_CITY_2"
+            className="TLO_CITY_2"
             onClick={handleClick}
             defaultValue={object.TLO_CITY_2}
           />
-          <div className="objectKeyName">TLO State 2:</div>
+          <div className="beforeInput TLO_STATE_2">TLO State 2:</div>
           <input
             readOnly
             type="text"
-            name="TLO_STATE_2"
+            className="TLO_STATE_2"
             onClick={handleClick}
             defaultValue={object.TLO_STATE_2}
           />
-          <div className="objectKeyName">R-1 Phone 1:</div>
+          <div className="beforeInput RELATIVE_1_PH1">R-1 Phone 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_PH1"
+            className="RELATIVE_1_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH1}
           />
-          <div className="objectKeyName">R-1 Phone 2:</div>
+          <div className="beforeInput RELATIVE_1_PH2">R-1 Phone 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_PH2"
+            className="RELATIVE_1_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH2}
           />
-          <div className="objectKeyName">R-1 Phone 3:</div>
+          <div className="beforeInput RELATIVE_1_PH3">R-1 Phone 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_1_PH3"
+            className="RELATIVE_1_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH3}
           />
@@ -492,359 +500,365 @@ function TestAccount({ object }) {
       </h1>
       <div className="section">
         <div className="five">
-          <div className="objectKeyName">TLO Phone 1</div>
+          <div className="beforeInput TLO_PHONE">TLO Phone 1</div>
           <input
             readOnly
             type="text"
-            name="TLO_PHONE"
+            className="TLO_PHONE"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE}
           />
-          <div className="objectKeyName">TLO Phone 2</div>
+          <div className="beforeInput TLO_PHONE_2">TLO Phone 2</div>
           <input
             readOnly
             type="text"
-            name="TLO_PHONE_2"
+            className="TLO_PHONE_2"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_2}
           />
-          <div className="objectKeyName">TLO Phone 3</div>
+          <div className="beforeInput TLO_PHONE_3">TLO Phone 3</div>
           <input
             readOnly
             type="text"
-            name="TLO_PHONE_3"
+            className="TLO_PHONE_3"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_3}
           />
-          <div className="objectKeyName">TLO Phone 4</div>
+          <div className="beforeInput TLO_PHONE_4">TLO Phone 4</div>
           <input
             readOnly
             type="text"
-            name="TLO_PHONE_4"
+            className="TLO_PHONE_4"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_4}
           />
-          <div className="objectKeyName">TLO Phone 5</div>
+          <div className="beforeInput TLO_PHONE_5">TLO Phone 5</div>
           <input
             readOnly
             type="text"
-            name="TLO_PHONE_5"
+            className="TLO_PHONE_5"
             onClick={handleClick}
             defaultValue={object.TLO_PHONE_5}
           />
         </div>
         <div className="five">
-          <div className="objectKeyName">Relative 2:</div>
+          <div className="beforeInput RELATIVE_2">Relative 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_2"
+            className="RELATIVE_2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2}
           />
-          <div className="objectKeyName">R-2 Address:</div>
+          <div className="beforeInput RELATIVE_2_ADDY">R-2 Address:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_2_ADDY"
+            className="RELATIVE_2_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_ADDY}
           />
-          <div className="objectKeyName">R-2 Phone 1:</div>
+          <div className="beforeInput RELATIVE_2_PH1">R-2 Phone 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_2_PH1"
+            className="RELATIVE_2_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH1}
           />
-          <div className="objectKeyName">R-2 Phone 2:</div>
+          <div className="beforeInput RELATIVE_2_PH2">R-2 Phone 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_2_PH2"
+            className="RELATIVE_2_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH2}
           />
-          <div className="objectKeyName">R-2 Phone 3:</div>
+          <div className="beforeInput RELATIVE_2_PH3">R-2 Phone 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_2_PH3"
+            className="RELATIVE_2_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH3}
           />
         </div>
         <div className="five">
-          <div className="objectKeyName">Relative 3:</div>
+          <div className="beforeInput RELATIVE_3">Relative 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_3"
+            className="RELATIVE_3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3}
           />
-          <div className="objectKeyName">R-3 Address:</div>
+          <div className="beforeInput RELATIVE_3_ADDY">R-3 Address:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_3_ADDY"
+            className="RELATIVE_3_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_ADDY}
           />
-          <div className="objectKeyName">R-3 Phone 1:</div>
+          <div className="beforeInput RELATIVE_3_PH1">R-3 Phone 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_3_PH1"
+            className="RELATIVE_3_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH1}
           />
-          <div className="objectKeyName">R-3 Phone 2:</div>
+          <div className="beforeInput RELATIVE_3_PH2">R-3 Phone 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_3_PH2"
+            className="RELATIVE_3_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH2}
           />
-          <div className="objectKeyName">R-3 Phone 3:</div>
+          <div className="beforeInput RELATIVE_3_PH3">R-3 Phone 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_3_PH3"
+            className="RELATIVE_3_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH3}
           />
         </div>
         <div className="five">
-          <div className="objectKeyName">Relative 4:</div>
+          <div className="beforeInput RELATIVE_4">Relative 4:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_4"
+            className="RELATIVE_4"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4}
           />
-          <div className="objectKeyName">R-4 Address:</div>
+          <div className="beforeInput RELATIVE_4_ADDY">R-4 Address:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_4_ADDY"
+            className="RELATIVE_4_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_ADDY}
           />
-          <div className="objectKeyName">R-4 Phone 1:</div>
+          <div className="beforeInput RELATIVE_4_PH1">R-4 Phone 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_4_PH1"
+            className="RELATIVE_4_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH1}
           />
-          <div className="objectKeyName">R-4 Phone 2:</div>
+          <div className="beforeInput RELATIVE_4_PH2">R-4 Phone 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_4_PH2"
+            className="RELATIVE_4_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH2}
           />
-          <div className="objectKeyName">R-4 Phone 3:</div>
+          <div className="beforeInput RELATIVE_4_PH3">R-4 Phone 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_4_PH3"
+            className="RELATIVE_4_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH3}
           />
         </div>
         <div className="five">
-          <div className="objectKeyName">Relative 5:</div>
+          <div className="beforeInput RELATIVE_5">Relative 5:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_5"
+            className="RELATIVE_5"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5}
           />
-          <div className="objectKeyName">R-5 Address:</div>
+          <div className="beforeInput RELATIVE_5_ADDY">R-5 Address:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_5_ADDY"
+            className="RELATIVE_5_ADDY"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_ADDY}
           />
-          <div className="objectKeyName">R-5 Phone 1:</div>
+          <div className="beforeInput RELATIVE_5_PH1">R-5 Phone 1:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_5_PH1"
+            className="RELATIVE_5_PH1"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH1}
           />
-          <div className="objectKeyName">R-5 Phone 2:</div>
+          <div className="beforeInput RELATIVE_5_PH2">R-5 Phone 2:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_5_PH2"
+            className="RELATIVE_5_PH2"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH2}
           />
-          <div className="objectKeyName">R-5 Phone 3:</div>
+          <div className="beforeInput RELATIVE_5_PH3">R-5 Phone 3:</div>
           <input
             readOnly
             type="text"
-            name="RELATIVE_5_PH3"
+            className="RELATIVE_5_PH3"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH3}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Bank Account Name:</div>
+          <div className="beforeInput BANK_ACCT_NAME">Bank Account Name:</div>
           <input
             readOnly
             type="text"
-            name="BANK_ACCT_NAME"
+            className="BANK_ACCT_NAME"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NAME}
           />
-          <div className="objectKeyName">Bank Routing:</div>
+          <div className="beforeInput BANK_ROUTING">Bank Routing:</div>
           <input
             readOnly
             type="text"
-            name="BANK_ROUTING"
+            className="BANK_ROUTING"
             onClick={handleClick}
             defaultValue={object.BANK_ROUTING}
           />
-          <div className="objectKeyName">Bank Account #:</div>
+          <div className="beforeInput BANK_ACCT_NUMBER">Bank Account #:</div>
           <input
             readOnly
             type="text"
-            name="BANK_ACCT_NUMBER"
+            className="BANK_ACCT_NUMBER"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NUMBER}
           />
-          <div className="objectKeyName">Last Payment:</div>
+          <div className="beforeInput LAST_PAYMENT">Last Payment:</div>
           <input
             readOnly
             type="text"
-            name="LAST_PAYMENT"
+            className="LAST_PAYMENT"
             onClick={handleClick}
             defaultValue={object.LAST_PAYMENT}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Date Last Payment:</div>
+          <div className="beforeInput DATE_LAST_PAYMENT">
+            Date Last Payment:
+          </div>
           <input
             readOnly
             type="text"
-            name="DATE_LAST_PAYMENT"
+            className="DATE_LAST_PAYMENT"
             onClick={handleClick}
             defaultValue={object.DATE_LAST_PAYMENT}
           />
-          <div className="objectKeyName">Date of Last Charge:</div>
+          <div className="beforeInput DATE_OF_LAST_CHARGE">
+            Date of Last Charge:
+          </div>
           <input
             readOnly
             type="text"
-            name="DATE_OF_LAST_CHARGE"
+            className="DATE_OF_LAST_CHARGE"
             onClick={handleClick}
             defaultValue={object.DATE_OF_LAST_CHARGE}
           />
-          <div className="objectKeyName">Bankruptcy:</div>
+          <div className="beforeInput BANKRUPTCY">Bankruptcy:</div>
           <input
             readOnly
             type="text"
-            name="BANKRUPTCY"
+            className="BANKRUPTCY"
             onClick={handleClick}
             defaultValue={object.BANKRUPTCY}
           />
-          <div className="objectKeyName">Discharged:</div>
+          <div className="beforeInput DISCHARGED">Discharged:</div>
           <input
             readOnly
             type="text"
-            name="DISCHARGED"
+            className="DISCHARGED"
             onClick={handleClick}
             defaultValue={object.DISCHARGED}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">PDF:</div>
+          <div className="beforeInput PDF">PDF:</div>
           <input
             readOnly
             type="text"
-            name="PDF"
+            className="PDF"
             onClick={handleClick}
             defaultValue={object.PDF}
           />
-          <div className="objectKeyName">
+          <div className="beforeInput GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS">
             Generate Debtor Document Notifications:
           </div>
           <input
             readOnly
             type="text"
-            name="GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS"
+            className="GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS"
             onClick={handleClick}
             defaultValue={object.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS}
           />
-          <div className="objectKeyName">SSN:</div>
+          <div className="beforeInput SSN">SSN:</div>
           <input
             readOnly
             type="text"
-            name="SSN"
+            className="SSN"
             onClick={handleClick}
             defaultValue={object.SSN}
           />
-          <div className="objectKeyName">DOB:</div>
+          <div className="beforeInput DOB">DOB:</div>
           <input
             readOnly
             type="text"
-            name="DOB"
+            className="DOB"
             onClick={handleClick}
             defaultValue={object.DOB}
           />
         </div>
         <div className="four">
-          <div className="objectKeyName">Attorney:</div>
+          <div className="beforeInput ATTORNEY">Attorney:</div>
           <input
             readOnly
             type="text"
-            name="ATTORNEY"
+            className="ATTORNEY"
             onClick={handleClick}
             defaultValue={object.ATTORNEY}
           />
-          <div className="objectKeyName">Employer:</div>
+          <div className="beforeInput EMPLOYER">Employer:</div>
           <input
             readOnly
             type="text"
-            name="EMPLOYER"
+            className="EMPLOYER"
             onClick={handleClick}
             defaultValue={object.EMPLOYER}
           />
-          <div className="objectKeyName">Action Codes:</div>
+          <div className="beforeInput ACTION_CODES">Action Codes:</div>
           <input
             readOnly
             type="text"
-            name="ACTION_CODES"
+            className="ACTION_CODES"
             onClick={handleClick}
             defaultValue={object.ACTION_CODES}
           />
-          <div className="objectKeyName">Letter Flows:</div>
+          <div className="beforeInput LETTER_FLOWS">Letter Flows:</div>
           <input
             readOnly
             type="text"
-            name="LETTER_FLOWS"
+            className="LETTER_FLOWS"
             onClick={handleClick}
             defaultValue={object.LETTER_FLOWS}
           />
         </div>
         <div className="two">
-          <div className="objectKeyName">Call Dispositions:</div>
+          <div className="beforeInput CALL_DISPOSITIONS">
+            Call Dispositions:
+          </div>
           <input
             readOnly
             type="text"
-            name="CALL_DISPOSITIONS"
+            className="CALL_DISPOSITIONS"
             onClick={handleClick}
             defaultValue={object.CALL_DISPOSITIONS}
           />

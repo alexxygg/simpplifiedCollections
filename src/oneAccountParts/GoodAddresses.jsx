@@ -11,27 +11,38 @@ const GoodAddresses = ({ object }) => {
     setNewAddress("");
   };
 
+  //copy to clipboard
+  const handleClick = (e) => {
+    navigator.clipboard.writeText(e.currentTarget.value);
+  };
+
   return (
     <div className="addAddressDiv">
-      <h3>Add New Address</h3>
+      <h3>TLO Address List</h3>
+      <div className="newAddressList">
+        <div className="allGoodAddresses">
+          {newAddressList.map((address, index) => (
+            <input
+              readOnly
+              onClick={handleClick}
+              key={index}
+              defaultValue={address}
+            />
+          ))}
+        </div>
+      </div>{" "}
       <form onSubmit={handleAddAddress}>
-        <label htmlFor="newAddressInput">New Address:</label>
         <input
+          placeholder="123 Evergreen St, Somewhere, USA"
           type="text"
           id="newAddressInput"
           value={newAddress}
           onChange={(e) => setNewAddress(e.target.value)}
         />
-        <button type="submit">Add</button>
+        <button className="searchBtn" type="submit">
+          Add
+        </button>
       </form>
-      <div className="newAddressList">
-        <h3>New Addresses</h3>
-        <div className="allGoodAddresses">
-          {newAddressList.map((address, index) => (
-            <input key={index} defaultValue={address} />
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
