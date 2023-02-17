@@ -1,10 +1,32 @@
-import React from "react";
+import { useState, React } from "react";
+
+const dispositions = [
+  "--",
+  "LVM",
+  "N/A, NO VM",
+  "Not available Message",
+  "DISC",
+  "Wrong Number",
+  "Busy Tone",
+  "Call can't be completed Message",
+  "Call Failed",
+  "Bad Connection",
+];
 
 function Relatives({ object }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
   };
+
+  const [selectedDisposition, setSelectedDisposition] = useState(
+    dispositions[0]
+  );
+
+  const handleDispositionChange = (event) => {
+    setSelectedDisposition(event.target.value);
+  };
+
   return (
     <>
       {" "}
@@ -115,7 +137,7 @@ function Relatives({ object }) {
           className="RELATIVE_1_PH2"
           onClick={handleClick}
           defaultValue={object.RELATIVE_1_PH2}
-        />
+        />{" "}
         <div className="beforeInput RELATIVE_1_PH3">
           R1 &nbsp;
           <img src="/newNumber.png" />
@@ -128,6 +150,45 @@ function Relatives({ object }) {
           onClick={handleClick}
           defaultValue={object.RELATIVE_1_PH3}
         />{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="beforeInput RELATIVE_2_PH1">
           R2 &nbsp;
           <img src="/newNumber.png" />
@@ -164,6 +225,45 @@ function Relatives({ object }) {
           onClick={handleClick}
           defaultValue={object.RELATIVE_2_PH3}
         />
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="beforeInput RELATIVE_3_PH1">
           R3 &nbsp;
           <img src="/newNumber.png" />
@@ -199,7 +299,46 @@ function Relatives({ object }) {
           className="RELATIVE_3_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_3_PH3}
-        />
+        />{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="beforeInput RELATIVE_4_PH1">
           R4 &nbsp;
           <img src="/newNumber.png" />
@@ -235,7 +374,46 @@ function Relatives({ object }) {
           className="RELATIVE_4_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_4_PH3}
-        />
+        />{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
         <div className="beforeInput RELATIVE_5_PH1">
           R5 &nbsp;
           <img src="/newNumber.png" />
@@ -271,7 +449,46 @@ function Relatives({ object }) {
           className="RELATIVE_5_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_5_PH3}
-        />
+        />{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="disposition">
+          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
+          <select
+            value={selectedDisposition}
+            onChange={handleDispositionChange}
+          >
+            {dispositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </>
   );

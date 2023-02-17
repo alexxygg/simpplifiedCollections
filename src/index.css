@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   font-size: 14px;
   font-weight: 500;
-  background-color: rgb(140, 197, 84);
+  background-color: rgba(55, 189, 59, 0.5);
   margin: 0;
 }
 .App {
@@ -524,12 +524,23 @@ button:active {
 .homepage-component__button:hover {
   background-color: #538d55;
 }
+.disposition {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+select {
+  width: 50%;
+  background-color: #242424;
+  outline: solid black;
+}
 .section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  border: solid ghostwhite;
+  border: solid black;
   border-radius: 0px 0px 10px 10px;
   background-color: rgb(32, 35, 37);
   width: 100%;
@@ -543,24 +554,25 @@ input {
   height: 12px;
   color: ghostwhite;
   background-color: #242424;
-  font-weight: 600;
+  font-weight: 700;
   outline: solid black;
 }
 input:hover {
   background-color: #383636;
-  outline: solid #1cdb22 2px;
+  outline: solid rgb(55, 189, 59) 2px;
+  z-index: 2;
 }
 .beforeInput {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: max-content;
-  background-color: #1cdb22;
-  color: black;
+  background-color: rgba(55, 189, 59, 0.5);
+  color: white;
   height: 17px;
+  font-weight: 500;
   outline: black solid;
   margin: 2px auto;
-  font-weight: 700;
 }
 .beforeInput > img {
   height: 20px;
@@ -628,7 +640,6 @@ input:hover {
 .DOB,
 .ACTION_CODES,
 .LETTER_FLOWS,
-.CALL_DISPOSITIONS,
 .ORIGINAL_CHECK_NUMBER,
 .PRODUCT {
   width: 24.4%;
@@ -643,6 +654,10 @@ input:hover {
 .PDF,
 .GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS {
   width: 24.4% !important;
+}
+.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS {
+  min-width: 20% !important;
+  height: auto;
 }
 .RELATIVE_1_PH1,
 .RELATIVE_1_PH2,
@@ -680,10 +695,11 @@ input:hover {
   width: 16.1%;
   margin: 2px auto;
 }
-
+.disposition {
+  width: 33.3%;
+}
 .LANDLORD_PHONE_NUMBER {
   width: 11.2%;
-  margin: 2px auto;
 }
 .TLO_PHONE,
 .TLO_PHONE_2,
@@ -700,7 +716,8 @@ input:hover {
 .TLO_PHONE_5:is(div) {
   width: 5%;
 }
-.CLIENT {
+.CLIENT,
+.CALL_DISPOSITIONS {
   width: 49.4%;
   margin-right: auto;
 }

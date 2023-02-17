@@ -238,6 +238,7 @@ function TestAccount({ object }) {
       </div>
       <div className="title">Debt Information</div>
       <div className="section">
+        <div className="subTitle goldColor">Banking Information</div>
         <div className="beforeInput BANK_ACCT_NAME">Bank Account Name:</div>
         <input
           readOnly
@@ -308,14 +309,6 @@ function TestAccount({ object }) {
           defaultValue={object.PDF}
         />
         <div className="subTitle goldColor">DOB and SSN</div>
-        <div className="beforeInput SSN">SSN:</div>
-        <input
-          readOnly
-          type="text"
-          className="SSN"
-          onClick={handleClick}
-          defaultValue={object.SSN}
-        />
         <div className="beforeInput DOB">DOB:</div>
         <input
           readOnly
@@ -324,6 +317,14 @@ function TestAccount({ object }) {
           onClick={handleClick}
           defaultValue={object.DOB}
         />
+        <div className="beforeInput SSN">SSN:</div>
+        <input
+          readOnly
+          type="text"
+          className="SSN"
+          onClick={handleClick}
+          defaultValue={object.SSN}
+        />{" "}
         <div className="beforeInput ACTION_CODES">Action Codes:</div>
         <input
           readOnly
