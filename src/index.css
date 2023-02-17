@@ -464,7 +464,7 @@ button:active {
   border: solid black;
 }
 .addNumberDiv > form > div > input {
-  width: 100%;
+  max-width: 80%;
   text-align: end;
 }
 .addNumberDiv,
@@ -473,6 +473,7 @@ button:active {
 }
 #newAddressInput {
   min-width: max-content;
+  max-width: 80%;
 }
 .allThingsSection {
   display: flex;

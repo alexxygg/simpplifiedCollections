@@ -37,7 +37,8 @@ const GoodAddresses = ({ object }) => {
       </div>{" "}
       <form onSubmit={handleAddAddress}>
         <div>
-          <img src="/address.png" />
+          + &nbsp; <img src="/address.png" />
+          &nbsp;
           <input
             placeholder="123 Evergreen St, Somewhere, USA"
             type="text"

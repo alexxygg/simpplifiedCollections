@@ -44,7 +44,8 @@ function GoodNumbers({ object }) {
         }}
       >
         <div>
-          <img src="/newNumber.png" />
+          +&nbsp; <img src="/newNumber.png" />
+          &nbsp;
           <input
             placeholder="xxx-xxx-xxxx"
             type="text"
@@ -55,7 +56,8 @@ function GoodNumbers({ object }) {
           />
         </div>
         <div>
-          <img src="/location.png" />
+          +&nbsp; <img src="/location.png" />
+          &nbsp;
           <input
             placeholder="home,cell"
             type="text"
@@ -66,7 +68,8 @@ function GoodNumbers({ object }) {
           />
         </div>
         <div>
-          <img src="/timeZone.png" />
+          +&nbsp; <img src="/timeZone.png" />
+          &nbsp;
           <input
             placeholder="pacific,atlantic"
             type="text"
