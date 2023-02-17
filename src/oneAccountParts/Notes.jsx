@@ -12,7 +12,7 @@ function Notes({ object }) {
       <div className="notes">
         <p className="id otherBg">ID:</p>
         <p className="time otherBg">Last Modified:</p>
-        <div className="note otherBg">Note:</div>
+        <div className="note otherBg noteTitle">Note:</div>
         {allNotes.map((note) => (
           <Fragment key={note.id}>
             <p className="id">{note.id}</p>

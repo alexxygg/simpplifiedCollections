@@ -115,9 +115,8 @@ function Relatives({ object }) {
         />
         <div className="subTitle">Contact</div>
         <div className="beforeInput RELATIVE_1_PH1">
-          R1 &nbsp;
+          R1 #1: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#1:
         </div>
         <input
           readOnly
@@ -127,9 +126,7 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_1_PH1}
         />
         <div className="beforeInput RELATIVE_1_PH2">
-          R1 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#2:
+          R1 #2: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -139,9 +136,7 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_1_PH2}
         />{" "}
         <div className="beforeInput RELATIVE_1_PH3">
-          R1 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#3:
+          R1 #3: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -190,9 +185,7 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="beforeInput RELATIVE_2_PH1">
-          R2 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#1:
+          R2 #1: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -202,9 +195,7 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_2_PH1}
         />
         <div className="beforeInput RELATIVE_2_PH2">
-          R2 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#2:
+          R2 #2: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -214,9 +205,7 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_2_PH2}
         />
         <div className="beforeInput RELATIVE_2_PH3">
-          R2 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#3:
+          R2 #3: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -265,9 +254,7 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="beforeInput RELATIVE_3_PH1">
-          R3 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#1:
+          R3 #1: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -277,9 +264,7 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_3_PH1}
         />
         <div className="beforeInput RELATIVE_3_PH2">
-          R3 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#2:
+          R3 #2: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -289,9 +274,8 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_3_PH2}
         />
         <div className="beforeInput RELATIVE_3_PH3">
-          R3 &nbsp;
+          R3 #3: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#3:
         </div>
         <input
           readOnly
@@ -340,9 +324,7 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="beforeInput RELATIVE_4_PH1">
-          R4 &nbsp;
-          <img src="/newNumber.png" />
-          &nbsp;#1:
+          R4 #1: &nbsp; <img src="/newNumber.png" />
         </div>
         <input
           readOnly
@@ -352,9 +334,8 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_4_PH1}
         />
         <div className="beforeInput RELATIVE_4_PH2">
-          R4 &nbsp;
+          R4 #2: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#2:
         </div>
         <input
           readOnly
@@ -364,9 +345,8 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_4_PH2}
         />
         <div className="beforeInput RELATIVE_4_PH3">
-          R4 &nbsp;
+          R4 #3: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#3:
         </div>
         <input
           readOnly
@@ -415,9 +395,8 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="beforeInput RELATIVE_5_PH1">
-          R5 &nbsp;
+          R5 #1: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#1:
         </div>
         <input
           readOnly
@@ -427,9 +406,8 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_5_PH1}
         />
         <div className="beforeInput RELATIVE_5_PH2">
-          R5 &nbsp;
+          R5 #2: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#2:
         </div>
         <input
           readOnly
@@ -439,9 +417,8 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_5_PH2}
         />
         <div className="beforeInput RELATIVE_5_PH3">
-          R5 &nbsp;
+          R5 #3: &nbsp;
           <img src="/newNumber.png" />
-          &nbsp;#3:
         </div>
         <input
           readOnly
