@@ -20,7 +20,7 @@ function GoodNumbers({ object }) {
 
   return (
     <div className="addNumberDiv">
-      <h3>Good Numbers:</h3>
+      <div className="title less">Good Numbers:</div>
       <div className="allGoodNumbers">
         {GOOD_NUMBERS.map((number, index) => (
           <div key={index}>
@@ -76,7 +76,7 @@ function GoodNumbers({ object }) {
             }
           />
         </div>
-        <button className="searchBtn" type="submit">
+        <button className="searchBtn less" type="submit">
           Add
         </button>
       </form>

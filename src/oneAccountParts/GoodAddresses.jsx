@@ -18,28 +18,35 @@ const GoodAddresses = ({ object }) => {
 
   return (
     <div className="addAddressDiv">
-      <h3>TLO Address List</h3>
+      <div className="title less">TLO Address List</div>
       <div className="newAddressList">
         <div className="allGoodAddresses">
           {newAddressList.map((address, index) => (
-            <input
-              readOnly
-              onClick={handleClick}
-              key={index}
-              defaultValue={address}
-            />
+            <div>
+              {" "}
+              <img src="/address.png" />
+              <input
+                readOnly
+                onClick={handleClick}
+                key={index}
+                defaultValue={address}
+              />
+            </div>
           ))}
         </div>
       </div>{" "}
       <form onSubmit={handleAddAddress}>
-        <input
-          placeholder="123 Evergreen St, Somewhere, USA"
-          type="text"
-          id="newAddressInput"
-          value={newAddress}
-          onChange={(e) => setNewAddress(e.target.value)}
-        />
-        <button className="searchBtn" type="submit">
+        <div>
+          <img src="/address.png" />
+          <input
+            placeholder="123 Evergreen St, Somewhere, USA"
+            type="text"
+            id="newAddressInput"
+            value={newAddress}
+            onChange={(e) => setNewAddress(e.target.value)}
+          />
+        </div>
+        <button className="searchBtn less" type="submit">
           Add
         </button>
       </form>

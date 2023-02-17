@@ -24,14 +24,14 @@ function NewNote({ object, updateNotes }) {
       <textarea
         className="newNoteField"
         wrap="hard"
-        rows="5"
+        rows="8"
         maxLength="500"
         type="text"
         value={input}
         onChange={(event) => setInput(event.target.value)}
       />
       <button className="newNoteBtn" type="submit">
-        New +
+        Add +
       </button>
     </form>
   );
