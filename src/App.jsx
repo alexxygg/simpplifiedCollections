@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
 import Footer from "./Footer";
 import HeaderOtherLinks from "./HeaderOtherLinks";
+import Login from "./Login";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 element={<Accounts key={object.id} object={object} />}
               />
             ))}
+            <Route path="/login" element={<Login />} />
             <Route path="/accountsList" element={<AccountsList />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFound />} />

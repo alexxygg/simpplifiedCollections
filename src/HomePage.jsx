@@ -1,6 +1,18 @@
-import React from "react";
+import { React, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "Grey";
+
+    return () => {
+      // reset the background color when leaving the route
+      document.body.style.backgroundColor = null;
+    };
+  }, [location]);
+
   return (
     <div className="homePage">
       <div className="homepage-component">
@@ -54,7 +66,7 @@ function HomePage() {
               Categories can be added or removed to adapt system.
             </li>
             <li className="featureSmaller">
-              Color can be modified to linkings.
+              Color can be modified to likings.
             </li>{" "}
           </div>
           <video autoPlay loop>

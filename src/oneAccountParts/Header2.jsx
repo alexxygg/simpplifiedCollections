@@ -10,7 +10,7 @@ function Header2({ object }) {
         <img src="/previous.png" title="Previous Account" />
       </a>{" "}
       <div>
-        Account {object.id} of {allAccounts.length}
+        Account {object.id} of {allAccounts.length} &nbsp;
       </div>
       <a className="a" href={`/accounts/${object.id + 1}`}>
         <img src="/next.png" title="Next Account" />

@@ -20,7 +20,7 @@ function GoodNumbers({ object }) {
 
   return (
     <div className="addNumberDiv">
-      <div className="title less">Good Numbers:</div>
+      <div className="title ">Good Numbers:</div>
       <div className="allGoodNumbers">
         {GOOD_NUMBERS.map((number, index) => (
           <div key={index}>
@@ -44,7 +44,7 @@ function GoodNumbers({ object }) {
         }}
       >
         <div>
-          +&nbsp; <img src="/newNumber.png" />
+          <img src="/newNumber.png" />
           &nbsp;
           <input
             placeholder="xxx-xxx-xxxx"
@@ -56,7 +56,7 @@ function GoodNumbers({ object }) {
           />
         </div>
         <div>
-          +&nbsp; <img src="/location.png" />
+          <img src="/location.png" />
           &nbsp;
           <input
             placeholder="home,cell"
@@ -68,7 +68,7 @@ function GoodNumbers({ object }) {
           />
         </div>
         <div>
-          +&nbsp; <img src="/timeZone.png" />
+          <img src="/timeZone.png" />
           &nbsp;
           <input
             placeholder="pacific,atlantic"

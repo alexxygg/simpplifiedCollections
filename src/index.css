@@ -92,7 +92,7 @@ button:active {
   border-image: linear-gradient(90deg, #538d55 0%, #213547 100%);
   border-image-slice: 1;
   border-left: none;
-  width: 95%;
+  width: 100%;
 }
 .header > div:nth-of-type(2) {
   width: 50%;
@@ -481,26 +481,34 @@ button:active {
   justify-content: space-evenly;
   align-items: center;
 }
-.addNumberDiv > form > div {
-  width: 80%;
+.addNumberDiv > form > div,
+.addAddressDiv > form > div {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.addAddressDiv > form > :nth-child(1) {
-  min-width: 80% !important;
+
+.addNumberDiv > form > div > img,
+.addAddressDiv > form > div > img {
+  width: 5%;
+  margin: 0 7.5%;
 }
 .addAddressDiv > form > button,
 .addNumberDiv > form > button {
   height: 30px;
-  width: 50%;
+  width: 80%;
   border-radius: 2rem;
-  margin: 20px 0px;
+  margin: 20px 0%;
+  margin-left: 20%;
   border: solid black;
 }
+
+.addAddressDiv > form > div > input,
 .addNumberDiv > form > div > input {
-  max-width: 80%;
-  text-align: end;
+  width: 80%;
+  margin-right: 0;
+  text-align: center;
 }
 .addNumberDiv,
 .addAddressDiv {
@@ -517,8 +525,7 @@ button:active {
   margin-bottom: 30px;
 }
 .allThingsSection > * {
-  width: 92%;
-  padding: 0 2%;
+  width: 100%;
 }
 form > div > img,
 .allGoodAddresses > div > img {
@@ -530,6 +537,14 @@ form > div > img,
   align-items: center;
   margin: 5px 0px;
   width: 100%;
+}
+.allGoodAddresses > div > img {
+  margin: auto;
+  width: 5%;
+}
+.allGoodAddresses > div > input {
+  width: 80%;
+  text-align: center;
 }
 .allGoodNumbers,
 .allGoodAddresses {
@@ -543,6 +558,10 @@ form > div > img,
 .addAddressDiv {
   padding: 5px 10px;
 }
+.addAddressDiv > form {
+  display: flex;
+  flex-wrap: wrap;
+}
 .allGoodNumbers > div {
   width: 100%;
   display: flex;
@@ -554,9 +573,19 @@ form > div > img,
 .addNumberDiv > form > div > img {
   height: 20px;
 }
+.allGoodNumbers > div > img {
+  width: auto;
+  padding: 1%;
+  margin-right: 0;
+}
+.allGoodNumbers > div > div {
+  width: 20%;
+  overflow: hidden;
+}
 .allGoodNumbers > div > input {
   min-width: 100px;
-  width: 30%;
+  width: 28%;
+  margin-right: 2%;
   text-align: center;
 }
 .homepage-component {
@@ -634,14 +663,15 @@ input:hover {
 }
 
 .video > div {
-  width: 40%;
-  margin: auto;
-}
-.video > video {
-  max-width: 50%;
+  width: 25%;
   margin: auto;
   margin-top: 0;
-  border: solid white 2px;
+}
+.video > video {
+  max-width: 70%;
+  margin: auto;
+  margin-top: 0;
+  border: solid blue 3px;
   outline: solid black;
 }
 .feature,
@@ -655,11 +685,14 @@ input:hover {
 .featureTitle {
   background-color: black;
   outline: solid white;
+  width: 98%;
+  text-align: center;
 }
 .feature {
   font-size: small;
   margin: 10px;
 }
+
 .h3 {
   margin: 10px;
 }
@@ -686,9 +719,6 @@ input:hover {
 }
 .RELATIVE_5,
 .RELATIVE_5_ADDY,
-.TLO_ADDRESS_2,
-.TLO_CITY_2,
-.TLO_STATE_2,
 .TLO_POE,
 .TLO_POE_NUMBER,
 .EMPLOYER,
@@ -779,12 +809,6 @@ input:hover {
 .RELATIVE_5_PH1,
 .RELATIVE_5_PH2,
 .RELATIVE_5_PH3,
-.TLO_ADDRESS,
-.TLO_CITY,
-.TLO_STATE,
-.TLO_ADDRESS_2,
-.TLO_CITY_2,
-.TLO_STATE_2,
 .TLO_POE,
 .TLO_POE_NUMBER,
 .EMPLOYER,
@@ -819,7 +843,8 @@ input:hover {
   width: 5%;
 }
 .CLIENT,
-.CALL_DISPOSITIONS {
+.CALL_DISPOSITIONS,
+.TLO_ADDRESS_LIST {
   width: 49.4%;
   margin-right: auto;
 }

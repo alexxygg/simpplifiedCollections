@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function TLO({ object }) {
   //copy to clipboard
@@ -10,55 +10,22 @@ function TLO({ object }) {
       {" "}
       <div className="title">TLO</div>
       <div className="section">
-        <div className="subTitle">Address</div>
-        <div className="beforeInput TLO_ADDRESS">Address:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_ADDRESS"
-          onClick={handleClick}
-          defaultValue={object.TLO_ADDRESS}
-        />
-        <div className="beforeInput TLO_CITY">City:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_CITY"
-          onClick={handleClick}
-          defaultValue={object.TLO_CITY}
-        />
-        <div className="beforeInput TLO_STATE">State:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_STATE"
-          onClick={handleClick}
-          defaultValue={object.TLO_STATE}
-        />
-        <div className="beforeInput TLO_ADDRESS_2">Address 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_ADDRESS_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_ADDRESS_2}
-        />
-        <div className="beforeInput TLO_CITY_2">City 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_CITY_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_CITY_2}
-        />
-        <div className="beforeInput TLO_STATE_2">State 2:</div>
-        <input
-          readOnly
-          type="text"
-          className="TLO_STATE_2"
-          onClick={handleClick}
-          defaultValue={object.TLO_STATE_2}
-        />
+        <div className="subTitle">Address</div>{" "}
+        {object.TLO_ADDRESS_LIST &&
+          object.TLO_ADDRESS_LIST.map((address, index) => (
+            <Fragment key={index}>
+              <div className="beforeInput TLO_ADDRESS_LIST">
+                Address {index + 1}:
+              </div>
+              <input
+                readOnly
+                type="text"
+                className="TLO_ADDRESS_LIST"
+                onClick={handleClick}
+                defaultValue={address}
+              />
+            </Fragment>
+          ))}
         <div className="subTitle goldColor">Employer</div>
         <div className="beforeInput EMPLOYER">Employer:</div>
         <input

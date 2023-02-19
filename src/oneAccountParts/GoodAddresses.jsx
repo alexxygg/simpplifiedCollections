@@ -18,7 +18,7 @@ const GoodAddresses = ({ object }) => {
 
   return (
     <div className="addAddressDiv">
-      <div className="title less">TLO Address List</div>
+      <div className="title ">TLO Address List</div>
       <div className="newAddressList">
         <div className="allGoodAddresses">
           {newAddressList.map((address, index) => (
@@ -37,8 +37,7 @@ const GoodAddresses = ({ object }) => {
       </div>{" "}
       <form onSubmit={handleAddAddress}>
         <div>
-          + &nbsp; <img src="/address.png" />
-          &nbsp;
+          <img src="/address.png" />
           <input
             placeholder="123 Evergreen St, Somewhere, USA"
             type="text"
@@ -47,7 +46,7 @@ const GoodAddresses = ({ object }) => {
             onChange={(e) => setNewAddress(e.target.value)}
           />
         </div>
-        <button className="searchBtn less" type="submit">
+        <button className="searchBtn weirdBtn" type="submit">
           Add
         </button>
       </form>
