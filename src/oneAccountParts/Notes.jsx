@@ -11,13 +11,20 @@ function Notes({ object }) {
       <div className="title">Notes:</div>
       <div className="notes">
         <p className="id otherBg">ID:</p>
+        <p className="by otherBg">By:</p>
         <p className="time otherBg">Last Modified:</p>
         <div className="note otherBg noteTitle">Note:</div>
         {allNotes.map((note) => (
           <Fragment key={note.id}>
             <p className="id">{note.id}</p>
+            <p className="by">John Smith</p>
             <p className="time">{note.timestamp}</p>
-            <div className="note">{note.note}</div>
+            <div
+              className="note"
+              style={note.isImportant ? { color: "gold" } : {}}
+            >
+              {note.note}
+            </div>
           </Fragment>
         ))}
       </div>

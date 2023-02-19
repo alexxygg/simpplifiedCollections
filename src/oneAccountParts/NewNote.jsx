@@ -4,6 +4,8 @@ function NewNote({ object, updateNotes }) {
   const [allNotes, setAllNotes] = useState(object.NOTES || []);
   const [input, setInput] = useState("");
 
+  const [isImportant, setIsImportant] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const newNotes = [
@@ -12,11 +14,14 @@ function NewNote({ object, updateNotes }) {
         id: allNotes.length + 1,
         note: input,
         timestamp: new Date().toLocaleString(),
+        isImportant: isImportant,
       },
     ];
     setAllNotes(newNotes);
     updateNotes(newNotes);
     setInput("");
+    setIsImportant(false);
+    window.scrollTo(0, document.body.scrollHeight);
   };
 
   return (
@@ -30,9 +35,21 @@ function NewNote({ object, updateNotes }) {
         value={input}
         onChange={(event) => setInput(event.target.value)}
       />
-      <button className="newNoteBtn" type="submit">
-        Add +
-      </button>
+      <div className="importnatAndBtn">
+        {" "}
+        <label className="importantCheckbox">
+          <input
+            className="importantInput"
+            type="checkbox"
+            checked={isImportant}
+            onChange={(event) => setIsImportant(event.target.checked)}
+          />
+          Important
+        </label>
+        <button className="newNoteBtn" type="submit">
+          Add +
+        </button>
+      </div>{" "}
     </form>
   );
 }

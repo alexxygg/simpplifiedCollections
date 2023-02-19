@@ -164,7 +164,6 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_1_PH3}
         />{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -177,7 +176,6 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -190,7 +188,6 @@ function Relatives({ object }) {
           </select>
         </div>{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -233,7 +230,6 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_2_PH3}
         />
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -246,7 +242,6 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -259,7 +254,6 @@ function Relatives({ object }) {
           </select>
         </div>{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -303,7 +297,6 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_3_PH3}
         />{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -316,7 +309,6 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -329,7 +321,6 @@ function Relatives({ object }) {
           </select>
         </div>{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -374,7 +365,6 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_4_PH3}
         />{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -387,7 +377,6 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -400,7 +389,6 @@ function Relatives({ object }) {
           </select>
         </div>{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -446,7 +434,6 @@ function Relatives({ object }) {
           defaultValue={object.RELATIVE_5_PH3}
         />{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -459,7 +446,6 @@ function Relatives({ object }) {
           </select>
         </div>
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}
@@ -472,7 +458,6 @@ function Relatives({ object }) {
           </select>
         </div>{" "}
         <div className="disposition">
-          <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CODE</label>
           <select
             value={selectedDisposition}
             onChange={handleDispositionChange}

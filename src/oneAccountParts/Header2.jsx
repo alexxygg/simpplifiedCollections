@@ -6,30 +6,30 @@ function Header2({ object }) {
       <a className="a" href="/">
         <img src="/homeIcon.png" alt="" />
       </a>
-      <div>
-        {object.id} / {allAccounts.length} accounts worked
-      </div>
       <a className="a" href={`/accounts/${object.id - 1}`}>
         <img src="/previous.png" title="Previous Account" />
-      </a>
+      </a>{" "}
+      <div>
+        Account {object.id} of {allAccounts.length}
+      </div>
       <a className="a" href={`/accounts/${object.id + 1}`}>
         <img src="/next.png" title="Next Account" />
       </a>
-      <a className="a" href={`/accounts/${object.id + 1}`}>
+      {/* <a className="a" href={`/accounts/${object.id + 1}`}>
         <img src="/skip.png" title="Skip to Next Account" />
-      </a>
+      </a> */}
       <a className="a" href={`/accountsList`}>
         <img src="/worklistAllAccounts.png" title="Current worklist" />{" "}
       </a>
       <a className="a" href={`/accountsList`}>
         <img src="/changeWorklist.png" title="Change Worklist" />{" "}
       </a>
-      <a className="a" href={`/accountsList`}>
+      {/* <a className="a" href={`/accountsList`}>
         <img src="/worklistAllAccounts.png" title="Pause Current Worklist" />{" "}
       </a>
       <a className="a" href={`/accountsList`}>
         <img src="/worklistAllAccounts.png" title="Delete Current Worklist" />{" "}
-      </a>{" "}
+      </a>{" "} */}
       <div className="help-container">
         Help
         <div className="help-dropdown">

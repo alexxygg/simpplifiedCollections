@@ -12,6 +12,13 @@ const SearchBar = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // If the search term is empty, set the search results to false
+    if (searchTerm === "") {
+      setSearchResults(false);
+      setShowNoMatches(false);
+      return;
+    }
+
     // Filter the list of objects based on the selected search option and search term
     let results = allAccounts.filter((object) => {
       switch (searchBy) {
@@ -45,7 +52,7 @@ const SearchBar = () => {
     const timer = setTimeout(() => {
       setSearchResults(false);
       setShowNoMatches(false);
-    }, 20000);
+    }, 40000);
 
     return () => {
       clearTimeout(timer);
@@ -84,7 +91,7 @@ const SearchBar = () => {
         {searchResults ? (
           searchResults.length > 0 ? (
             <div className="results">
-              <div className="accountFromList otherBg">
+              <div className="accountFromResults otherBg">
                 <div>id</div>
                 <div>Account #</div>
                 <div>Client Claim #</div>
@@ -95,7 +102,7 @@ const SearchBar = () => {
               {searchResults.map((result) => (
                 <Link
                   key={result.id}
-                  className="accountFromList"
+                  className="accountFromResults"
                   to={`/accounts/${result.id}`}
                 >
                   <div>{result.id}</div>
