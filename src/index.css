@@ -195,7 +195,8 @@ button:active {
 .accountFromList,
 .footer,
 .allThingsSection,
-.importantCheckbox {
+.importantCheckbox,
+.copyDispositions {
   box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
@@ -682,6 +683,13 @@ input:hover {
 .center {
   text-align: center;
 }
+.copyDispositions {
+  user-select: none;
+  background-color: #21603a;
+  border: solid black;
+  outline: solid white 1px;
+}
+
 .featureTitle {
   background-color: black;
   outline: solid white;
