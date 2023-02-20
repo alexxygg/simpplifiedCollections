@@ -1,7 +1,8 @@
 import { useState, React } from "react";
-
+import DispoCopyNote from "./DispoCopyNote";
+import DispoSummary from "./DispoSummary";
 const dispositions = [
-  "",
+  " ",
   "Debtor took info",
   "3rd party took info",
   "POE took info",
@@ -18,13 +19,13 @@ const dispositions = [
   "Call can't be completed",
   "Not reachable",
   "Not available",
-  "Unassigned/unallocated # msg",
-  "Not accepting incoming calls",
+  "Unallocated # msg",
+  "Incoming calls disabled",
   "No routes found",
-  "Robo-Killer blocked our number",
+  "Robo-Killer blocked",
   "DSL noise",
   "Wrong number",
-  "'Wrong number' , hung up",
+  "'Wrong number', hung up",
   "Unrelated business",
   "Memory full msg",
   "Language Barrier",
@@ -35,12 +36,9 @@ const dispositions = [
 function Relatives({ object }) {
   //copy to clipboard
   const handleClick = (e) => {
-    navigator.clipboard.writeText(e.currentTarget.value);
+    navigator.clipboard.writeText(e.target.value);
   };
 
-  const copyAllDispos = () => {
-    navigator.clipboard.writeText(copyDispositions);
-  };
   const [selectedDispositions, setSelectedDispositions] = useState({
     RELATIVE_1_DISPOSITION: dispositions[0],
     RELATIVE_2_DISPOSITION: dispositions[0],
@@ -59,67 +57,6 @@ function Relatives({ object }) {
     RELATIVE_15_DISPOSITION: dispositions[0],
   });
 
-  const copyDispositions =
-    `${object.RELATIVE_1_PH1}` +
-    " " +
-    `${selectedDispositions.RELATIVE_1_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_1_PH2}` +
-    " " +
-    `${selectedDispositions.RELATIVE_2_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_1_PH3}` +
-    " " +
-    `${selectedDispositions.RELATIVE_3_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_2_PH1}` +
-    " " +
-    `${selectedDispositions.RELATIVE_4_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_2_PH2}` +
-    " " +
-    `${selectedDispositions.RELATIVE_5_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_2_PH3}` +
-    " " +
-    `${selectedDispositions.RELATIVE_6_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_3_PH1}` +
-    " " +
-    `${selectedDispositions.RELATIVE_7_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_3_PH2}` +
-    " " +
-    `${selectedDispositions.RELATIVE_8_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_3_PH3}` +
-    " " +
-    `${selectedDispositions.RELATIVE_9_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_4_PH1}` +
-    " " +
-    `${selectedDispositions.RELATIVE_10_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_4_PH2}` +
-    " " +
-    `${selectedDispositions.RELATIVE_11_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_4_PH3}` +
-    " " +
-    `${selectedDispositions.RELATIVE_12_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_5_PH1}` +
-    " " +
-    `${selectedDispositions.RELATIVE_13_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_5_PH2}` +
-    " " +
-    `${selectedDispositions.RELATIVE_14_DISPOSITION}` +
-    ", " +
-    `${object.RELATIVE_5_PH3}` +
-    " " +
-    `${selectedDispositions.RELATIVE_15_DISPOSITION}`;
-
   const handleDispositionChange = (event) => {
     const { name, value } = event.target;
     setSelectedDispositions({
@@ -130,7 +67,6 @@ function Relatives({ object }) {
 
   return (
     <>
-      {" "}
       <div className="title">Relatives</div>
       <div className="section">
         <div className="subTitle">Name and Address</div>
@@ -165,7 +101,7 @@ function Relatives({ object }) {
           className="RELATIVE_2_ADDY"
           onClick={handleClick}
           defaultValue={object.RELATIVE_2_ADDY}
-        />{" "}
+        />
         <div className="beforeInput RELATIVE_3">Relative 3 (R3):</div>
         <input
           readOnly
@@ -181,7 +117,7 @@ function Relatives({ object }) {
           className="RELATIVE_3_ADDY"
           onClick={handleClick}
           defaultValue={object.RELATIVE_3_ADDY}
-        />{" "}
+        />
         <div className="beforeInput RELATIVE_4">Relative 4 (R4):</div>
         <input
           readOnly
@@ -197,7 +133,7 @@ function Relatives({ object }) {
           className="RELATIVE_4_ADDY"
           onClick={handleClick}
           defaultValue={object.RELATIVE_4_ADDY}
-        />{" "}
+        />
         <div className="beforeInput RELATIVE_5">Relative 5 (R5):</div>
         <input
           readOnly
@@ -235,7 +171,7 @@ function Relatives({ object }) {
           className="RELATIVE_1_PH2"
           onClick={handleClick}
           defaultValue={object.RELATIVE_1_PH2}
-        />{" "}
+        />
         <div className="beforeInput RELATIVE_1_PH3">
           R1 #3: &nbsp; <img src="/newNumber.png" />
         </div>
@@ -245,7 +181,7 @@ function Relatives({ object }) {
           className="RELATIVE_1_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_1_PH3}
-        />{" "}
+        />
         <div className="disposition">
           <select
             name="RELATIVE_1_DISPOSITION"
@@ -271,7 +207,7 @@ function Relatives({ object }) {
               </option>
             ))}
           </select>
-        </div>{" "}
+        </div>
         <div className="disposition">
           <select
             name="RELATIVE_3_DISPOSITION"
@@ -340,7 +276,7 @@ function Relatives({ object }) {
               </option>
             ))}
           </select>
-        </div>{" "}
+        </div>
         <div className="disposition">
           <select
             name="RELATIVE_6_DISPOSITION"
@@ -384,7 +320,7 @@ function Relatives({ object }) {
           className="RELATIVE_3_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_3_PH3}
-        />{" "}
+        />
         <div className="disposition">
           <select
             name="RELATIVE_7_DISPOSITION"
@@ -410,7 +346,7 @@ function Relatives({ object }) {
               </option>
             ))}
           </select>
-        </div>{" "}
+        </div>
         <div className="disposition">
           <select
             name="RELATIVE_9_DISPOSITION"
@@ -455,7 +391,7 @@ function Relatives({ object }) {
           className="RELATIVE_4_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_4_PH3}
-        />{" "}
+        />
         <div className="disposition">
           <select
             name="RELATIVE_10_DISPOSITION"
@@ -481,7 +417,7 @@ function Relatives({ object }) {
               </option>
             ))}
           </select>
-        </div>{" "}
+        </div>
         <div className="disposition">
           <select
             name="RELATIVE_12_DISPOSITION"
@@ -527,7 +463,7 @@ function Relatives({ object }) {
           className="RELATIVE_5_PH3"
           onClick={handleClick}
           defaultValue={object.RELATIVE_5_PH3}
-        />{" "}
+        />
         <div className="disposition">
           <select
             name="RELATIVE_13_DISPOSITION"
@@ -553,7 +489,7 @@ function Relatives({ object }) {
               </option>
             ))}
           </select>
-        </div>{" "}
+        </div>
         <div className="disposition">
           <select
             name="RELATIVE_15_DISPOSITION"
@@ -567,20 +503,14 @@ function Relatives({ object }) {
             ))}
           </select>
         </div>
-        <button
-          onClick={copyAllDispos}
-          className="searchBtn"
-          style={{
-            borderRadius: "10px",
-            width: "max-content",
-            borderLeft: "solid black",
-          }}
-        >
-          Copy all numbers/disposition outcome notes.
-        </button>
-        <div cols="100" rows="7" className="copyDispositions" readOnly>
-          {copyDispositions}
-        </div>
+        <DispoCopyNote
+          selectedDispositions={selectedDispositions}
+          object={object}
+        />
+        <DispoSummary
+          selectedDispositions={selectedDispositions}
+          object={object}
+        />
       </div>
     </>
   );

@@ -22,15 +22,10 @@ const GoodAddresses = ({ object }) => {
       <div className="newAddressList">
         <div className="allGoodAddresses">
           {newAddressList.map((address, index) => (
-            <div>
+            <div key={index}>
               {" "}
               <img src="/address.png" />
-              <input
-                readOnly
-                onClick={handleClick}
-                key={index}
-                defaultValue={address}
-              />
+              <input readOnly onClick={handleClick} defaultValue={address} />
             </div>
           ))}
         </div>

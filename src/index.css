@@ -196,7 +196,7 @@ button:active {
 .footer,
 .allThingsSection,
 .importantCheckbox,
-.copyDispositions {
+.dispositionsNote {
   box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
@@ -213,6 +213,9 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   outline: solid black;
+}
+.blueColor {
+  color: blue;
 }
 .note,
 .id,
@@ -607,18 +610,43 @@ form > div > img,
 .disposition {
   display: flex;
   justify-content: center;
-  padding: 10px 0px 25px 0px;
-  width: 33.3%;
+  padding: 10px 5px 15px 5px;
+  margin: 2px 0px 10px 0px;
+  outline: solid black;
+  border-radius: 0px 0px 10px 10px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .disposition > select {
   width: 35%;
   margin-left: 50%;
+  background-color: #00000040;
 }
 select {
   width: 30%;
   background-color: #242424;
   outline: solid black;
   border: none;
+}
+select option {
+  background-color: rgb(19, 30, 40);
+  color: #ccc;
+}
+select option:hover {
+  background-color: #538d55;
+  color: #ccc;
+}
+
+select::-webkit-scrollbar {
+  width: 15px;
+}
+
+select::-webkit-scrollbar-track {
+  background-color: rgb(19, 30, 40);
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: #ccc;
 }
 .section {
   display: flex;
@@ -653,7 +681,7 @@ textarea:hover,
   z-index: 2;
 }
 select:hover {
-  background-color: #3b3c41;
+  background-color: rgba(0, 0, 0, 0.45);
 }
 input:hover {
   background-color: #383636;
@@ -683,9 +711,9 @@ input:hover {
 .center {
   text-align: center;
 }
-.copyDispositions {
+.dispositionsNote {
   user-select: none;
-  background-color: #21603a;
+  background-color: #25302a;
   border: solid black;
   outline: solid white 1px;
 }
