@@ -1,6 +1,10 @@
 import React from "react";
+import { globalUser } from "../Login";
 
 function Header({ object }) {
+  const ifUser = (globalUser) => {
+    return globalUser ? <div>{globalUser.USERNAME}</div> : null;
+  };
   return (
     <div className="header">
       <div className="logo">DebtDynamic</div>
@@ -13,8 +17,8 @@ function Header({ object }) {
         <div>Status: General New Import Last Updated: 2/7/2023</div>
       </div>
       <div>
-        <div>GUAS</div>
-        <div>OTAY34</div>
+        <div>USER:</div>
+        {ifUser(globalUser)}
       </div>
     </div>
   );

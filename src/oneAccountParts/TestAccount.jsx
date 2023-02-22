@@ -1,7 +1,8 @@
 import React from "react";
 import Others from "./AccountTemplate/Others";
-import Relatives from "./AccountTemplate/Relatives";
-import TLO from "./AccountTemplate/TLO";
+import Relatives from "./AccountTemplate/Relatives/Relatives";
+import TLO from "./AccountTemplate/TLO/TLO";
+import StatusComp from "./StatusComp";
 
 function TestAccount({ object }) {
   //copy to clipboard
@@ -98,14 +99,7 @@ function TestAccount({ object }) {
           onClick={handleClick}
           defaultValue={object.ACCOUNT_TYPE}
         />
-        <div className="beforeInput STATUS">Status:</div>
-        <input
-          readOnly
-          type="text"
-          className="STATUS"
-          onClick={handleClick}
-          defaultValue={object.STATUS}
-        />
+        <StatusComp object={object} />
         <div className="beforeInput CREDITOR">Creditor:</div>
         <input
           readOnly
@@ -340,14 +334,6 @@ function TestAccount({ object }) {
           className="LETTER_FLOWS"
           onClick={handleClick}
           defaultValue={object.LETTER_FLOWS}
-        />
-        <div className="beforeInput CALL_DISPOSITIONS">Call Dispositions:</div>
-        <input
-          readOnly
-          type="text"
-          className="CALL_DISPOSITIONS"
-          onClick={handleClick}
-          defaultValue={object.CALL_DISPOSITIONS}
         />
       </div>
       <Others object={object} />

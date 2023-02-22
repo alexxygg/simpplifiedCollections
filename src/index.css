@@ -21,7 +21,7 @@ a:hover {
   color: rgb(140, 197, 84);
 }
 body {
-  min-width: 600px;
+  min-width: 710px;
   min-height: 100vh;
   font-size: 14px;
   font-weight: 500;
@@ -73,7 +73,6 @@ button:active {
   background-color: rgb(32, 35, 37);
   display: flex;
   outline: 3px solid black;
-  border-top: none;
 }
 .header > div:nth-of-type(1) {
   max-width: 22%;
@@ -126,12 +125,12 @@ button:active {
 }
 @media (min-width: 1000px) {
   .App {
-    padding: 0vw 15vw;
+    padding: 0vw 5vw;
   }
 }
 @media (min-width: 1500px) {
   .App {
-    padding: 0vw 20vw;
+    padding: 0vw 10vw;
   }
 }
 .title {
@@ -146,26 +145,16 @@ button:active {
   color: gold;
   background: linear-gradient(
     -45deg,
-    #213547 0%,
-    #213547 10%,
-    #000 10%,
-    #000 20%,
-    #213547 20%,
-    #213547 30%,
-    #000 30%,
-    #000 40%,
-    #000 40%,
-    #000 50%,
-    #000 50%,
-    #000 60%,
-    #000 60%,
-    #000 70%,
-    #213547 70%,
-    #213547 80%,
-    #000 80%,
-    #000 90%,
-    #213547 90%,
-    #213547 100%
+    rgb(25, 25, 155) 0%,
+    rgb(25, 25, 155) 4.5%,
+    gold 4.5%,
+    gold 5%,
+    #000 5%,
+    #000 94.5%,
+    gold 94.5%,
+    gold 95%,
+    rgb(25, 25, 155) 95%,
+    rgb(25, 25, 155) 100%
   );
 }
 .title:nth-of-type(1) {
@@ -192,11 +181,11 @@ button:active {
 .searchBarDiv,
 .otherSites,
 .title,
-.accountFromList,
 .footer,
 .allThingsSection,
 .importantCheckbox,
-.dispositionsNote {
+.dispositionsNote,
+.accountsPage {
   box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
   user-select: none;
 }
@@ -306,28 +295,18 @@ button:active {
   align-items: center;
   outline: solid black;
 }
-.accountFromList,
 .accountFromResults {
   display: flex;
   margin: 10px 0px;
   padding: 5px 0px;
   background-color: #14171b;
-  outline: ghostwhite solid;
+  outline: ghostwhite solid 2px;
 }
 
-.accountFromList > div:nth-child(1),
-.accountFromList > div:nth-child(4) {
-  width: 10%;
-}
 .accountFromResults > div:nth-child(1) {
   width: 10%;
 }
-.accountFromList > div:nth-child(2),
-.accountFromList > div:nth-child(3),
-.accountFromList > div:nth-child(5),
-.accountFromList > div:nth-child(6) {
-  width: 20%;
-}
+
 .accountFromResults > div:nth-child(2),
 .accountFromResults > div:nth-child(3),
 .accountFromResults > div:nth-child(4),
@@ -444,10 +423,13 @@ button:active {
 .aboutPage,
 .accountsPage,
 .notFound {
-  min-height: 90.9vh;
+  max-height: max-content;
 }
 .accountsPage {
-  margin: 20px 0px;
+  margin: 10px 0px;
+  padding: 10px 5px 30px 5px;
+  outline: solid black;
+  background-color: #213547;
 }
 .help-container {
   position: relative;
@@ -457,7 +439,7 @@ button:active {
   display: none;
   position: absolute;
   z-index: 5;
-  padding-top: 12px;
+  padding-top: 11px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -617,9 +599,24 @@ form > div > img,
   width: 30%;
   background-color: rgba(0, 0, 0, 0.25);
 }
+.dispositionSmall {
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px 15px 5px;
+  margin: 2px 0px 10px 0px;
+  outline: solid black;
+  border-radius: 0px 0px 10px 10px;
+  width: 17%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
 .disposition > select {
   width: 35%;
   margin-left: 50%;
+  background-color: #00000040;
+}
+.dispositionSmall > select {
+  width: 55%;
+  margin-left: 30%;
   background-color: #00000040;
 }
 select {
@@ -628,26 +625,40 @@ select {
   outline: solid black;
   border: none;
 }
-select option {
+.select option {
   background-color: rgb(19, 30, 40);
   color: #ccc;
-}
-select option:hover {
-  background-color: #538d55;
-  color: #ccc;
+  transition: background-color 1s linear;
 }
 
-select::-webkit-scrollbar {
+select::-webkit-scrollbar,
+::-webkit-scrollbar {
   width: 15px;
 }
 
 select::-webkit-scrollbar-track {
   background-color: rgb(19, 30, 40);
 }
-
-select::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(
+    0deg,
+    blue 0%,
+    blue 0.7%,
+    rgb(61, 164, 64) 0.7%,
+    rgb(61, 164, 64) 99.3%,
+    blue 99.3%,
+    blue 100%
+  );
 }
+
+select::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background-color: rgb(19, 30, 40);
+  border: solid blue 3px;
+  border-radius: 2rem;
+  margin-bottom: 10px;
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -663,10 +674,10 @@ select::-webkit-scrollbar-thumb {
 input {
   overflow: hidden;
   text-align: end;
-  height: 12px;
+  height: 10px;
   color: ghostwhite;
   background-color: #242424;
-  font-weight: 700;
+  font-weight: 400;
   outline: solid black;
 }
 .importantInput {
@@ -716,6 +727,7 @@ input:hover {
   background-color: #25302a;
   border: solid black;
   outline: solid white 1px;
+  width: 100%;
 }
 
 .featureTitle {
@@ -744,7 +756,7 @@ input:hover {
   min-width: max-content;
   background-color: #21603a;
   color: white;
-  height: 17px;
+  height: 15.4px;
   font-weight: 500;
   outline: black solid;
   margin: 2px auto;
@@ -767,7 +779,6 @@ input:hover {
 .BALANCE,
 .LINKED_BALANCE,
 .ACCOUNT_TYPE,
-.STATUS,
 .CREDITOR,
 .ACCOUNT_NUMBER,
 .ORIGINATED,
@@ -814,6 +825,10 @@ input:hover {
 .ORIGINAL_CHECK_NUMBER,
 .PRODUCT {
   width: 24.4%;
+  margin: 2px auto;
+}
+.STATUS {
+  width: 25%;
   margin: 2px auto;
 }
 .RENT_AMOUNT,
@@ -879,7 +894,6 @@ input:hover {
   width: 5%;
 }
 .CLIENT,
-.CALL_DISPOSITIONS,
 .TLO_ADDRESS_LIST {
   width: 49.4%;
   margin-right: auto;

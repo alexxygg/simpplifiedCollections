@@ -1,37 +1,8 @@
 import { useState, React } from "react";
 import DispoCopyNote from "./DispoCopyNote";
 import DispoSummary from "./DispoSummary";
-const dispositions = [
-  " ",
-  "Debtor took info",
-  "3rd party took info",
-  "POE took info",
-  "Left VM",
-  "N/A, no VM",
-  "VM full",
-  "VM not set up",
-  "Ringing only",
-  "Dead air",
-  "Busy tone",
-  "Not accepting calls",
-  "Restricted ",
-  "Not callable",
-  "Call can't be completed",
-  "Not reachable",
-  "Not available",
-  "Unallocated # msg",
-  "Incoming calls disabled",
-  "No routes found",
-  "Robo-Killer blocked",
-  "DSL noise",
-  "Wrong number",
-  "'Wrong number', hung up",
-  "Unrelated business",
-  "Memory full msg",
-  "Language Barrier",
-  "Disconnected",
-  "DO NOT CALL",
-];
+
+import allDipositions from "../../../allDipositions";
 
 function Relatives({ object }) {
   //copy to clipboard
@@ -40,21 +11,21 @@ function Relatives({ object }) {
   };
 
   const [selectedDispositions, setSelectedDispositions] = useState({
-    RELATIVE_1_DISPOSITION: dispositions[0],
-    RELATIVE_2_DISPOSITION: dispositions[0],
-    RELATIVE_3_DISPOSITION: dispositions[0],
-    RELATIVE_4_DISPOSITION: dispositions[0],
-    RELATIVE_5_DISPOSITION: dispositions[0],
-    RELATIVE_6_DISPOSITION: dispositions[0],
-    RELATIVE_7_DISPOSITION: dispositions[0],
-    RELATIVE_8_DISPOSITION: dispositions[0],
-    RELATIVE_9_DISPOSITION: dispositions[0],
-    RELATIVE_10_DISPOSITION: dispositions[0],
-    RELATIVE_11_DISPOSITION: dispositions[0],
-    RELATIVE_12_DISPOSITION: dispositions[0],
-    RELATIVE_13_DISPOSITION: dispositions[0],
-    RELATIVE_14_DISPOSITION: dispositions[0],
-    RELATIVE_15_DISPOSITION: dispositions[0],
+    RELATIVE_1_DISPOSITION: allDipositions[0],
+    RELATIVE_2_DISPOSITION: allDipositions[0],
+    RELATIVE_3_DISPOSITION: allDipositions[0],
+    RELATIVE_4_DISPOSITION: allDipositions[0],
+    RELATIVE_5_DISPOSITION: allDipositions[0],
+    RELATIVE_6_DISPOSITION: allDipositions[0],
+    RELATIVE_7_DISPOSITION: allDipositions[0],
+    RELATIVE_8_DISPOSITION: allDipositions[0],
+    RELATIVE_9_DISPOSITION: allDipositions[0],
+    RELATIVE_10_DISPOSITION: allDipositions[0],
+    RELATIVE_11_DISPOSITION: allDipositions[0],
+    RELATIVE_12_DISPOSITION: allDipositions[0],
+    RELATIVE_13_DISPOSITION: allDipositions[0],
+    RELATIVE_14_DISPOSITION: allDipositions[0],
+    RELATIVE_15_DISPOSITION: allDipositions[0],
   });
 
   const handleDispositionChange = (event) => {
@@ -184,11 +155,12 @@ function Relatives({ object }) {
         />
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_1_DISPOSITION"
             value={selectedDispositions.RELATIVE_1_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -197,11 +169,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_2_DISPOSITION"
             value={selectedDispositions.RELATIVE_2_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -210,11 +183,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_3_DISPOSITION"
             value={selectedDispositions.RELATIVE_3_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -253,11 +227,12 @@ function Relatives({ object }) {
         />
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_4_DISPOSITION"
             value={selectedDispositions.RELATIVE_4_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -266,11 +241,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_5_DISPOSITION"
             value={selectedDispositions.RELATIVE_5_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -279,11 +255,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_6_DISPOSITION"
             value={selectedDispositions.RELATIVE_6_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -323,11 +300,12 @@ function Relatives({ object }) {
         />
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_7_DISPOSITION"
             value={selectedDispositions.RELATIVE_7_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -336,11 +314,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_8_DISPOSITION"
             value={selectedDispositions.RELATIVE_8_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -349,11 +328,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_9_DISPOSITION"
             value={selectedDispositions.RELATIVE_9_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -394,11 +374,12 @@ function Relatives({ object }) {
         />
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_10_DISPOSITION"
             value={selectedDispositions.RELATIVE_10_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -407,11 +388,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_11_DISPOSITION"
             value={selectedDispositions.RELATIVE_11_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -420,11 +402,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_12_DISPOSITION"
             value={selectedDispositions.RELATIVE_12_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -466,11 +449,12 @@ function Relatives({ object }) {
         />
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_13_DISPOSITION"
             value={selectedDispositions.RELATIVE_13_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -479,11 +463,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_14_DISPOSITION"
             value={selectedDispositions.RELATIVE_14_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>
@@ -492,11 +477,12 @@ function Relatives({ object }) {
         </div>
         <div className="disposition">
           <select
+            className="select"
             name="RELATIVE_15_DISPOSITION"
             value={selectedDispositions.RELATIVE_15_DISPOSITION}
             onChange={handleDispositionChange}
           >
-            {dispositions.map((disposition, index) => (
+            {allDipositions.map((disposition, index) => (
               <option key={index} value={disposition}>
                 {disposition}
               </option>

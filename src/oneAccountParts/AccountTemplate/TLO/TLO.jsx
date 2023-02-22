@@ -1,10 +1,31 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from "react";
+
+import DispoCopyNote from "./DispoCopyNote";
+import DispoSummary from "./DispoSummary";
+import allDipositions from "../../../allDipositions";
 
 function TLO({ object }) {
+  const [selectedDispositions, setSelectedDispositions] = useState({
+    TLO_1_DISPOSITION: allDipositions[0],
+    TLO_2_DISPOSITION: allDipositions[0],
+    TLO_3_DISPOSITION: allDipositions[0],
+    TLO_4_DISPOSITION: allDipositions[0],
+    TLO_5_DISPOSITION: allDipositions[0],
+  });
+
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
   };
+
+  const handleDispositionChange = (event) => {
+    const { name, value } = event.target;
+    setSelectedDispositions({
+      ...selectedDispositions,
+      [name]: value,
+    });
+  };
+
   return (
     <>
       {" "}
@@ -120,6 +141,84 @@ function TLO({ object }) {
           className="TLO_PHONE_5"
           onClick={handleClick}
           defaultValue={object.TLO_PHONE_5}
+        />
+        <div className="dispositionSmall">
+          <select
+            className="select"
+            name="TLO_1_DISPOSITION"
+            value={selectedDispositions.TLO_1_DISPOSITION}
+            onChange={handleDispositionChange}
+          >
+            {allDipositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="dispositionSmall">
+          <select
+            className="select"
+            name="TLO_2_DISPOSITION"
+            value={selectedDispositions.TLO_2_DISPOSITION}
+            onChange={handleDispositionChange}
+          >
+            {allDipositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="dispositionSmall">
+          <select
+            className="select"
+            name="TLO_3_DISPOSITION"
+            value={selectedDispositions.TLO_3_DISPOSITION}
+            onChange={handleDispositionChange}
+          >
+            {allDipositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="dispositionSmall">
+          <select
+            className="select"
+            name="TLO_4_DISPOSITION"
+            value={selectedDispositions.TLO_4_DISPOSITION}
+            onChange={handleDispositionChange}
+          >
+            {allDipositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>{" "}
+        <div className="dispositionSmall">
+          <select
+            className="select"
+            name="TLO_5_DISPOSITION"
+            value={selectedDispositions.TLO_5_DISPOSITION}
+            onChange={handleDispositionChange}
+          >
+            {allDipositions.map((disposition, index) => (
+              <option key={index} value={disposition}>
+                {disposition}
+              </option>
+            ))}
+          </select>
+        </div>
+        <DispoCopyNote
+          selectedDispositions={selectedDispositions}
+          object={object}
+        />
+        <DispoSummary
+          selectedDispositions={selectedDispositions}
+          object={object}
         />
       </div>
     </>

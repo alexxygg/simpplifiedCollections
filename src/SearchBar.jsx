@@ -26,8 +26,8 @@ const SearchBar = () => {
           return object.id.toString().includes(searchTerm);
         case "ACCOUNT_NUMBER":
           return object.ACCOUNT_NUMBER.toString().includes(searchTerm);
-        case "CLIENT_CLAIM_NUMBER":
-          return object.CLIENT_CLAIM_NUMBER.toString().includes(searchTerm);
+        case "NAME":
+          return object.NAME.toString().includes(searchTerm);
         case "TLO_PHONE":
           return object.TLO_PHONE.toString().includes(searchTerm);
         case "SSN":
@@ -72,7 +72,7 @@ const SearchBar = () => {
           >
             <option value="id">id</option>
             <option value="ACCOUNT_NUMBER">Account #</option>
-            <option value="CLIENT_CLAIM_NUMBER">Client Claim #</option>
+            <option value="NAME">Name</option>
             <option value="TLO_PHONE">TLO Phone #</option>
             <option value="SSN">SSN</option>
             <option value="DOB">DOB</option>
@@ -91,11 +91,11 @@ const SearchBar = () => {
         {searchResults ? (
           searchResults.length > 0 ? (
             <div className="results">
-              <div className="accountFromResults otherBg">
+              <div className="accountFromResults otherBg goldColor">
                 <div>id</div>
                 <div>Account #</div>
-                <div>Client Claim #</div>
-                <div>TLO Phone #</div>
+                <div>Name</div>
+                <div>Phone #</div>
                 <div>SSN</div>
                 <div>DOB</div>
               </div>
@@ -107,7 +107,7 @@ const SearchBar = () => {
                 >
                   <div>{result.id}</div>
                   <div>{result.ACCOUNT_NUMBER}</div>
-                  <div>{result.CLIENT_CLAIM_NUMBER}</div>
+                  <div>{result.NAME}</div>
                   <div>{result.TLO_PHONE}</div>
                   <div>{result.SSN}</div>
                   <div>{result.DOB}</div>

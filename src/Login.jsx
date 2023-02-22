@@ -1,55 +1,60 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+
+let globalUser = null; // Declare global variable outside of component
+
+const setGlobalUser = (user) => {
+  globalUser = user;
+};
+
+import loginAccounts from "./loginAccounts";
+const Login = ({ loggedIn, setLoggedIn }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [loggedIn, setLoggedIn] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // Here you would typically make a request to a server to validate the username and password.
-    // For simplicity, we'll just check if the username and password match some hard-coded values.
-    if (username === "user" && password === "password") {
-      setLoggedIn(true);
-      navigate("/accountsList");
-    } else {
-      setLoggedIn(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    for (let i = 0; i < loginAccounts.length; i++) {
+      const user = loginAccounts[i];
+      if (user.USERNAME === username && user.PASSWORD === password) {
+        setLoggedIn(true);
+        user.loggedIn = true;
+        setGlobalUser(user); // Update global variable with matched user
+        navigate("/accountsList");
+        return;
+      } else {
+        setLoggedIn(false);
+        user.loggedIn = false;
+        navigate("/login");
+      }
     }
   };
 
   return (
-    <div>
-      <h2>Login</h2>
-      {loggedIn ? (
-        <p>You are logged in.</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <label>
-            Username:
-            <input
-              type="text"
-              value={username}
-              onChange={(event) => setUsername(event.target.value)}
-            />
-          </label>
-          <br />
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-            />
-          </label>
-          <br />
-          <button type="submit">Log In</button>
-        </form>
-      )}
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Username:
+        <input
+          type="text"
+          value={username}
+          onChange={(event) => setUsername(event.target.value)}
+        />
+      </label>
+      <br />
+      <label>
+        Password:
+        <input
+          type="password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+      </label>
+      <br />
+      <button type="submit">Log In</button>
+    </form>
   );
 };
 
-export default Login;
+export { Login, globalUser, setGlobalUser };
