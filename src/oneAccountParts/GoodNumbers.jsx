@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function GoodNumbers({ object }) {
+function GoodNumbers({ object, handleCopyClick }) {
   const { GOOD_NUMBERS } = object;
   const [newNumber, setNewNumber] = useState({
     number: "",
@@ -16,6 +16,7 @@ function GoodNumbers({ object }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
+    handleCopyClick();
   };
 
   return (

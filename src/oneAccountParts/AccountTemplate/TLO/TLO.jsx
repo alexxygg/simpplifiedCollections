@@ -4,7 +4,7 @@ import DispoCopyNote from "./DispoCopyNote";
 import DispoSummary from "./DispoSummary";
 import allDipositions from "../../../allDipositions";
 
-function TLO({ object }) {
+function TLO({ object, handleCopyClick }) {
   const [selectedDispositions, setSelectedDispositions] = useState({
     TLO_1_DISPOSITION: allDipositions[0],
     TLO_2_DISPOSITION: allDipositions[0],
@@ -16,6 +16,7 @@ function TLO({ object }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
+    handleCopyClick();
   };
 
   const handleDispositionChange = (event) => {

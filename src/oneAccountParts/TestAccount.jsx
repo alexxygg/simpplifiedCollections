@@ -4,10 +4,11 @@ import Relatives from "./AccountTemplate/Relatives/Relatives";
 import TLO from "./AccountTemplate/TLO/TLO";
 import StatusComp from "./StatusComp";
 
-function TestAccount({ object }) {
+function TestAccount({ object, handleCopyClick }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
+    handleCopyClick();
   };
 
   return (
@@ -336,9 +337,9 @@ function TestAccount({ object }) {
           defaultValue={object.LETTER_FLOWS}
         />
       </div>
-      <Others object={object} />
-      <TLO object={object} />
-      <Relatives object={object} />
+      <Others object={object} handleCopyClick={handleCopyClick} />
+      <TLO object={object} handleCopyClick={handleCopyClick} />
+      <Relatives object={object} handleCopyClick={handleCopyClick} />
     </div>
   );
 }

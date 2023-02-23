@@ -4,10 +4,11 @@ import DispoSummary from "./DispoSummary";
 
 import allDipositions from "../../../allDipositions";
 
-function Relatives({ object }) {
+function Relatives({ object, handleCopyClick }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.target.value);
+    handleCopyClick();
   };
 
   const [selectedDispositions, setSelectedDispositions] = useState({

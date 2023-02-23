@@ -1,9 +1,10 @@
 import React from "react";
 
-function Others({ object }) {
+function Others({ object, handleCopyClick }) {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
+    handleCopyClick();
   };
   return (
     <>

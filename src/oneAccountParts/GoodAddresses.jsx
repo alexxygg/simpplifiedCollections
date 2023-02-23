@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const GoodAddresses = ({ object }) => {
+const GoodAddresses = ({ object, handleCopyClick }) => {
   const [newAddress, setNewAddress] = useState("");
   const [newAddressList, setNewAddressList] = useState(object.TLO_ADDRESS_LIST);
 
@@ -14,6 +14,7 @@ const GoodAddresses = ({ object }) => {
   //copy to clipboard
   const handleClick = (e) => {
     navigator.clipboard.writeText(e.currentTarget.value);
+    handleCopyClick();
   };
 
   return (
