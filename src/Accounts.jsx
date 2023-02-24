@@ -15,18 +15,22 @@ function Accounts({ object }) {
     setTimeout(() => setShowConfirmation(false), 2000);
   };
   return (
-    <div>
-      <SearchBar />
-      <Tabs object={object} />
-      <Header object={object} />
-      <Header2 object={object} />
-      <TestAccount object={object} handleCopyClick={handleCopyClick} />
-      <AddThingsSection object={object} handleCopyClick={handleCopyClick} />
-      <Notes object={object} />
-      <div id="popUp" className={showConfirmation ? "show" : ""}>
-        Copied!
+    <>
+      <div id="positionedHeader">
+        <SearchBar />
+        <Tabs object={object} />
+        <Header object={object} />
+        <Header2 object={object} />
       </div>
-    </div>
+      <div id="padded">
+        <TestAccount object={object} handleCopyClick={handleCopyClick} />
+        <AddThingsSection object={object} handleCopyClick={handleCopyClick} />
+        <Notes object={object} />
+        <div id="popUp" className={showConfirmation ? "show" : ""}>
+          Copied!
+        </div>
+      </div>
+    </>
   );
 }
 export default Accounts;

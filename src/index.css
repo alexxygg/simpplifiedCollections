@@ -5,7 +5,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(20, 28, 27);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +28,10 @@ body {
   background-color: rgb(61, 164, 64);
   margin: 0;
 }
-.App {
+#padded {
   padding: 0vw 2vw;
+  padding-top: 30vh;
+  top: 0;
 }
 button {
   background-color: blue;
@@ -56,6 +58,10 @@ button:active {
     background-color: #f9f9f9;
   }
 }
+#positionedHeader {
+  width: 100%;
+  position: absolute;
+}
 .account {
   display: flex;
   flex-wrap: wrap;
@@ -70,9 +76,10 @@ button:active {
 }
 .header {
   justify-content: space-between;
-  background-color: rgb(32, 35, 37);
+  background-color: rgb(20, 28, 27);
   display: flex;
   outline: 3px solid black;
+  width: 100%;
 }
 .header > div:nth-of-type(1) {
   max-width: 22%;
@@ -124,12 +131,12 @@ button:active {
   border-right: none;
 }
 @media (min-width: 1000px) {
-  .App {
+  #padded {
     padding: 0vw 5vw;
   }
 }
 @media (min-width: 1500px) {
-  .App {
+  #padded {
     padding: 0vw 10vw;
   }
 }
@@ -620,7 +627,7 @@ form > div > img,
 }
 select {
   width: 30%;
-  background-color: #242424;
+  background-color: rgb(20, 28, 27);
   outline: solid black;
   border: none;
 }
@@ -643,8 +650,8 @@ select::-webkit-scrollbar-track {
     0deg,
     blue 0%,
     blue 0.7%,
-    rgb(61, 164, 64) 0.7%,
-    rgb(61, 164, 64) 99.3%,
+    rgb(20, 28, 27) 0.7%,
+    rgb(20, 28, 27) 99.3%,
     blue 99.3%,
     blue 100%
   );
@@ -675,7 +682,7 @@ input {
   text-align: end;
   height: 10px;
   color: ghostwhite;
-  background-color: #242424;
+  background-color: rgb(20, 28, 27);
   font-weight: 400;
   outline: solid black;
 }
@@ -723,7 +730,7 @@ input:hover {
 }
 .dispositionsNote {
   user-select: none;
-  background-color: #25302a;
+  background-color: rgb(20, 28, 27);
   border: solid black;
   outline: solid white 1px;
   width: 100%;

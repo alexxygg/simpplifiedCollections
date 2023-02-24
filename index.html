@@ -12,6 +12,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Permanent+Marker&display=swap" rel="stylesheet">
   <!-- our favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico">
+
+  <script>// get a reference to the section element
+    const section = document.getElementById('positionedHeader');
+
+    // add an event listener for the scroll event
+    section.addEventListener('scroll', function () {
+      // check if the section has reached the top of the page
+      if (section.scrollTop === 0) {
+        // prevent further scrolling
+        section.style.overflowY = 'hidden';
+      } else {
+        // allow scrolling
+        section.style.overflowY = 'scroll';
+      }
+    });
+  </script>
 </head>
 
 <body>
