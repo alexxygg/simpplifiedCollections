@@ -28,10 +28,12 @@ body {
   background-color: rgb(61, 164, 64);
   margin: 0;
 }
+.navbar {
+  min-width: 710px;
+}
 #padded {
-  padding: 0vw 2vw;
-  padding-top: 30vh;
-  top: 0;
+  padding: 0px 2vw;
+  padding-top: 160px;
 }
 button {
   background-color: blue;
@@ -58,10 +60,7 @@ button:active {
     background-color: #f9f9f9;
   }
 }
-#positionedHeader {
-  width: 100%;
-  position: absolute;
-}
+
 .account {
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +70,6 @@ button:active {
 .header2,
 .tabs {
   display: flex;
-  height: min-content;
   user-select: none;
 }
 .header {
@@ -80,12 +78,11 @@ button:active {
   display: flex;
   outline: 3px solid black;
   width: 100%;
+  height: 60px;
 }
 .header > div:nth-of-type(1) {
-  max-width: 22%;
   margin-right: 3%;
-  margin: auto;
-  font-size: 23px;
+  font-size: 20px;
 }
 .logo {
   background-color: black;
@@ -98,13 +95,28 @@ button:active {
   border-image: linear-gradient(90deg, #538d55 0%, #213547 100%);
   border-image-slice: 1;
   border-left: none;
-  width: 100%;
+  width: 27%;
+  height: auto;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header > div:nth-of-type(2) {
-  width: 50%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header > div:nth-of-type(2) > div {
+  width: 100%;
 }
 .header > div:nth-of-type(3) {
-  width: 25%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header2 {
   justify-content: space-evenly;
@@ -112,6 +124,7 @@ button:active {
   outline: solid black;
   border-radius: 0px;
   align-items: center;
+  height: 40px;
 }
 .header2 > div {
   width: auto;
@@ -121,6 +134,7 @@ button:active {
   outline: solid black;
   border-radius: 0px !important;
   min-width: max-content;
+  height: 24px;
 }
 .tabs > div {
   border-right: solid black;
@@ -133,11 +147,14 @@ button:active {
 @media (min-width: 1000px) {
   #padded {
     padding: 0vw 5vw;
+
+    padding-top: 160px;
   }
 }
 @media (min-width: 1500px) {
   #padded {
     padding: 0vw 10vw;
+    padding-top: 160px;
   }
 }
 .title {
@@ -153,14 +170,14 @@ button:active {
   background: linear-gradient(
     -45deg,
     rgb(25, 25, 155) 0%,
-    rgb(25, 25, 155) 4.5%,
-    gold 4.5%,
-    gold 5%,
-    #000 5%,
-    #000 94.5%,
-    gold 94.5%,
-    gold 95%,
-    rgb(25, 25, 155) 95%,
+    rgb(25, 25, 155) 2.5%,
+    gold 2.5%,
+    gold 3.5%,
+    #000 3.5%,
+    #000 96.5%,
+    gold 96.5%,
+    gold 97.5%,
+    rgb(25, 25, 155) 97.5%,
     rgb(25, 25, 155) 100%
   );
 }
@@ -289,11 +306,16 @@ button:active {
   align-items: center;
 }
 .a > img {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 30px;
+  max-height: 30px;
+}
+.a > .img {
+  max-width: 27px;
+  max-height: 27px;
 }
 .otherSites {
-  height: auto;
+  margin-bottom: 23px;
+  bottom: 0;
   background-color: #213547;
   width: 100%;
   display: flex;
@@ -320,14 +342,33 @@ button:active {
 .accountFromResults > div:nth-child(6) {
   width: 22.5%;
 }
-.searchBarDiv {
+.searchBarDiv,
+.searchBarDivSmall {
   background-color: rgb(54, 69, 105);
   display: flex;
   flex-wrap: wrap;
   outline: black solid;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
-  margin-top: 20px !important;
+  height: 50px;
+  max-height: max-content;
 }
+.searchBarDivSmall {
+  width: 100%;
+  height: 28px;
+  flex-wrap: nowrap;
+}
+.searchBarDivSmall > .searchBy {
+  height: 15px;
+}
+.searchBarDivSmall > .searchBar {
+  height: 15px;
+}
+.searchBarDivSmall > .searchBtn {
+  height: 19px;
+}
+
 .searchBar:hover {
   background-color: #f9f9f9;
 }
@@ -335,7 +376,7 @@ button:active {
   width: 27%;
   margin: 1.5%;
   display: flex;
-  height: 3.3vh;
+  height: 20px;
   margin-right: 0%;
   justify-content: space-between;
   align-items: center;
@@ -350,7 +391,7 @@ button:active {
   color: black;
   width: 40%;
   padding: 0;
-  height: 3.3vh;
+  height: 20px;
   align-self: center;
   text-align: left;
   margin: 0;
@@ -363,7 +404,7 @@ button:active {
   width: 28%;
   margin: 1.5%;
   margin-left: 0%;
-  height: 4vh;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -389,7 +430,11 @@ button:active {
 .results {
   width: 100%;
   height: max-content;
+  background-color: #213547;
+  height: auto;
+  border-bottom: solid black 5px;
 }
+
 .notFound {
   display: flex;
   flex-direction: column;
@@ -418,22 +463,24 @@ button:active {
 .footer {
   bottom: 0;
   margin-top: auto;
-  height: 3.5vh;
+  height: 20px;
   width: 100%;
-  background-color: #213547;
+  background-color: rgb(20, 28, 27);
   border-top: solid black;
   position: fixed;
   z-index: 6;
 }
-.homePage,
 .aboutPage,
-.accountsPage,
-.notFound {
-  max-height: max-content;
+.searchBarDivAgain {
+  min-height: 94vh;
+}
+.searchBarDivAgainSmall > .searchBarDivSmall {
+  background: none;
+  outline: none;
 }
 .accountsPage {
-  margin: 10px 0px;
-  padding: 10px 5px 30px 5px;
+  /* margin: 10px 0px;
+  padding: 10px 5px 30px 5px; */
   outline: solid black;
   background-color: #213547;
 }
@@ -921,13 +968,13 @@ input:hover {
     bottom: -100px;
   }
   100% {
-    bottom: 27px;
+    bottom: 20px;
   }
 }
 
 @keyframes slideOut {
   0% {
-    bottom: 27px;
+    bottom: 20px;
   }
   100% {
     bottom: -100px;
@@ -944,4 +991,10 @@ input:hover {
 .TLO_ADDRESS_LIST {
   width: 49.4%;
   margin-right: auto;
+}
+.navbar {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  transition: all 0.5s ease-in;
 }

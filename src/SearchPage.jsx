@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import allAccounts from "./allAccounts";
 import { Link } from "react-router-dom";
 
-const SearchBar = () => {
+const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchBy, setSearchBy] = useState("id");
   const [searchResults, setSearchResults] = useState(false);
@@ -60,8 +60,8 @@ const SearchBar = () => {
   }, [searchResults, showNoMatches]);
 
   return (
-    <div className="searchBarDivAgainSmall">
-      <form className="searchBarDivSmall" action="#" onSubmit={handleSubmit}>
+    <div className="searchBarDivAgain">
+      <form className="searchBarDiv" action="#" onSubmit={handleSubmit}>
         <div className="searchBy">
           <label htmlFor="searchBy">Search by:</label>
           <select
@@ -88,42 +88,42 @@ const SearchBar = () => {
         <button className="searchBtn" type="submit" value="Submit">
           Search
         </button>
-      </form>
-      {searchResults ? (
-        searchResults.length > 0 ? (
-          <div className="results">
-            <div className="accountFromResults otherBg goldColor">
-              <div>id</div>
-              <div>Account #</div>
-              <div>Name</div>
-              <div>Phone #</div>
-              <div>SSN</div>
-              <div>DOB</div>
+        {searchResults ? (
+          searchResults.length > 0 ? (
+            <div className="results">
+              <div className="accountFromResults otherBg goldColor">
+                <div>id</div>
+                <div>Account #</div>
+                <div>Name</div>
+                <div>Phone #</div>
+                <div>SSN</div>
+                <div>DOB</div>
+              </div>
+              {searchResults.map((result) => (
+                <Link
+                  key={result.id}
+                  className="accountFromResults"
+                  to={`/accounts/${result.id}`}
+                >
+                  <div>{result.id}</div>
+                  <div>{result.ACCOUNT_NUMBER}</div>
+                  <div>{result.NAME}</div>
+                  <div>{result.TLO_PHONE}</div>
+                  <div>{result.SSN}</div>
+                  <div>{result.DOB}</div>
+                </Link>
+              ))}
+              <button onClick={clearSearch} className="clearSearch">
+                Clear Search
+              </button>
             </div>
-            {searchResults.map((result) => (
-              <Link
-                key={result.id}
-                className="accountFromResults"
-                to={`/accounts/${result.id}`}
-              >
-                <div>{result.id}</div>
-                <div>{result.ACCOUNT_NUMBER}</div>
-                <div>{result.NAME}</div>
-                <div>{result.TLO_PHONE}</div>
-                <div>{result.SSN}</div>
-                <div>{result.DOB}</div>
-              </Link>
-            ))}
-            <button onClick={clearSearch} className="clearSearch">
-              Clear Search
-            </button>
-          </div>
-        ) : showNoMatches ? (
-          <div className="results">No matches found.</div>
-        ) : null
-      ) : null}
+          ) : showNoMatches ? (
+            <div className="results">No matches found.</div>
+          ) : null
+        ) : null}
+      </form>
     </div>
   );
 };
 
-export default SearchBar;
+export default SearchPage;

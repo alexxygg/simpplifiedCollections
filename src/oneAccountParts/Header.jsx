@@ -9,12 +9,12 @@ function Header({ object }) {
     <div className="header">
       <div className="logo">DebtDynamic</div>
       <div>
-        <div>{object.TLO_ADDRESS}</div>
         <div>
-          ID: {object.id} ACCT #: {object.ACCOUNT_NUMBER}
+          Name: <span className="goldColor">{object.NAME.toUpperCase()}</span>{" "}
         </div>
-        <div className="goldColor">{object.NAME}</div>
-        <div>Status: General New Import Last Updated: 2/7/2023</div>
+        <div>
+          Status: <span className="goldColor">{object.STATUS}</span>{" "}
+        </div>
       </div>
       <div>
         <div>USER:</div>

@@ -14,6 +14,7 @@ import NotFound from "./NotFound";
 import Footer from "./Footer";
 import HeaderOtherLinks from "./HeaderOtherLinks";
 import { Login } from "./Login";
+import SearchPage from "./SearchPage";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -26,7 +27,6 @@ function App() {
   return (
     <>
       {" "}
-      <HeaderOtherLinks />
       <div className="App">
         <Router>
           <Routes>
@@ -44,10 +44,12 @@ function App() {
               path="/login"
             />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/search" element={<SearchPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </div>
+      <HeaderOtherLinks />
       <Footer />
     </>
   );
