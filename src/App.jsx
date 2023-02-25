@@ -12,7 +12,6 @@ import { useState } from "react";
 
 import NotFound from "./NotFound";
 import Footer from "./Footer";
-import HeaderOtherLinks from "./HeaderOtherLinks";
 import { Login } from "./Login";
 import SearchPage from "./SearchPage";
 
@@ -49,7 +48,6 @@ function App() {
           </Routes>
         </Router>
       </div>
-      <HeaderOtherLinks />
       <Footer />
     </>
   );

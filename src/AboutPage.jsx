@@ -1,10 +1,14 @@
 import React from "react";
+import HeaderOtherLinks from "./HeaderOtherLinks";
 
 function AboutPage() {
   return (
-    <div className="aboutPage">
-      <div>About Page</div>
-    </div>
+    <>
+      <HeaderOtherLinks />
+      <div className="aboutPage">
+        <div>About Page</div>
+      </div>
+    </>
   );
 }
 

@@ -60,69 +60,73 @@ const SearchBar = () => {
   }, [searchResults, showNoMatches]);
 
   return (
-    <div className="searchBarDivAgainSmall">
-      <form className="searchBarDivSmall" action="#" onSubmit={handleSubmit}>
-        <div className="searchBy">
-          <label htmlFor="searchBy">Search by:</label>
-          <select
-            id="searchBy"
-            name="searchBy"
-            value={searchBy}
-            onChange={(event) => setSearchBy(event.target.value)}
-          >
-            <option value="id">id</option>
-            <option value="ACCOUNT_NUMBER">Account #</option>
-            <option value="NAME">Name</option>
-            <option value="TLO_PHONE">TLO Phone #</option>
-            <option value="SSN">SSN</option>
-            <option value="DOB">DOB</option>
-          </select>
-        </div>{" "}
-        <input
-          className="searchBar"
-          type="text"
-          placeholder=" id, Account #, Phone #, SSN, DOB..."
-          value={searchTerm}
-          onChange={(event) => setSearchTerm(event.target.value)}
-        />
-        <button className="searchBtn" type="submit" value="Submit">
-          Search
-        </button>
-      </form>
-      {searchResults ? (
-        searchResults.length > 0 ? (
-          <div className="results">
-            <div className="accountFromResults otherBg goldColor">
-              <div>id</div>
-              <div>Account #</div>
-              <div>Name</div>
-              <div>Phone #</div>
-              <div>SSN</div>
-              <div>DOB</div>
+    <>
+      <div className="searchBarDivAgainSmall">
+        <form className="searchBarDivSmall" action="#" onSubmit={handleSubmit}>
+          <div className="searchBy">
+            <label htmlFor="searchBy">Search by: &nbsp;</label>
+            <select
+              id="searchBy"
+              name="searchBy"
+              value={searchBy}
+              onChange={(event) => setSearchBy(event.target.value)}
+            >
+              <option value="id">id</option>
+              <option value="ACCOUNT_NUMBER">Account #</option>
+              <option value="NAME">Name</option>
+              <option value="TLO_PHONE">TLO Phone #</option>
+              <option value="SSN">SSN</option>
+              <option value="DOB">DOB</option>
+            </select>
+          </div>{" "}
+          <input
+            className="searchBar"
+            type="text"
+            placeholder=" id, Account #, Phone #, SSN, DOB..."
+            value={searchTerm}
+            onChange={(event) => setSearchTerm(event.target.value)}
+          />
+          <button className="searchBtn" type="submit" value="Submit">
+            Search
+          </button>
+        </form>
+      </div>
+      <>
+        {searchResults ? (
+          searchResults.length > 0 ? (
+            <div className="results">
+              <div className="accountFromResults otherBg goldColor">
+                <div>id</div>
+                <div>Account #</div>
+                <div>Name</div>
+                <div>Phone #</div>
+                <div>SSN</div>
+                <div>DOB</div>
+              </div>
+              {searchResults.map((result) => (
+                <Link
+                  key={result.id}
+                  className="accountFromResults"
+                  to={`/accounts/${result.id}`}
+                >
+                  <div>{result.id}</div>
+                  <div>{result.ACCOUNT_NUMBER}</div>
+                  <div>{result.NAME}</div>
+                  <div>{result.TLO_PHONE}</div>
+                  <div>{result.SSN}</div>
+                  <div>{result.DOB}</div>
+                </Link>
+              ))}
+              <button onClick={clearSearch} className="clearSearch">
+                Clear Search
+              </button>
             </div>
-            {searchResults.map((result) => (
-              <Link
-                key={result.id}
-                className="accountFromResults"
-                to={`/accounts/${result.id}`}
-              >
-                <div>{result.id}</div>
-                <div>{result.ACCOUNT_NUMBER}</div>
-                <div>{result.NAME}</div>
-                <div>{result.TLO_PHONE}</div>
-                <div>{result.SSN}</div>
-                <div>{result.DOB}</div>
-              </Link>
-            ))}
-            <button onClick={clearSearch} className="clearSearch">
-              Clear Search
-            </button>
-          </div>
-        ) : showNoMatches ? (
-          <div className="results">No matches found.</div>
-        ) : null
-      ) : null}
-    </div>
+          ) : showNoMatches ? (
+            <div>No matches found.</div>
+          ) : null
+        ) : null}
+      </>
+    </>
   );
 };
 

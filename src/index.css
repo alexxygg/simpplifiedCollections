@@ -5,7 +5,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,15 +25,35 @@ body {
   min-height: 100vh;
   font-size: 14px;
   font-weight: 500;
-  background-color: rgb(61, 164, 64);
   margin: 0;
 }
+body {
+  background: linear-gradient(to right, blue, rgb(125, 17, 125));
+  background-size: 800% 800%;
+  animation: background-shift 60s linear infinite;
+}
+
+@keyframes background-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .navbar {
   min-width: 710px;
 }
 #padded {
   padding: 0px 2vw;
-  padding-top: 160px;
+  padding-top: 120px;
+}
+#paddedList {
+  padding: 0px 2vw;
 }
 button {
   background-color: blue;
@@ -74,11 +94,11 @@ button:active {
 }
 .header {
   justify-content: space-between;
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   display: flex;
   outline: 3px solid black;
   width: 100%;
-  height: 60px;
+  height: 45px;
 }
 .header > div:nth-of-type(1) {
   margin-right: 3%;
@@ -120,11 +140,12 @@ button:active {
 }
 .header2 {
   justify-content: space-evenly;
-  background-color: #213547;
+  background-color: #0c2235;
   outline: solid black;
   border-radius: 0px;
   align-items: center;
-  height: 40px;
+  height: 30px;
+  border-bottom: solid red 3px;
 }
 .header2 > div {
   width: auto;
@@ -147,14 +168,19 @@ button:active {
 @media (min-width: 1000px) {
   #padded {
     padding: 0vw 5vw;
-
-    padding-top: 160px;
+    padding-top: 120px;
+  }
+  #paddedList {
+    padding: 0vw 5vw;
   }
 }
 @media (min-width: 1500px) {
   #padded {
     padding: 0vw 10vw;
-    padding-top: 160px;
+    padding-top: 120px;
+  }
+  #paddedList {
+    padding: 0vw 10vw;
   }
 }
 .title {
@@ -164,21 +190,18 @@ button:active {
     2px 2px 0 black;
   height: 20px;
   margin: 7px 0px;
-  border-radius: 5px;
+  border-radius: 0px 10px 0px 10px;
   z-index: 3;
   color: gold;
   background: linear-gradient(
     -45deg,
-    rgb(25, 25, 155) 0%,
-    rgb(25, 25, 155) 2.5%,
-    gold 2.5%,
-    gold 3.5%,
+    #0c2235 0%,
+    #0c2235 3.5%,
     #000 3.5%,
+
     #000 96.5%,
-    gold 96.5%,
-    gold 97.5%,
-    rgb(25, 25, 155) 97.5%,
-    rgb(25, 25, 155) 100%
+    #0c2235 96.5%,
+    #0c2235 100%
   );
 }
 .title:nth-of-type(1) {
@@ -209,11 +232,12 @@ button:active {
 .importantCheckbox,
 .dispositionsNote,
 .accountsPage {
-  box-shadow: 5px 5px 10px #14171b, -5px -5px 10px #3b3c41;
+  box-shadow: 5px 5px 10px #08090b, -5px -5px 10px #3c3c40;
   user-select: none;
 }
 .notesDiv {
   padding-bottom: 3.5vh;
+  margin-bottom: 23px;
 }
 .newNoteField,
 .newNoteBtn,
@@ -314,14 +338,14 @@ button:active {
   max-height: 27px;
 }
 .otherSites {
-  margin-bottom: 23px;
-  bottom: 0;
   background-color: #213547;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   outline: solid black;
+  position: absolute;
+  z-index: 6;
 }
 .accountFromResults {
   display: flex;
@@ -361,16 +385,26 @@ button:active {
 }
 .searchBarDivSmall > .searchBy {
   height: 15px;
+  font-weight: 500;
+  min-width: max-content;
+  background-color: #1a2e3e;
+}
+.searchBarDivSmall > .searchBy > select {
+  min-width: max-content;
+  outline: none;
 }
 .searchBarDivSmall > .searchBar {
   height: 15px;
+  font-weight: 700;
+  width: auto;
 }
 .searchBarDivSmall > .searchBtn {
   height: 19px;
+  width: auto;
 }
 
 .searchBar:hover {
-  background-color: #f9f9f9;
+  background-color: #7d7878;
 }
 .searchBy {
   width: 27%;
@@ -381,13 +415,13 @@ button:active {
   justify-content: space-between;
   align-items: center;
   border: solid black;
-  outline: solid ghostwhite 2px;
+  outline: solid #7d7878 2px;
 }
 .searchBy > label {
   min-width: max-content;
 }
 .searchBar {
-  background-color: ghostwhite;
+  background-color: #7d7878;
   color: black;
   width: 40%;
   padding: 0;
@@ -396,7 +430,7 @@ button:active {
   text-align: left;
   margin: 0;
   border: solid black;
-  outline: solid ghostwhite 2px;
+  outline: solid #7d7878 2px;
 }
 .searchBtn,
 .searchBtn2,
@@ -412,7 +446,7 @@ button:active {
   border-radius: 0px 10px 10px 0px;
   border: solid black;
   border-left: none;
-  outline: solid ghostwhite 2px;
+  outline: solid #7d7878 2px;
 }
 .searchBtn2 {
   width: 50vw;
@@ -428,10 +462,9 @@ button:active {
   margin: 10px auto;
 }
 .results {
-  width: 100%;
+  width: 100% !important;
   height: max-content;
   background-color: #213547;
-  height: auto;
   border-bottom: solid black 5px;
 }
 
@@ -465,24 +498,42 @@ button:active {
   margin-top: auto;
   height: 20px;
   width: 100%;
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   border-top: solid black;
   position: fixed;
   z-index: 6;
+  border-top: solid red 4px;
 }
 .aboutPage,
 .searchBarDivAgain {
   min-height: 94vh;
+  padding-top: 23px;
+}
+#accountsPage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  padding: 2% 5%;
+}
+#accountsPage > div {
+  width: 100%;
 }
 .searchBarDivAgainSmall > .searchBarDivSmall {
   background: none;
   outline: none;
 }
+.searchBarDivAgainSmall {
+  width: auto;
+}
+
 .accountsPage {
   /* margin: 10px 0px;
   padding: 10px 5px 30px 5px; */
   outline: solid black;
   background-color: #213547;
+  width: 100%;
+  border-radius: 10px 0px 10px 0px;
 }
 .help-container {
   position: relative;
@@ -510,8 +561,9 @@ button:active {
   border: black solid;
 }
 .help-dropdown a:hover {
-  background-color: #2e3f4d;
+  background-color: #213547;
 }
+
 .addAddressDiv > form,
 .addNumberDiv > form {
   width: 100%;
@@ -551,7 +603,7 @@ button:active {
 }
 .addNumberDiv,
 .addAddressDiv {
-  background-color: #213547;
+  background-color: rgba(33, 53, 71, 0.7);
 }
 #newAddressInput {
   min-width: max-content;
@@ -636,7 +688,7 @@ form > div > img,
   background-color: #171717;
 }
 .homepage-component > div {
-  padding: 20px 10px;
+  padding: 20px 0px;
 }
 .homepage-component__title {
   font-size: 2rem;
@@ -674,7 +726,7 @@ form > div > img,
 }
 select {
   width: 30%;
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   outline: solid black;
   border: none;
 }
@@ -693,23 +745,14 @@ select::-webkit-scrollbar-track {
   background-color: rgb(19, 30, 40);
 }
 ::-webkit-scrollbar-track {
-  background-image: linear-gradient(
-    0deg,
-    blue 0%,
-    blue 0.7%,
-    rgb(20, 28, 27) 0.7%,
-    rgb(20, 28, 27) 99.3%,
-    blue 99.3%,
-    blue 100%
-  );
+  background-color: rgb(19, 21, 22);
 }
 
 select::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(19, 30, 40);
-  border: solid blue 3px;
-  border-radius: 2rem;
+  background-color: #213547;
   margin-bottom: 10px;
+  border: solid black;
 }
 
 .section {
@@ -719,7 +762,9 @@ select::-webkit-scrollbar-thumb,
   align-items: center;
   border: solid black;
   border-radius: 0px 0px 10px 10px;
-  background-color: #213547;
+  border-radius: 10px 0px 10px 0px;
+
+  background-color: rgba(33, 53, 71, 0.7);
   width: 100%;
   padding: 10px 20px;
   margin-bottom: 7px;
@@ -729,9 +774,15 @@ input {
   text-align: end;
   height: 10px;
   color: ghostwhite;
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   font-weight: 400;
   outline: solid black;
+}
+input[type="checkbox"] {
+  outline: none;
+}
+input[type="checkbox"]:hover {
+  outline: none;
 }
 .importantInput {
   outline: white solid 1px;
@@ -744,9 +795,7 @@ textarea:hover,
   outline: solid rgb(55, 189, 59) 2px;
   z-index: 2;
 }
-select:hover {
-  background-color: rgba(0, 0, 0, 0.45);
-}
+
 input:hover {
   background-color: #383636;
 }
@@ -756,12 +805,12 @@ input:hover {
 }
 
 .video > div {
-  width: 25%;
+  width: 45%;
   margin: auto;
   margin-top: 0;
 }
 .video > video {
-  max-width: 70%;
+  max-width: 40%;
   margin: auto;
   margin-top: 0;
   border: solid blue 3px;
@@ -777,7 +826,7 @@ input:hover {
 }
 .dispositionsNote {
   user-select: none;
-  background-color: rgb(20, 28, 27);
+  background-color: rgb(19, 21, 22);
   border: solid black;
   outline: solid white 1px;
   width: 100%;
@@ -807,7 +856,7 @@ input:hover {
   justify-content: center;
   align-items: center;
   min-width: max-content;
-  background-color: #21603a;
+  background-color: #0c2235;
   color: white;
   height: 15.4px;
   font-weight: 500;
@@ -816,7 +865,6 @@ input:hover {
 }
 .beforeInput > img {
   height: 20px;
-  background-color: #2e3f4d;
 }
 .RELATIVE_5,
 .RELATIVE_5_ADDY,
@@ -876,7 +924,8 @@ input:hover {
 .ACTION_CODES,
 .LETTER_FLOWS,
 .ORIGINAL_CHECK_NUMBER,
-.PRODUCT {
+.PRODUCT,
+.DAYS {
   width: 24.4%;
   margin: 2px auto;
 }

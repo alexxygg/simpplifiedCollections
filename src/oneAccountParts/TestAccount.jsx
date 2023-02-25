@@ -11,8 +11,32 @@ function TestAccount({ object, handleCopyClick }) {
     handleCopyClick();
   };
 
+  const importedOnDate = new Date(object.IMPORTED_ON);
+  const daysSince = Math.floor(
+    (new Date() - importedOnDate) / (1000 * 60 * 60 * 24)
+  );
+
   return (
     <div className="account accountFields">
+      <div className="title">...</div>
+      <div className="section">
+        <div className="beforeInput IMPORTED_ON">Imported on:</div>
+        <input
+          readOnly
+          type="text"
+          className="IMPORTED_ON"
+          onClick={handleClick}
+          defaultValue={object.IMPORTED_ON}
+        />{" "}
+        <div className="beforeInput DAYS">Age:</div>
+        <input
+          readOnly
+          type="text"
+          className="AGE"
+          onClick={handleClick}
+          defaultValue={`${daysSince} days since.`}
+        />
+      </div>
       <div className="title">Debt</div>
       <div className="section">
         <div className="beforeInput PRINCIPAL">Principal:</div>

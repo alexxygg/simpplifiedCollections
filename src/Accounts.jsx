@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import TestAccount from "./oneAccountParts/TestAccount";
 import Header from "./oneAccountParts/Header";
 import Header2 from "./oneAccountParts/Header2";
 import Notes from "./oneAccountParts/Notes";
 import Tabs from "./oneAccountParts/Tabs";
 import AddThingsSection from "./oneAccountParts/AddThingsSection";
-
+import HeaderOtherLinks from "./HeaderOtherLinks";
 function Accounts({ object }) {
   const [showConfirmation, setShowConfirmation] = useState(false);
 
@@ -13,9 +13,11 @@ function Accounts({ object }) {
     setShowConfirmation(true);
     setTimeout(() => setShowConfirmation(false), 2000);
   };
+
   return (
     <>
       <div className="navbar">
+        <HeaderOtherLinks />
         <Tabs object={object} />
         <Header object={object} />
         <Header2 object={object} />

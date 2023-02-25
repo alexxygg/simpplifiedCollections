@@ -7,7 +7,7 @@ function Header({ object }) {
   };
   return (
     <div className="header">
-      <div className="logo">DebtDynamic</div>
+      <div className="logo">DEBTDYNAMIC©</div>
       <div>
         <div>
           Name: <span className="goldColor">{object.NAME.toUpperCase()}</span>{" "}
