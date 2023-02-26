@@ -30,6 +30,7 @@ function App() {
         <Router>
           <Routes>
             <Route exact path="/" element={<HomePage />} />
+            <Route path="/accounts/search" element={<SearchPage />} />
             {allAccounts.map((object) => (
               <Route
                 key={object.id}
@@ -43,7 +44,6 @@ function App() {
               path="/login"
             />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/search" element={<SearchPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>

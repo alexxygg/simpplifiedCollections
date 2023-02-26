@@ -44,36 +44,39 @@ function GoodNumbers({ object, handleCopyClick }) {
           handleAddNumber();
         }}
       >
-        <div>
+        <div className="divMedium">
           <img src="/newNumber.png" />
           &nbsp;
           <input
             placeholder="xxx-xxx-xxxx"
             type="text"
+            className="input"
             value={newNumber.number}
             onChange={(event) =>
               setNewNumber({ ...newNumber, number: event.target.value })
             }
           />
         </div>
-        <div>
+        <div className="divMedium">
           <img src="/location.png" />
           &nbsp;
           <input
             placeholder="home,cell"
             type="text"
+            className="input"
             value={newNumber.type}
             onChange={(event) =>
               setNewNumber({ ...newNumber, type: event.target.value })
             }
           />
         </div>
-        <div>
+        <div className="divMedium">
           <img src="/timeZone.png" />
           &nbsp;
           <input
             placeholder="pacific,atlantic"
             type="text"
+            className="input"
             value={newNumber.area}
             onChange={(event) =>
               setNewNumber({ ...newNumber, area: event.target.value })

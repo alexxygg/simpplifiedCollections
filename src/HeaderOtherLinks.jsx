@@ -18,7 +18,7 @@ function HeaderOtherLinks() {
     <div className="otherSites">
       <a href="/">Home</a>
       <a href="/about">About</a>
-      <a href="/accountsList">Demo</a>
+      <a href="/accountsList">All Accounts</a>
       {ifUser(globalUser)}
     </div>
   );

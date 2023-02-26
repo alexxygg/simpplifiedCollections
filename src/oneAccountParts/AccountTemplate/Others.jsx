@@ -13,115 +13,139 @@ function Others({ object, handleCopyClick }) {
       <div className="section">
         {" "}
         <div className="subTitle goldColor">Items</div>
-        <div className="beforeInput ITEM_A">Item A:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_A"
-          onClick={handleClick}
-          defaultValue={object.ITEM_A}
-        />
-        <div className="beforeInput ITEM_B">Item B:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_B"
-          onClick={handleClick}
-          defaultValue={object.ITEM_B}
-        />
-        <div className="beforeInput ITEM_C">Item C:</div>
-        <input
-          readOnly
-          type="text"
-          className="ITEM_C"
-          onClick={handleClick}
-          defaultValue={object.ITEM_C}
-        />
-        <div className="subTitle goldColor">Props</div>
-        <div className="beforeInput PROP_OWNER_ADDRESS">
-          Prop Owner Address:
+        <div className="divMedium">
+          <div className="beforeInput medium">Item A:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.ITEM_A}
+          />
         </div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_OWNER_ADDRESS"
-          onClick={handleClick}
-          defaultValue={object.PROP_OWNER_ADDRESS}
-        />
-        <div className="beforeInput PROP">Prop:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP"
-          onClick={handleClick}
-          defaultValue={object.PROP}
-        />
-        <div className="beforeInput PROP_LOAN_AMOUNT">Prop Loan Amount:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_LOAN_AMOUNT"
-          onClick={handleClick}
-          defaultValue={object.PROP_LOAN_AMOUNT}
-        />
-        <div className="beforeInput PROP_OWNER_LENDER">Prop Owner Lender:</div>
-        <input
-          readOnly
-          type="text"
-          className="PROP_OWNER_LENDER"
-          onClick={handleClick}
-          defaultValue={object.PROP_OWNER_LENDER}
-        />
+        <div className="divMedium">
+          <div className="beforeInput medium">Item B:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.ITEM_B}
+          />
+        </div>
+        <div className="divMedium">
+          <div className="beforeInput medium">Item C:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.ITEM_C}
+          />
+        </div>
+        <div className="subTitle goldColor">Props</div>
+        <div className="div">
+          <div className="beforeInput small2 ">Prop Owner Address:</div>
+          <input
+            readOnly
+            type="text"
+            className="small2"
+            onClick={handleClick}
+            defaultValue={object.PROP_OWNER_ADDRESS}
+          />
+        </div>
+        <div className="div">
+          <div className="beforeInput small">Prop:</div>
+          <input
+            readOnly
+            type="text"
+            className="small"
+            onClick={handleClick}
+            defaultValue={object.PROP}
+          />
+        </div>
+        <div className="div">
+          <div className="beforeInput small2 ">Prop Loan Amount:</div>
+          <input
+            readOnly
+            type="text"
+            className="small2"
+            onClick={handleClick}
+            defaultValue={object.PROP_LOAN_AMOUNT}
+          />
+        </div>
+        <div className="div">
+          <div className="beforeInput small2 ">Prop Owner Lender:</div>
+          <input
+            readOnly
+            type="text"
+            className="small2"
+            onClick={handleClick}
+            defaultValue={object.PROP_OWNER_LENDER}
+          />
+        </div>
         <div className="subTitle">Co-Signer</div>{" "}
-        <div className="beforeInput CO_SIGNER_FIRST">Co-Signer First:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGNER_FIRST"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_FIRST}
-        />
-        <div className="beforeInput CO_SIGNER_LAST">Co-Signer Last:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGNER_LAST"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_LAST}
-        />
-        <div className="beforeInput CO_SIGN_SSN">Co-Signer SSN:</div>
-        <input
-          readOnly
-          type="text"
-          className="CO_SIGN_SSN"
-          onClick={handleClick}
-          defaultValue={object.CO_SIGNER_SSN}
-        />
+        <div className="divMedium">
+          <div className="beforeInput medium">Co-Signer First:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.CO_SIGNER_FIRST}
+          />
+        </div>
+        <div className="divMedium">
+          <div className="beforeInput medium">Co-Signer Last:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.CO_SIGNER_LAST}
+          />
+        </div>
+        <div className="divMedium">
+          <div className="beforeInput medium">Co-Signer SSN:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.CO_SIGNER_SSN}
+          />
+        </div>
         <div className="subTitle">Legal</div>
-        <div className="beforeInput ATTORNEY">Attorney:</div>
-        <input
-          readOnly
-          type="text"
-          className="ATTORNEY"
-          onClick={handleClick}
-          defaultValue={object.ATTORNEY}
-        />
-        <div className="beforeInput BANKRUPTCY">Bankruptcy:</div>
-        <input
-          readOnly
-          type="text"
-          className="BANKRUPTCY"
-          onClick={handleClick}
-          defaultValue={object.BANKRUPTCY}
-        />
-        <div className="beforeInput DISCHARGED">Discharged:</div>
-        <input
-          readOnly
-          type="text"
-          className="DISCHARGED"
-          onClick={handleClick}
-          defaultValue={object.DISCHARGED}
-        />
+        <div className="divMedium">
+          <div className="beforeInput medium">Attorney:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.ATTORNEY}
+          />
+        </div>
+        <div className="divMedium">
+          <div className="beforeInput medium">Bankruptcy:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.BANKRUPTCY}
+          />
+        </div>
+        <div className="divMedium">
+          <div className="beforeInput medium">Discharged:</div>
+          <input
+            readOnly
+            type="text"
+            className="medium"
+            onClick={handleClick}
+            defaultValue={object.DISCHARGED}
+          />
+        </div>
       </div>
     </>
   );

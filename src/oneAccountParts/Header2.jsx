@@ -4,7 +4,7 @@ import SearchBar from "../SearchBar";
 function Header2({ object }) {
   return (
     <div className="header2">
-      <a className="a" href="/">
+      <a className="a" href="/search">
         <img src="/homeIcon.png" alt="" className="img" />
       </a>
       <div className="help-container">
@@ -58,6 +58,9 @@ function Header2({ object }) {
       <a className="a" href={`/accountsList`}>
         <img src="/worklistAllAccounts.png" title="Delete Current Worklist" />{" "}
       </a>{" "} */}{" "}
+      <a className="a" href="/accounts/search" target="_blank">
+        <img src="/homeIcon.png" alt="" className="img" />
+      </a>{" "}
       <SearchBar />
     </div>
   );

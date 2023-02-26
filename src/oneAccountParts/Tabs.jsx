@@ -4,7 +4,7 @@ const Tab = ({ title, selected, onClick }) => (
   <div
     onClick={onClick}
     style={{
-      backgroundColor: selected ? "rgb(20, 28, 27)" : "#213547",
+      backgroundColor: selected ? "rgb(19, 21, 22)" : "#213547",
       cursor: "pointer",
       width: "100%",
       color: selected ? "rgb(140, 197, 84)" : "",

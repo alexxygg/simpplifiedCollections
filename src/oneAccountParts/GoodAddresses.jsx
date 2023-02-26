@@ -32,16 +32,14 @@ const GoodAddresses = ({ object, handleCopyClick }) => {
         </div>
       </div>{" "}
       <form onSubmit={handleAddAddress}>
-        <div>
-          <img src="/address.png" />
-          <input
-            placeholder="123 Evergreen St, Somewhere, USA"
-            type="text"
-            id="newAddressInput"
-            value={newAddress}
-            onChange={(e) => setNewAddress(e.target.value)}
-          />
-        </div>
+        <img src="/address.png" />
+        <input
+          placeholder="123 Evergreen St, Somewhere, USA"
+          type="text"
+          className="input"
+          value={newAddress}
+          onChange={(e) => setNewAddress(e.target.value)}
+        />
         <button className="searchBtn weirdBtn" type="submit">
           Add
         </button>

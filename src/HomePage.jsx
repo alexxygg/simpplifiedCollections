@@ -17,11 +17,9 @@ function HomePage() {
   return (
     <>
       <HeaderOtherLinks />
-      <div className="homePage">
-        <div className="homepage-component">
-          <h1 className="featureTitle homepage-component__title logo">
-            DebtDynamic
-          </h1>
+      <div id="paddedList2">
+        <div className="homepage">
+          <h1 className="featureTitle homepageTitle logo">DebtDynamic</h1>
           <h2 className="goldColor leftAlign featureTitle">
             "Revolutionize account managing."
           </h2>{" "}
@@ -62,9 +60,8 @@ function HomePage() {
                 {" "}
                 With our <span className="goldColor">Important Note</span>{" "}
                 feature you can mark your most critical notes as important with
-                a simple checkbox. By selecting this option, the text color of
-                the note will change to gold, making it much easier to spot at a
-                glance.
+                a simple checkbox. The text color will change, making it much
+                easier to spot at a glance.
               </div>
               <li className="featureSmaller">
                 Categories can be added or removed to adapt system.
@@ -85,7 +82,7 @@ function HomePage() {
             </h2>
           </div>
           <a href="/accountsList">
-            <button className="searchBtn2">Demo</button>
+            <button className="searchBtn2">Try the DEMO!</button>
           </a>
         </div>
       </div>

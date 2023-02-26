@@ -28,18 +28,20 @@ function StatusComp({ object }) {
 
   return (
     <>
-      <div className="beforeInput STATUS">Status:</div>
-      <select
-        className="STATUS"
-        onChange={handleDispositionChange}
-        defaultValue={object.STATUS}
-      >
-        {allStatusCodes.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+      <div className="divBigger">
+        <div className="beforeInput small">Status:</div>
+        <select
+          className="bigger"
+          onChange={handleDispositionChange}
+          defaultValue={object.STATUS}
+        >
+          {allStatusCodes.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </div>
       {/* object.STATUS being updated on change */}
       {/* <div>{object.STATUS}</div> */}
     </>
