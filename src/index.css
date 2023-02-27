@@ -381,9 +381,9 @@ button:active {
   margin-top: 10px !important;
 }
 .middle {
-  min-width: 80% !important;
-  max-width: 80% !important;
-  margin-left: 10%;
+  min-width: 70% !important;
+  max-width: 70% !important;
+  margin-left: 15%;
 }
 .searchBarDiv,
 .searchBarDivSmall {
@@ -529,14 +529,14 @@ button:active {
 .notFound > div:nth-of-type(1) {
   font-size: xx-large;
   height: 50%;
-  background-color: gold;
+  background-color: red;
   padding-top: 20px;
   border-radius: 5px 5px 0px 0px;
 }
 .notFound > div:nth-of-type(2) {
   font-size: small;
   height: 50%;
-  background-color: gold;
+  background-color: red;
   padding-bottom: 50px;
   padding-top: 30px;
 }
