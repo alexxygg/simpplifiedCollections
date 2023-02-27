@@ -34,110 +34,115 @@ function TLO({ object, handleCopyClick }) {
         <div className="subTitle">Address</div>
         {object.TLO_ADDRESS_LIST &&
           object.TLO_ADDRESS_LIST.map((address, index) => (
-            <div className="divBigger" key={index}>
-              <div className="beforeInput smallBig">Address {index + 1}:</div>
+            <div className="div">
+              {" "}
+              <div key={index} className="beforeInput thirty">
+                Address {index + 1}:
+              </div>
               <input
                 readOnly
                 type="text"
-                className="bigger"
+                className="seventy"
                 onClick={handleClick}
                 defaultValue={address}
               />
             </div>
           ))}
         <div className="subTitle goldColor">Employer</div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Employer:</div>
+        <div className="div">
+          <div className="beforeInput sixth">Employer:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.EMPLOYER}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">TLO POE:</div>
+
+          <div className="beforeInput sixth">TLO POE:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.TLO_POE}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">TLO POE #:</div>
+
+          <div className="beforeInput sixth">TLO POE #:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.TLO_POE_NUMBER}
           />
         </div>
         <div className="subTitle">Rent</div>
         <div className="div">
-          <div className="beforeInput small">Rent Amount:</div>
+          <div className="beforeInput thirty">Rent Amount:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.RENT_AMOUNT}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small2">Landlord Phone #:</div>
+
+          <div className="beforeInput thirty">Landlord Phone #:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.LANDLORD_PHONE_NUMBER}
           />
         </div>
         <div className="subTitle">Contact</div>
-        <div className="divBigger">
-          <div className="beforeInput smaller">
-            <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput div2 ">
+            <img src="/newNumber.png" className="smallImg2" />
             <input
+              className="tenth"
               readOnly
               type="text"
               onClick={handleClick}
               defaultValue={object.TLO_PHONE}
             />
           </div>
-          <div className="beforeInput smaller">
-            <img src="/newNumber.png" />
+          <div className="beforeInput div2 ">
+            <img src="/newNumber.png" className="smallImg2" />
             <input
+              className="tenth"
               readOnly
               type="text"
               onClick={handleClick}
               defaultValue={object.TLO_PHONE_2}
             />
           </div>
-          <div className="beforeInput smaller">
-            <img src="/newNumber.png" />
+          <div className="beforeInput div2 ">
+            <img src="/newNumber.png" className="smallImg2" />
             <input
+              className="tenth"
               readOnly
               type="text"
               onClick={handleClick}
               defaultValue={object.TLO_PHONE_3}
             />
           </div>
-          <div className="beforeInput smaller">
-            <img src="/newNumber.png" />
+          <div className="beforeInput div2 ">
+            <img src="/newNumber.png" className="smallImg2" />
             <input
+              className="tenth"
               readOnly
               type="text"
               onClick={handleClick}
               defaultValue={object.TLO_PHONE_4}
             />
           </div>
-          <div className="beforeInput smaller">
-            <img src="/newNumber.png" />
+          <div className="beforeInput div2 ">
+            <img src="/newNumber.png" className="smallImg2" />
             <input
+              className="tenth"
               readOnly
               type="text"
               onClick={handleClick}

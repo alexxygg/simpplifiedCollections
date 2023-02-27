@@ -16,10 +16,10 @@ function AccountsList() {
         <div className="header">
           <div className="logo middle">DEBTDYNAMIC©</div>
         </div>{" "}
-        <div className="title redColor">All accounts:</div>
+        <div className="title goldColor">All accounts:</div>
         <div className="results">
           {/* <div>{ifUser(globalUser)}</div> */}
-          <div className="accountFromResults otherBg redColor">
+          <div className="accountFromResults otherBg goldColor">
             <div>id</div>
             <div>Account #</div>
             <div>Name</div>

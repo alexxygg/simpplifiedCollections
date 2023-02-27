@@ -21,21 +21,19 @@ function TestAccount({ object, handleCopyClick }) {
       <div className="title">...</div>
       <div className="section">
         <div className="div">
-          <div className="beforeInput small">Imported on:</div>
+          <div className="beforeInput thirty">Imported on:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.IMPORTED_ON}
           />{" "}
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Age:</div>
+          <div className="beforeInput thirty">Age:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={`${daysSince} days since.`}
           />
@@ -44,81 +42,76 @@ function TestAccount({ object, handleCopyClick }) {
       <div className="title">Debt</div>
       <div className="section">
         <div className="div">
-          <div className="beforeInput small">Principal:</div>
+          <div className="beforeInput thirty">Principal:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PRINCIPAL}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Linked Balance:</div>
+
+          <div className="beforeInput thirty">Linked Balance:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.LINKED_BALANCE}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Balance:</div>
+          <div className="beforeInput thirty">Balance:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.BALANCE}
           />{" "}
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Payment Portal:</div>
+          <div className="beforeInput thirty">Payment Portal:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PAYMENT_PORTAL}
           />{" "}
         </div>
         <div className="div">
-          <div className="beforeInput small">Payments:</div>
+          <div className="beforeInput thirty">Payments:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PAYMENTS}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Last Payment:</div>
+
+          <div className="beforeInput thirty">Last Payment:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.LAST_PAYMENT}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small2 ">Date Last Payment:</div>
+          <div className="beforeInput thirty ">Date Last Payment:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.DATE_LAST_PAYMENT}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small2 ">Date of Last Charge:</div>
+
+          <div className="beforeInput thirty ">Date of Last Charge:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.DATE_OF_LAST_CHARGE}
           />
@@ -129,181 +122,172 @@ function TestAccount({ object, handleCopyClick }) {
         <StatusComp object={object} />
 
         <div className="div">
-          <div className="beforeInput small">Client:</div>
+          <div className="beforeInput thirty">Client:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.CLIENT}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Account Type:</div>
+
+          <div className="beforeInput thirty">Account Type:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_TYPE}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Creditor:</div>
+          <div className="beforeInput thirty">Creditor:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.CREDITOR}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Account #:</div>
+
+          <div className="beforeInput thirty">Account #:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_NUMBER}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Originated:</div>
+          <div className="beforeInput thirty">Originated:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ORIGINATED}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small2">Account Received:</div>
+
+          <div className="beforeInput thirty">Account Received:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ACCOUNT_RECEIVED}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Imported on:</div>
+          <div className="beforeInput thirty">Imported on:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.IMPORTED_ON}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Collector:</div>
+
+          <div className="beforeInput thirty">Collector:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.COLLECTOR}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Client Claim #:</div>
+          <div className="beforeInput thirty">Client Claim #:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.CLIENT_CLAIM_NUMBER}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Charged Off:</div>
+
+          <div className="beforeInput thirty">Charged Off:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.CHARGED_OFF}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Purchased:</div>
+          <div className="beforeInput thirty">Purchased:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PURCHASED}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Queue:</div>
+
+          <div className="beforeInput thirty">Queue:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.QUEUE}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Next Work:</div>
+          <div className="beforeInput thirty">Next Work:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.NEXT_WORK}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small2 ">Debtor Payment ID:</div>
+
+          <div className="beforeInput thirty ">Debtor Payment ID:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.DEBTOR_PMT_ID}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Referring:</div>
+          <div className="beforeInput thirty">Referring:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.REFERRING}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Age:</div>
+
+          <div className="beforeInput thirty">Age:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.AGE}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Delinq #1:</div>
+          <div className="beforeInput thirty">Delinq #1:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.DELINQ_1}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Sales Rep:</div>
+
+          <div className="beforeInput thirty">Sales Rep:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.SALES_REP}
           />
@@ -313,123 +297,112 @@ function TestAccount({ object, handleCopyClick }) {
       <div className="section">
         <div className="subTitle goldColor">Banking Information</div>
         <div className="div">
-          <div className="beforeInput small2 ">Bank Account Name:</div>
+          <div className="beforeInput thirty ">Bank Account Name:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NAME}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Bank Routing:</div>
+          <div className="beforeInput thirty">Bank Routing:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.BANK_ROUTING}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Bank Account #:</div>
+          <div className="beforeInput thirty">Bank Account #:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.BANK_ACCT_NUMBER}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Last Payment:</div>
+          <div className="beforeInput thirty">Last Payment:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.LAST_PAYMENT}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Original Check #:</div>
+          <div className="beforeInput thirty">Original Check #:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ORIGINAL_CHECK_NUMBER}
           />{" "}
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Product:</div>
+          <div className="beforeInput thirty">Product:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PRODUCT}
           />
         </div>
         <div className="subTitle goldColor">Documents</div>
         <div className="div">
-          <div className="beforeInput other">Debtor Doc. Notifications:</div>
+          <div className="beforeInput thirty">Debtor Doc. Notifications:</div>
           <input
             readOnly
             type="text"
-            className="other2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.GENERATE_DEBTOR_DOCUMENT_NOTIFICATIONS}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">PDF:</div>
+          <div className="beforeInput thirty">PDF:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PDF}
           />
         </div>
         <div className="subTitle goldColor">DOB and SSN</div>
         <div className="div">
-          <div className="beforeInput small">DOB:</div>
+          <div className="beforeInput thirty">DOB:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.DOB}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">SSN:</div>
+          <div className="beforeInput thirty">SSN:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.SSN}
           />{" "}
         </div>
         <div className="div">
-          <div className="beforeInput small">Action Codes:</div>
+          <div className="beforeInput thirty">Action Codes:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.ACTION_CODES}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Letter Flows:</div>
+
+          <div className="beforeInput thirty">Letter Flows:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.LETTER_FLOWS}
           />

@@ -28,10 +28,10 @@ function StatusComp({ object }) {
 
   return (
     <>
-      <div className="divBigger">
-        <div className="beforeInput small">Status:</div>
+      <div className="div">
+        <div className="beforeInput sixth">Status:</div>
         <select
-          className="bigger"
+          className="maxContent"
           onChange={handleDispositionChange}
           defaultValue={object.STATUS}
         >

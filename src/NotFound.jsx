@@ -11,13 +11,15 @@ function NotFound() {
     <>
       <HeaderOtherLinks />{" "}
       <div id="paddedList2">
-        <div className="header">
+        <div className="header ">
           <div className="logo middle">DEBTDYNAMIC©</div>
         </div>{" "}
         <div className="title goldColor">ERROR</div>
         <div className="notFound">
-          <div>Error 404</div>
-          <div>The resource you were looking for doesn't exist.</div>
+          <div className="notFoundA">Error 404</div>
+          <div className="notFoundB">
+            The resource you were looking for doesn't exist.
+          </div>
           <Link to="#" onClick={handleClick}>
             Back
           </Link>{" "}

@@ -81,8 +81,8 @@ function HomePage() {
               today and experience the difference in your account management!
             </h2>
           </div>
-          <a href="/accountsList">
-            <button className="searchBtn2">Try the DEMO!</button>
+          <a href="/accountsList" className="searchBtn">
+            Try the DEMO!
           </a>
         </div>
       </div>

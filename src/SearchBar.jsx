@@ -96,7 +96,7 @@ const SearchBar = () => {
           searchResults.length > 0 ? (
             <div className="results">
               <div id="paddedList">
-                <div className="accountFromResults otherBg redColor">
+                <div className="accountFromResults otherBg goldColor">
                   <div>id</div>
                   <div>Account #</div>
                   <div>Name</div>

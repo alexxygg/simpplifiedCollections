@@ -43,139 +43,125 @@ function Relatives({ object, handleCopyClick }) {
       <div className="section">
         <div className="subTitle">Name and Address</div>
         <div className="div">
-          <div className="beforeInput small">Relative 1 (R1):</div>
+          <div className="beforeInput twenty">Relative 1 (R1):</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">R1 Address:</div>
+          <div className="beforeInput twenty">R1 Address:</div>
           <input
             readOnly
             type="text"
-            className="mediumBig"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_ADDY}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Relative 2 (R2):</div>
+          <div className="beforeInput twenty">Relative 2 (R2):</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">R2 Address:</div>
+          <div className="beforeInput twenty">R2 Address:</div>
           <input
             readOnly
             type="text"
-            className="mediumBig"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_ADDY}
-          />
+          />{" "}
         </div>
         <div className="div">
-          <div className="beforeInput small">Relative 3 (R3):</div>
+          <div className="beforeInput twenty">Relative 3 (R3):</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">R3 Address:</div>
+          <div className="beforeInput twenty">R3 Address:</div>
           <input
             readOnly
             type="text"
-            className="mediumBig"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_ADDY}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small">Relative 4 (R4):</div>
+          <div className="beforeInput twenty">Relative 4 (R4):</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">R4 Address:</div>
+          <div className="beforeInput twenty">R4 Address:</div>
           <input
             readOnly
             type="text"
-            className="mediumBig"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_ADDY}
-          />
+          />{" "}
         </div>
         <div className="div">
-          <div className="beforeInput small">Relative 5 (R5):</div>
+          <div className="beforeInput twenty">Relative 5 (R5):</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">R5 Address:</div>
+          <div className="beforeInput twenty">R5 Address:</div>
           <input
             readOnly
             type="text"
-            className="mediumBig"
+            className="thirty"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_ADDY}
           />
         </div>
         <div className="subTitle">Contact</div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R1 #1: &nbsp;
-            <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput sixth">
+            R1 1 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH1}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R1 #2: &nbsp; <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R1 2 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH2}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R1 #3: &nbsp; <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R1 3 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_1_PH3}
           />
@@ -222,38 +208,35 @@ function Relatives({ object, handleCopyClick }) {
             ))}
           </select>
         </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R2 #1: &nbsp; <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput sixth">
+            R2 1 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH1}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R2 #2: &nbsp; <img src="/newNumber.png" />
+
+          <div className="beforeInput sixth">
+            R2 2 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH2}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R2 #3: &nbsp; <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R2 3 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_2_PH3}
           />
@@ -300,39 +283,35 @@ function Relatives({ object, handleCopyClick }) {
             ))}
           </select>
         </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R3 #1: &nbsp; <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput sixth">
+            R3 1 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH1}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R3 #2: &nbsp; <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R3 2 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH2}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R3 #3: &nbsp;
-            <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R3 3 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_3_PH3}
           />
@@ -379,40 +358,36 @@ function Relatives({ object, handleCopyClick }) {
             ))}
           </select>
         </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R4 #1: &nbsp; <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput sixth">
+            R4 1 &nbsp; <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH1}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R4 #2: &nbsp;
-            <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R4 2 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH2}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R4 #3: &nbsp;
-            <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R4 3 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_4_PH3}
           />
@@ -459,41 +434,37 @@ function Relatives({ object, handleCopyClick }) {
             ))}
           </select>
         </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R5 #1: &nbsp;
-            <img src="/newNumber.png" />
+        <div className="div">
+          <div className="beforeInput sixth">
+            R5 1 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH1}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R5 #2: &nbsp;
-            <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R5 2 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH2}
           />
-        </div>
-        <div className="divMedium2">
-          <div className="beforeInput medium">
-            R5 #3: &nbsp;
-            <img src="/newNumber.png" />
+          <div className="beforeInput sixth">
+            R5 3 &nbsp;
+            <img src="/newNumber.png" className="smallImg2" />
           </div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.RELATIVE_5_PH3}
           />

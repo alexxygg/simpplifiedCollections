@@ -6,17 +6,16 @@ function DispoCopyNote({ object, selectedDispositions }) {
   };
   return (
     <>
-      <div className="title">Disposition Codes Summary</div>
       <button
         onClick={copyDispositionsNote}
-        className="searchBtn"
+        className="weirdBtn marginAuto"
         style={{
           borderRadius: "2rem",
           width: "max-content",
           borderLeft: "solid black",
         }}
       >
-        Copy all numbers + codes to notes.
+        Copy all numbers + codes.
       </button>
     </>
   );

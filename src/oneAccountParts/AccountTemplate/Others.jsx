@@ -8,140 +8,129 @@ function Others({ object, handleCopyClick }) {
   };
   return (
     <>
-      {" "}
-      <div className="title">Other</div>{" "}
+      <div className="title">Other</div>
       <div className="section">
-        {" "}
         <div className="subTitle goldColor">Items</div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Item A:</div>
+        <div className="div">
+          <div className="beforeInput sixth">Item A:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.ITEM_A}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Item B:</div>
+          <div className="beforeInput sixth">Item B:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.ITEM_B}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Item C:</div>
+
+          <div className="beforeInput sixth">Item C:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.ITEM_C}
           />
         </div>
         <div className="subTitle goldColor">Props</div>
         <div className="div">
-          <div className="beforeInput small2 ">Prop Owner Address:</div>
+          <div className="beforeInput thirty ">Prop Owner Address:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PROP_OWNER_ADDRESS}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small">Prop:</div>
+
+          <div className="beforeInput thirty">Prop:</div>
           <input
             readOnly
             type="text"
-            className="small"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PROP}
           />
         </div>
         <div className="div">
-          <div className="beforeInput small2 ">Prop Loan Amount:</div>
+          <div className="beforeInput thirty ">Prop Loan Amount:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PROP_LOAN_AMOUNT}
           />
-        </div>
-        <div className="div">
-          <div className="beforeInput small2 ">Prop Owner Lender:</div>
+
+          <div className="beforeInput thirty ">Prop Owner Lender:</div>
           <input
             readOnly
             type="text"
-            className="small2"
+            className="twenty"
             onClick={handleClick}
             defaultValue={object.PROP_OWNER_LENDER}
           />
         </div>
-        <div className="subTitle">Co-Signer</div>{" "}
-        <div className="divMedium">
-          <div className="beforeInput medium">Co-Signer First:</div>
+        <div className="subTitle">Co-Signer</div>
+        <div className="div">
+          <div className="beforeInput sixth">Co-Signer First:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_FIRST}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Co-Signer Last:</div>
+
+          <div className="beforeInput sixth">Co-Signer Last:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_LAST}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Co-Signer SSN:</div>
+
+          <div className="beforeInput sixth">Co-Signer SSN:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.CO_SIGNER_SSN}
           />
         </div>
         <div className="subTitle">Legal</div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Attorney:</div>
+        <div className="div">
+          <div className="beforeInput sixth">Attorney:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.ATTORNEY}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Bankruptcy:</div>
+
+          <div className="beforeInput sixth">Bankruptcy:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.BANKRUPTCY}
           />
-        </div>
-        <div className="divMedium">
-          <div className="beforeInput medium">Discharged:</div>
+
+          <div className="beforeInput sixth">Discharged:</div>
           <input
             readOnly
             type="text"
-            className="medium"
+            className="sixth"
             onClick={handleClick}
             defaultValue={object.DISCHARGED}
           />

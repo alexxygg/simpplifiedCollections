@@ -68,38 +68,40 @@ const SearchPage = () => {
         <div className="header">
           <div className="logo middle">DEBTDYNAMIC©</div>
         </div>{" "}
-        <div className="title redColor">Search all accounts:</div>
-        <form className="searchBarDiv" action="#" onSubmit={handleSubmit}>
-          <div className="searchBy">
-            <label htmlFor="searchBy">Search by:</label>
-            <select
-              id="searchBy"
-              name="searchBy"
-              value={searchBy}
-              onChange={(event) => setSearchBy(event.target.value)}
-            >
-              <option value="id">id</option>
-              <option value="ACCOUNT_NUMBER">Account #</option>
-              <option value="NAME">Name</option>
-              <option value="TLO_PHONE">TLO Phone #</option>
-              <option value="SSN">SSN</option>
-              <option value="DOB">DOB</option>
-            </select>
-          </div>{" "}
-          <input
-            className="searchBar"
-            type="text"
-            placeholder=" id, Account #, Phone #, SSN, DOB..."
-            value={searchTerm}
-            onChange={(event) => setSearchTerm(event.target.value)}
-          />
-          <button className="searchBtn" type="submit" value="Submit">
-            Search
-          </button>
+        <div className="title goldColor">Search all accounts:</div>
+        <div className="searchBarDivAgain">
+          <form className="searchBarDiv" action="#" onSubmit={handleSubmit}>
+            <div className="searchBy">
+              <label htmlFor="searchBy">Search by:</label>
+              <select
+                id="searchBy"
+                name="searchBy"
+                value={searchBy}
+                onChange={(event) => setSearchBy(event.target.value)}
+              >
+                <option value="id">id</option>
+                <option value="ACCOUNT_NUMBER">Account #</option>
+                <option value="NAME">Name</option>
+                <option value="TLO_PHONE">TLO Phone #</option>
+                <option value="SSN">SSN</option>
+                <option value="DOB">DOB</option>
+              </select>
+            </div>{" "}
+            <input
+              className="searchBar"
+              type="text"
+              placeholder=" id, Account #, Phone #, SSN, DOB..."
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+            />
+            <button className="searchBtn" type="submit" value="Submit">
+              Search
+            </button>
+          </form>
           {searchResults ? (
             searchResults.length > 0 ? (
               <div className="results">
-                <div className="accountFromResults otherBg redColor">
+                <div className="accountFromResults otherBg goldColor">
                   <div>id</div>
                   <div>Account #</div>
                   <div>Name</div>
@@ -135,7 +137,7 @@ const SearchPage = () => {
               </div>
             ) : null
           ) : null}
-        </form>
+        </div>
       </div>
     </>
   );

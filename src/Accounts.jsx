@@ -19,7 +19,8 @@ function Accounts({ object }) {
       <div className="navbar">
         <HeaderOtherLinks />
         <Header object={object} />
-        <Tabs object={object} />
+        {/* not ready      
+          <Tabs object={object} /> */}
         <Header2 object={object} />
       </div>
       <div id="padded">

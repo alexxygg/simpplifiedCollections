@@ -25,22 +25,29 @@ const GoodAddresses = ({ object, handleCopyClick }) => {
           {newAddressList.map((address, index) => (
             <div key={index}>
               {" "}
-              <img src="/address.png" />
-              <input readOnly onClick={handleClick} defaultValue={address} />
+              <img src="/address.png" className="smallImg" />
+              <input
+                readOnly
+                onClick={handleClick}
+                defaultValue={address}
+                className="eighty"
+              />
             </div>
           ))}
         </div>
       </div>{" "}
       <form onSubmit={handleAddAddress}>
-        <img src="/address.png" />
-        <input
-          placeholder="123 Evergreen St, Somewhere, USA"
-          type="text"
-          className="input"
-          value={newAddress}
-          onChange={(e) => setNewAddress(e.target.value)}
-        />
-        <button className="searchBtn weirdBtn" type="submit">
+        <div className="div">
+          <img src="/address.png" className="smallImg" />
+          <input
+            placeholder="123 Evergreen St, Somewhere, USA"
+            type="text"
+            className="eighty"
+            value={newAddress}
+            onChange={(e) => setNewAddress(e.target.value)}
+          />
+        </div>
+        <button className=" weirdBtn" type="submit">
           Add
         </button>
       </form>

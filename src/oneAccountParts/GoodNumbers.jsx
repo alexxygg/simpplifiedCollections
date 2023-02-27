@@ -24,7 +24,7 @@ function GoodNumbers({ object, handleCopyClick }) {
       <div className="title ">Good Numbers:</div>
       <div className="allGoodNumbers">
         {GOOD_NUMBERS.map((number, index) => (
-          <div key={index}>
+          <div key={index} className="div">
             <img src="/newNumber.png" />
             <input
               readOnly
@@ -44,46 +44,46 @@ function GoodNumbers({ object, handleCopyClick }) {
           handleAddNumber();
         }}
       >
-        <div className="divMedium">
+        <div className="div">
           <img src="/newNumber.png" />
           &nbsp;
           <input
             placeholder="xxx-xxx-xxxx"
             type="text"
-            className="input"
+            className="eighty"
             value={newNumber.number}
             onChange={(event) =>
               setNewNumber({ ...newNumber, number: event.target.value })
             }
           />
         </div>
-        <div className="divMedium">
+        <div className="div">
           <img src="/location.png" />
           &nbsp;
           <input
             placeholder="home,cell"
             type="text"
-            className="input"
+            className="eighty"
             value={newNumber.type}
             onChange={(event) =>
               setNewNumber({ ...newNumber, type: event.target.value })
             }
           />
         </div>
-        <div className="divMedium">
+        <div className="div">
           <img src="/timeZone.png" />
           &nbsp;
           <input
             placeholder="pacific,atlantic"
             type="text"
-            className="input"
+            className="eighty"
             value={newNumber.area}
             onChange={(event) =>
               setNewNumber({ ...newNumber, area: event.target.value })
             }
           />
         </div>
-        <button className="searchBtn less" type="submit">
+        <button className="weirdBtn" type="submit">
           Add
         </button>
       </form>
